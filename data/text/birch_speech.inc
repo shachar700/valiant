@@ -2,8 +2,8 @@ gText_Birch_Welcome::
 	.string "Hi! You are dreaming of my forthcoming!\p"
 	.string "I'm coming to you to give you a POKéMON!\p"
 	.string "My name is ARACUARIA.\p"
-	.string "But everyone calls me ARIA, the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "But everyone calls me ARIA,\n"
+	.string "the POKéMON PROFESSOR.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
