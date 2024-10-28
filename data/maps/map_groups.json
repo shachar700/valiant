@@ -38,10 +38,11 @@
     "gMapGroup_IndoorRoute124"
   ],
   "gMapGroup_ValiantTownsAndRoutes": [
-    "HawamCity"
+    "HawamCity",
+    "PtolemaisCity"
   ],
   "gMapGroup_ValiantIndoor": [
-
+    "SerenityLake"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

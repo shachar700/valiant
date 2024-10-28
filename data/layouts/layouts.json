@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HawamCity/border.bin",
       "blockdata_filepath": "data/layouts/HawamCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY",
+      "name": "PtolemaisCity_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/PtolemaisCity/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SERENITY_LAKE",
+      "name": "SerenityLake_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideOfTruck",
+      "border_filepath": "data/layouts/SerenityLake/border.bin",
+      "blockdata_filepath": "data/layouts/SerenityLake/map.bin"
     }
   ]
 }

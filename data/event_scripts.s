@@ -1076,3 +1076,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/HawamCity/scripts.inc"
+
+	.include "data/maps/PtolemaisCity/scripts.inc"
+
+	.include "data/maps/SerenityLake/scripts.inc"
