@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_HAWAM_CITY",
       "name": "HawamCity_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 54,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HawamCity/border.bin",
@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_InsideOfTruck",
       "border_filepath": "data/layouts/SerenityLake/border.bin",
       "blockdata_filepath": "data/layouts/SerenityLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_A",
+      "name": "RouteA_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteA/border.bin",
+      "blockdata_filepath": "data/layouts/RouteA/map.bin"
     }
   ]
 }
