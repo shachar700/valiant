@@ -1082,3 +1082,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SerenityLake/scripts.inc"
 
 	.include "data/maps/RouteA/scripts.inc"
+
+	.include "data/maps/RouteB/scripts.inc"
+
+	.include "data/maps/RouteC/scripts.inc"

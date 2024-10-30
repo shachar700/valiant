@@ -1,12 +1,12 @@
 {
-  "id": "MAP_HAWAM_CITY",
-  "name": "HawamCity",
-  "layout": "LAYOUT_HAWAM_CITY",
-  "music": "MUS_PETALBURG",
-  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "id": "MAP_ROUTE_B",
+  "name": "RouteB",
+  "layout": "LAYOUT_ROUTE_B",
+  "music": "MUS_ROUTE101",
+  "region_map_section": "MAPSEC_ROUTE_102",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_CITY",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -15,33 +15,37 @@
   "connections": [
     {
       "map": "MAP_ROUTE_A",
-      "offset": 22,
+      "offset": 36,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_PTOLEMAIS_CITY",
+      "offset": -15,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE_C",
+      "offset": 0,
       "direction": "right"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 36,
-      "y": 29,
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 17,
+      "y": 46,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "HawamCity_EventScript_Give_Mon",
+      "script": "NULL",
       "flag": "0"
     }
   ],
   "warp_events": [
-    {
-      "x": 32,
-      "y": 28,
-      "elevation": 0,
-      "dest_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
-      "dest_warp_id": "0"
-    }
+
   ],
   "coord_events": [
 

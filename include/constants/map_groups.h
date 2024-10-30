@@ -9,6 +9,8 @@
 #define MAP_HAWAM_CITY     (0 | (0 << 8))
 #define MAP_PTOLEMAIS_CITY (1 | (0 << 8))
 #define MAP_ROUTE_A        (2 | (0 << 8))
+#define MAP_ROUTE_B        (3 | (0 << 8))
+#define MAP_ROUTE_C        (4 | (0 << 8))
 
 // gMapGroup_ValiantIndoor
 #define MAP_SERENITY_LAKE (0 | (1 << 8))

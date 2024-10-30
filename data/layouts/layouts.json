@@ -4450,6 +4450,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RouteA/border.bin",
       "blockdata_filepath": "data/layouts/RouteA/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_B",
+      "name": "RouteB_Layout",
+      "width": 20,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/RouteB/border.bin",
+      "blockdata_filepath": "data/layouts/RouteB/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_C",
+      "name": "RouteC_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/RouteC/border.bin",
+      "blockdata_filepath": "data/layouts/RouteC/map.bin"
     }
   ]
 }

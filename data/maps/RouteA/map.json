@@ -17,6 +17,11 @@
       "map": "MAP_HAWAM_CITY",
       "offset": -22,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE_B",
+      "offset": -36,
+      "direction": "right"
     }
   ],
   "object_events": [

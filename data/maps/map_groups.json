@@ -40,7 +40,9 @@
   "gMapGroup_ValiantTownsAndRoutes": [
     "HawamCity",
     "PtolemaisCity",
-    "RouteA"
+    "RouteA",
+    "RouteB",
+    "RouteC"
   ],
   "gMapGroup_ValiantIndoor": [
     "SerenityLake"
