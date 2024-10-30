@@ -19,7 +19,7 @@ SerenityLake_EventScript_Celebi::
 	closemessage
 	applymovement LOCALID_CELEBI, CelebiLeaves
 	waitmovement 0
-	warp MAP_HAWAM_CITY, 25, 32
+	warp MAP_HAWAM_CITY_PLAYERS_HOUSE_2F, 8, 5
 	waitstate
 	releaseall
 	end

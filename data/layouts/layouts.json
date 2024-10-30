@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/RouteC/border.bin",
       "blockdata_filepath": "data/layouts/RouteC/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAWAM_CITY_PLAYERS_HOUSE_1F",
+      "name": "HawamCity_PlayersHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/HawamCity_PlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/HawamCity_PlayersHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAWAM_CITY_PLAYERS_HOUSE_2F",
+      "name": "HawamCity_PlayersHouse_2F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/HawamCity_PlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/HawamCity_PlayersHouse_2F/map.bin"
     }
   ]
 }

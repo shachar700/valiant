@@ -36,6 +36,13 @@
   ],
   "warp_events": [
     {
+      "x": 17,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_HAWAM_CITY_PLAYERS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
       "x": 32,
       "y": 28,
       "elevation": 0,

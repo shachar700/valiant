@@ -1086,3 +1086,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RouteB/scripts.inc"
 
 	.include "data/maps/RouteC/scripts.inc"
+
+	.include "data/maps/HawamCity_PlayersHouse_1F/scripts.inc"
+
+	.include "data/maps/HawamCity_PlayersHouse_2F/scripts.inc"
