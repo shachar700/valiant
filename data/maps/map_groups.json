@@ -47,7 +47,9 @@
   "gMapGroup_ValiantIndoor": [
     "SerenityLake",
     "HawamCity_PlayersHouse_1F",
-    "HawamCity_PlayersHouse_2F"
+    "HawamCity_PlayersHouse_2F",
+    "HawamCity_Mart",
+    "HawamCity_PokemonCenter"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

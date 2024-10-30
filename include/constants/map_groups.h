@@ -16,6 +16,8 @@
 #define MAP_SERENITY_LAKE               (0 | (1 << 8))
 #define MAP_HAWAM_CITY_PLAYERS_HOUSE_1F (1 | (1 << 8))
 #define MAP_HAWAM_CITY_PLAYERS_HOUSE_2F (2 | (1 << 8))
+#define MAP_HAWAM_CITY_MART             (3 | (1 << 8))
+#define MAP_HAWAM_CITY_POKEMON_CENTER   (4 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))
