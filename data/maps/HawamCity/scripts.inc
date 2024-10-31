@@ -1,30 +1,26 @@
-.set LOCALID_BIRCH, 2
+.set LOCALID_BIRCH, 1
 
 HawamCity_MapScripts::
 	.byte 0
 
-HawamCity_EventScript_Give_Mon::
-	lockall
-	msgbox HawamCity_Text_HeyBitch, MSGBOX_NPC
-	setflag FLAG_SYS_POKEMON_GET
-	givemon SPECIES_BELDUM, 5	
-	givemon SPECIES_DRATINI, 5
-	givemon SPECIES_LARVITAR, 5
-	releaseall
-	end
-
 HawamCity_EventScript_ProfApproachesTrigger1::
 	setvar VAR_0x8008, 1
+	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
 
 HawamCity_EventScript_ProfApproachesTrigger2::
 	setvar VAR_0x8008, 2
+	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
 
 HawamCity_EventScript_ProfApproachesTrigger3::
 	setvar VAR_0x8008, 3
+	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
 
@@ -60,7 +56,7 @@ HawamCity_EventScript_ProfApproaches::
 	setflag FLAG_HIDE_HAWAM_CITY_PROF
 	setvar VAR_HAWAM_CITY_INTRO_STATE, 3
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	warpsilent MAP_HAWAM_CITY_POKEMON_CENTER, 6, 5
+	warpsilent MAP_HAWAM_CITY_PROFESSOR_ARIAS_HOUSE, 6, 5
 	waitstate
 	release
 	end
@@ -92,8 +88,9 @@ HawamCity_Text_ProfIntro:
 	.string "waiting for you.\p"
 	.string "Follow me to my house.$"
 
-HawamCity_Text_HeyBitch:
-	.string "Hey Bitch.$"
+HawamCity_Movement_FaceRight:
+	face_right
+	step_end
 
 HawamCity_Movement_WalkOneUp:
 	walk_up

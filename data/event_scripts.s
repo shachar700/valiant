@@ -1094,3 +1094,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HawamCity_Mart/scripts.inc"
 
 	.include "data/maps/HawamCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/HawamCity_ProfessorAriasHouse/scripts.inc"

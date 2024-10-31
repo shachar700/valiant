@@ -3026,6 +3026,12 @@ extern const u8 gText_PkmnForSwap[];
 extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
 
+// Starters
+extern const u8 gText_Dratini[];
+extern const u8 gText_Larvitar[];
+extern const u8 gText_Bagon[];
+extern const u8 gText_Beldum[];
+
 // Naming Screen
 extern const u8 gText_MoveOkBack[];
 extern const u8 gText_YourName[];
