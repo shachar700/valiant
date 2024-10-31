@@ -73,15 +73,6 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 19,
-      "y": 11,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "SerenityLake_EventScript_Celebi"
-    },
-    {
-      "type": "trigger",
       "x": 21,
       "y": 11,
       "elevation": 0,
@@ -97,13 +88,22 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "SerenityLake_EventScript_Celebi"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SerenityLake_EventScript_Celebi"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 16,
-      "y": 11,
+      "x": 17,
+      "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "SerenityLake_EventScript_Sign"

@@ -10,7 +10,7 @@ SerenityLake_OnTransition:
 
 SerenityLake_EventScript_Celebi::
 	lockall
-	setrespawn HEAL_LOCATION_HAWAM_CITY
+	setrespawn HEAL_LOCATION_HAWAM_CITY_PLAYERS_HOUSE_2F
 	applymovement LOCALID_CELEBI, CelebiApproaches
 	waitmovement 0
 	playmoncry SPECIES_CELEBI, 0
@@ -41,7 +41,7 @@ SerenityLake_EventScript_SmashMale2::
 	end
 
 SerenityLake_Text_Celebi::
-	.string "{COLOR GREEN}Celebi:{COLOR DARK_GRAY} Cele...biiiii...\p"
+	.string "{COLOR GREEN}Celebi:{COLOR DARK_GRAY} Cele…biiiii…\p"
 	.string "The sound coming from Celebi's voice\n"
 	.string "sounded like a stress signal.$"
 
