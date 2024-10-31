@@ -4414,7 +4414,7 @@
     {
       "id": "LAYOUT_HAWAM_CITY",
       "name": "HawamCity_Layout",
-      "width": 54,
+      "width": 56,
       "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",

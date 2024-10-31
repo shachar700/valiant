@@ -15,14 +15,14 @@
   "connections": [
     {
       "map": "MAP_ROUTE_A",
-      "offset": 22,
+      "offset": 23,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 35,
+      "x": 41,
       "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -36,17 +36,17 @@
   ],
   "warp_events": [
     {
-      "x": 16,
+      "x": 22,
       "y": 39,
       "elevation": 0,
       "dest_map": "MAP_HAWAM_CITY_PLAYERS_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 31,
+      "x": 37,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
+      "dest_map": "MAP_HAWAM_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
     }
   ],
