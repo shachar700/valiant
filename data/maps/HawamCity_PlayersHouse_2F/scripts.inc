@@ -33,6 +33,7 @@ HawamCity_PlayersHouse_2F_EventScript_MeetMom::
 
 HawamCity_PlayersHouse_2F_EventScript_Mudkip_Doll::
 	msgbox HawamCity_PlayersHouse_2F_Text_Mudkip_Doll, MSGBOX_SIGN
+	end
 
 HawamCity_PlayersHouse_2F_EventScript_Clock::
 	msgbox HawamCity_PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_SIGN
