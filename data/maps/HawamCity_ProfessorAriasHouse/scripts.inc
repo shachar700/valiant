@@ -20,7 +20,7 @@ HawamCity_ProfessorAriasHouse_EventText_Intro::
 	lock
 	playse SE_PIN
 	applymovement LOCALID_BIRCH, Common_Movement_ExclamationMark
-	waitmovement 0
+	waitmovement 10
 	msgbox HawamCity_ProfessorAriasHouse_Text_GiveMon, MSGBOX_DEFAULT
 	call HawamCity_ProfessorAriasHouse_EventText_GiveStarter
 	release
@@ -79,24 +79,24 @@ HawamCity_ProfessorAriasHouse_EventScript_ShowStarter::
 	msgbox HawamCity_ProfessorAriasHouse_Text_Received, MSGBOX_DEFAULT
 	waitfanfare
 	msgbox HawamCity_ProfessorAriasHouse_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
+	waitmessage
 	goto_if_eq VAR_RESULT, YES, HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter
 	goto_if_eq VAR_RESULT, NO, HawamCity_ProfessorAriasHouse_EventScript_VentureForth
-	end
 
 HawamCity_ProfessorAriasHouse_EventScript_PickAgain:
 	hidemonpic
 	goto HawamCity_ProfessorAriasHouse_EventText_GiveStarter
 
-HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter::
+HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter:
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
 	goto HawamCity_ProfessorAriasHouse_EventScript_VentureForth
-	end
 
 HawamCity_ProfessorAriasHouse_EventScript_VentureForth:
 	msgbox HawamCity_ProfessorAriasHouse_Text_VentureForth, MSGBOX_DEFAULT
-	setvar VAR_HAWAM_CITY_INTRO_STATE, 4
 	closemessage
+	setvar VAR_HAWAM_CITY_INTRO_STATE, 4
+	callnative UpdateFollowingPokemon
 	releaseall
 	end
 

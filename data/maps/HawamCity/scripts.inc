@@ -5,21 +5,21 @@ HawamCity_MapScripts::
 
 HawamCity_EventScript_ProfApproachesTrigger1::
 	setvar VAR_0x8008, 1
-	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
 
 HawamCity_EventScript_ProfApproachesTrigger2::
 	setvar VAR_0x8008, 2
-	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
 
 HawamCity_EventScript_ProfApproachesTrigger3::
 	setvar VAR_0x8008, 3
-	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 	waitmovement 0
 	goto HawamCity_EventScript_ProfApproaches
 	end
@@ -81,6 +81,16 @@ HawamCity_Movement_ProfAndPlayerTwoUp::
 	waitmovement 0
 	return
 
+HawamCity_EventScript_BlockSouth_Trigger::
+	lock
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
+	msgbox HawamCity_Text_Man_Block, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_GoOneUp
+	waitmovement 0
+	release
+	end
+
 HawamCity_EventScript_LittleBoy::
 	msgbox HawamCity_Text_LittleKid, MSGBOX_NPC
 	end
@@ -104,6 +114,11 @@ HawamCity_EventScript_Gentleman::
 
 HawamCity_EventScript_Girl::
 	msgbox HawamCity_Text_Girl, MSGBOX_NPC
+	end
+
+
+HawamCity_EventScript_Man::
+	msgbox HawamCity_Text_Man, MSGBOX_NPC
 	end
 
 HawamCity_EventScript_PlayersMailbox::
@@ -159,6 +174,20 @@ HawamCity_Text_Girl:
 	.string "I wanted to buy SUPER POTIONS but they\n"
 	.string "only have POTIONS in Hawam City.$"
 
+HawamCity_Text_Man:
+	.string "To the SOUTH is the city of spring,\n"
+	.string "HARUTEL CITY.\p"
+	.string "You'd need a bicycle if you want to\n"
+	.string "travel the roads SOUTH.\l"
+	.string "You can get one from KENKORIA CITY\l"
+	.string "to the NORTH-EAST.$"
+
+HawamCity_Text_Man_Block:
+	.string "You'd need a bike if you want to\n"
+	.string "go SOUTH.\p"
+	.string "There's a bike shop NORTH-EAST\n"
+	.string "of here in KENKORIA CITY.$"
+
 HawamCity_Text_PlayersMailbox:
 	.string "My family's mailbox…\n"
 	.string "None of the letters are for me though.$"
@@ -178,10 +207,6 @@ HawamCity_Text_CitySign:
 HawamCity_Text_GymSign:
 	.string "HAIFA CITY GYM\n"
 	.string "Jona soars the blue sky.$"
-
-HawamCity_Movement_FaceRight:
-	face_right
-	step_end
 
 HawamCity_Movement_WalkOneUp:
 	walk_up
@@ -228,4 +253,8 @@ HawamCity_Movement_PlayerEntersHouse:
 	walk_right
 	walk_up
 	set_invisible
+	step_end
+
+HawamCity_Movement_GoOneUp:
+	walk_up
 	step_end
