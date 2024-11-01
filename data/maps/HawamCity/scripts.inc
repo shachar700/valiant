@@ -81,12 +81,103 @@ HawamCity_Movement_ProfAndPlayerTwoUp::
 	waitmovement 0
 	return
 
+HawamCity_EventScript_LittleBoy::
+	msgbox HawamCity_Text_LittleKid, MSGBOX_NPC
+	end
+
+HawamCity_EventScript_LittleGirl::
+	msgbox HawamCity_Text_LittleGirl, MSGBOX_NPC
+	end
+
+HawamCity_EventScript_FatMan::
+	msgbox HawamCity_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	end
+
+HawamCity_EventScript_Boy::
+	msgbox HawamCity_Text_BirchSpendsDaysInLab, MSGBOX_NPC
+	end
+
+HawamCity_EventScript_Gentleman::
+	msgbox HawamCity_Text_Gentleman, MSGBOX_NPC
+	end
+
+
+HawamCity_EventScript_Girl::
+	msgbox HawamCity_Text_Girl, MSGBOX_NPC
+	end
+
+HawamCity_EventScript_PlayersMailbox::
+	msgbox HawamCity_Text_PlayersMailbox, MSGBOX_SIGN
+	end
+
+HawamCity_EventScript_ProfessorAriasMailbox::
+	msgbox HawamCity_Text_ProfessorAriasMailbox, MSGBOX_SIGN
+	end
+
+HawamCity_EventScript_NoamsMailbox::
+	msgbox HawamCity_Text_NoamsMailbox, MSGBOX_SIGN
+	end
+
+HawamCity_EventScript_CitySign::
+	msgbox HawamCity_Text_CitySign, MSGBOX_SIGN
+	end
+
+HawamCity_EventScript_GymSign::
+	msgbox HawamCity_Text_GymSign, MSGBOX_SIGN
+	end
+
 HawamCity_Text_ProfIntro:
 	.string "{COLOR GREEN}PROF ARIA:{COLOR DARK_GRAY} Oh hello there {PLAYER}!\p"
 	.string "I came here to let you know that\n"
 	.string "your very first POKéMON is\l"
 	.string "waiting for you.\p"
 	.string "Follow me to my house.$"
+
+HawamCity_Text_LittleKid:
+	.string "Weeeeeeeeeeeeee.$"
+
+HawamCity_Text_LittleGirl:
+	.string "Help me! I'm getting chased.$"
+
+HawamCity_Text_CanUsePCToStoreItems:
+	.string "I never thought of the day people could\n"
+	.string "store items in the clouds.\p"
+	.string "The power of science is astounding!$"
+
+HawamCity_Text_BirchSpendsDaysInLab:
+	.string "PROF. ARAUCARIA is a very messy guy.\n"
+	.string "His house has piles of books and trash\l"
+	.string "all over the place…\p"
+	.string "He should really clean up his\n"
+	.string "working space.$"
+
+HawamCity_Text_Gentleman:
+	.string "I've been living in Hawam City all my life.\n"
+	.string "It's peaceful and quiet here.$"
+
+HawamCity_Text_Girl:
+	.string "I wanted to buy SUPER POTIONS but they\n"
+	.string "only have POTIONS in Hawam City.$"
+
+HawamCity_Text_PlayersMailbox:
+	.string "My family's mailbox…\n"
+	.string "None of the letters are for me though.$"
+
+HawamCity_Text_ProfessorAriasMailbox:
+	.string "PROF. ARAUCARIA'S mailbox…\n"
+	.string "It's full of letters.$"
+
+HawamCity_Text_NoamsMailbox:
+	.string "Noam's family mailbox…\n"
+	.string "It would be rude to sniff around.$"
+
+HawamCity_Text_CitySign:
+	.string "HAWAM CITY\n"
+	.string "A vibrant coastal city.$"
+
+HawamCity_Text_GymSign:
+	.string "HAIFA CITY GYM\n"
+	.string "Jona soars the blue sky.$"
 
 HawamCity_Movement_FaceRight:
 	face_right
