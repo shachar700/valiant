@@ -263,6 +263,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "HawamCity_EventScript_ProfessorAriasMailbox"
+    },
+    {
+      "type": "sign",
+      "x": 46,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HawamCity_EventScript_GymDoor"
     }
   ]
 }

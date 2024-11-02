@@ -91,6 +91,24 @@ HawamCity_EventScript_BlockSouth_Trigger::
 	release
 	end
 
+HawamCity_EventScript_GymDoor::
+	lockall
+	goto_if_set FLAG_HAWAM_CITY_GYM_DOOR_OPENED, HawamCity_EventScript_TheDoorIsOpen
+	msgbox HawamCity_EventScript_GymIsLocked, MSGBOX_SIGN
+
+	@ if (flag) {}
+	@ Do this when you want the gym door to open ->
+	@ setmetatile 3, 8, METATILE_Gym_Door_Unlocked, TRUE
+	@ special DrawWholeMapView
+	
+	releaseall
+	end
+
+HawamCity_EventScript_TheDoorIsOpen::
+	msgbox HawamCity_Text_TheDoorIsOpen, MSGBOX_DEFAULT
+	releaseall
+	end
+
 HawamCity_EventScript_LittleBoy::
 	msgbox HawamCity_Text_LittleKid, MSGBOX_NPC
 	end
@@ -147,6 +165,13 @@ HawamCity_Text_ProfIntro:
 	.string "your very first POKéMON is\l"
 	.string "waiting for you.\p"
 	.string "Follow me to my house.$"
+
+HawamCity_EventScript_GymIsLocked:
+	.string "The door is locked.\p"
+	.string "“The gym leader went to errands.$"
+
+HawamCity_Text_TheDoorIsOpen:
+	.string "The door is open.$"
 
 HawamCity_Text_LittleKid:
 	.string "Weeeeeeeeeeeeee.$"

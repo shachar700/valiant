@@ -45,7 +45,7 @@
 #define FLAG_HIDE_PLAYERS_HOUSE_2F_MOM    0x20 // Valiant Flag
 #define FLAG_HIDE_HAWAM_CITY_PROF    0x21 // Valiant Flag
 #define FLAG_HIDE_ROUTE_B_RIVAL    0x22 // Valiant Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define FLAG_HAWAM_CITY_GYM_DOOR_OPENED    0x23 // Valiant Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag

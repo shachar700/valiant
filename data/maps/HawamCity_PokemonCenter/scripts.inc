@@ -1,3 +1,5 @@
+.set LOCALID_NURSE, 1
+
 HawamCity_PokemonCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, HawamCity_PokemonCenter_OnTransition
 	.byte 0

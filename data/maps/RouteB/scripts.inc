@@ -14,6 +14,8 @@ RouteB_EventScript_Rival_Trigger2::
 	end
 
 RouteB_EventScript_RivalBattle::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
+	waitmovement 0
 	msgbox RouteB_Text_RivalExplore, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 1, RouteB_EventScript_RivalApproachPlayer1
@@ -23,6 +25,8 @@ RouteB_EventScript_RivalBattle::
 	msgbox RouteB_Text_Fairwell, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_RIVAL, RouteB_Movement_RivalLeaves
+	waitmovement 0
+	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_ROUTE_B_RIVAL
 	setvar VAR_ROUTE_B_STATE, 1
 	end

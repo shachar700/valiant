@@ -94,6 +94,7 @@ HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter:
 
 HawamCity_ProfessorAriasHouse_EventScript_VentureForth:
 	msgbox HawamCity_ProfessorAriasHouse_Text_VentureForth, MSGBOX_DEFAULT
+	waitmessage
 	closemessage
 	setvar VAR_HAWAM_CITY_INTRO_STATE, 4
 	callnative UpdateFollowingPokemon
