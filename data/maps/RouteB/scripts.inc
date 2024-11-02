@@ -22,7 +22,7 @@ RouteB_EventScript_RivalBattle::
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
-	waitmovement 0
+	waitmovement 60
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 	call_if_eq VAR_0x8008, 1, RouteB_EventScript_RivalApproachPlayer1
 	call_if_eq VAR_0x8008, 2, RouteB_EventScript_RivalApproachPlayer2
@@ -35,6 +35,9 @@ RouteB_EventScript_RivalBattle::
 	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_ROUTE_B_RIVAL
 	setvar VAR_ROUTE_B_STATE, 1
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	release
 	end
 
 RouteB_EventScript_RivalApproachPlayer1::

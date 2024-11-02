@@ -126,6 +126,7 @@ GivePokedex::
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
+	callnative UpdateFollowingPokemon
 	msgbox GivePokedex_Text_2, MSGBOX_DEFAULT
 	giveitem ITEM_POKE_BALL, 5
 	msgbox GivePokedex_Text_3, MSGBOX_DEFAULT
