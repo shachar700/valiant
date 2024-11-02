@@ -2,6 +2,7 @@
 
 HawamCity_PokemonCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, HawamCity_PokemonCenter_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 HawamCity_PokemonCenter_OnTransition:
@@ -15,3 +16,4 @@ HawamCity_PokemonCenter_EventScript_Nurse::
 	waitbuttonpress
 	release
 	end
+

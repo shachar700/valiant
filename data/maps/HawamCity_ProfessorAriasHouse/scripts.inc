@@ -1,134 +1,210 @@
+
 .set LOCALID_BIRCH, 1
 
-HawamCity_ProfessorAriasHouse_MapScripts::
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE HawamCity_ProfessorAriasHouse_OnWarp
-	map_script MAP_SCRIPT_ON_FRAME_TABLE HawamCity_ProfessorAriasHouse_OnFrame
-	.byte 0
-
-HawamCity_ProfessorAriasHouse_OnWarp:
-	map_script_2 VAR_TEMP_0, 0, HawamCity_ProfessorAriasHouse_EventScript_PlayerTurnNorth
+ProfessorAriasHouse_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, ProfessorBirchsLab_EventScript_PlayerTurnNorth
 	.2byte 0
 
-HawamCity_ProfessorAriasHouse_OnFrame:
-	map_script_2 VAR_HAWAM_CITY_INTRO_STATE, 3, HawamCity_ProfessorAriasHouse_EventText_Intro
-
-HawamCity_ProfessorAriasHouse_EventScript_PlayerTurnNorth::
+ProfessorBirchsLab_EventScript_PlayerTurnNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
-HawamCity_ProfessorAriasHouse_EventText_Intro::
+HawamCity_ProfessorAriasHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, ProfessorAriasHouse_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, HawamCity_ProfessorAriasHouse_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
+	.byte 0
+
+HawamCity_ProfessorAriasHouse_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_HAWAM_CITY_INTRO_STATE, 3, ComeCloser
+	.2byte 0
+
+
+ComeCloser::
 	lock
+	setvar VAR_HAWAM_CITY_INTRO_STATE, 4
+	applymovement LOCALID_BIRCH, Common_Movement_FacePlayer
+	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_BIRCH, Common_Movement_ExclamationMark
-	waitmovement 10
-	msgbox HawamCity_ProfessorAriasHouse_Text_GiveMon, MSGBOX_DEFAULT
-	call HawamCity_ProfessorAriasHouse_EventText_GiveStarter
+	waitmovement 0
+	msgbox ComeCloser_Text_0
+	@ closemessage
+	call PlayerChoosesStarter
 	release
-	end
+	return
 
-HawamCity_ProfessorAriasHouse_EventText_GiveStarter::
-	msgbox HawamCity_ProfessorAriasHouse_Text_Question
+
+PlayerChoosesStarter::
+	msgbox PlayerChoosesStarter_Text_0
 	waitmessage
 	multichoice 20, 1, MULTI_CHOOSE_STARTER, 1
+	@ closemessage
 	compare VAR_RESULT, 0
-	goto_if_eq PlayerChoosesStarter_Dratini
+	goto_if_eq PlayerChoosesStarter_2
 	compare VAR_RESULT, 1
-	goto_if_eq PlayerChoosesStarter_Larvitar
+	goto_if_eq PlayerChoosesStarter_3
 	compare VAR_RESULT, 2
-	goto_if_eq PlayerChoosesStarter_Bagon
+	goto_if_eq PlayerChoosesStarter_4
 	compare VAR_RESULT, 3
-	goto_if_eq PlayerChoosesStarter_Beldum
+	goto_if_eq PlayerChoosesStarter_5
+
+PlayerChoosesStarter_1:
 	return
 
-PlayerChoosesStarter_Dratini:
+PlayerChoosesStarter_2:
 	bufferspeciesname STR_VAR_1, SPECIES_DRATINI
 	setvar VAR_STARTER_CHOICE, SPECIES_DRATINI
-	goto HawamCity_ProfessorAriasHouse_EventScript_ShowStarter
-	return
+	goto NewProfessor_EventScript_GiveStarter
+	goto PlayerChoosesStarter_1
 
-PlayerChoosesStarter_Larvitar:
+PlayerChoosesStarter_3:
 	bufferspeciesname STR_VAR_1, SPECIES_LARVITAR
 	setvar VAR_STARTER_CHOICE, SPECIES_LARVITAR
-	goto HawamCity_ProfessorAriasHouse_EventScript_ShowStarter
-	return
+	goto NewProfessor_EventScript_GiveStarter
+	goto PlayerChoosesStarter_1
 
-PlayerChoosesStarter_Bagon:
+PlayerChoosesStarter_4:
 	bufferspeciesname STR_VAR_1, SPECIES_BAGON
 	setvar VAR_STARTER_CHOICE, SPECIES_BAGON
-	goto HawamCity_ProfessorAriasHouse_EventScript_ShowStarter
-	return
+	goto NewProfessor_EventScript_GiveStarter
+	goto PlayerChoosesStarter_1
 
-PlayerChoosesStarter_Beldum:
+PlayerChoosesStarter_5:
 	bufferspeciesname STR_VAR_1, SPECIES_BELDUM
 	setvar VAR_STARTER_CHOICE, SPECIES_BELDUM
-	goto HawamCity_ProfessorAriasHouse_EventScript_ShowStarter
-	return
+	goto NewProfessor_EventScript_GiveStarter
+	goto PlayerChoosesStarter_1
 
-HawamCity_ProfessorAriasHouse_EventScript_ShowStarter::
+
+NewProfessor_EventScript_GiveStarter::
 	showmonpic VAR_STARTER_CHOICE, 10, 3
 	playmoncry VAR_STARTER_CHOICE, 0
-	msgbox HawamCity_ProfessorAriasHouse_Text_Confirm, MSGBOX_YESNO
+	msgbox NewProfessor_EventScript_GiveStarter_Text_0, MSGBOX_YESNO
 	waitmessage
 	waitmoncry
 	compare VAR_RESULT, NO
-	goto_if_eq HawamCity_ProfessorAriasHouse_EventScript_PickAgain
-	hidemonpic
+	goto_if_eq NewProfessor_EventScript_GiveStarter_2
 	setflag FLAG_SYS_POKEMON_GET
 	givemon VAR_STARTER_CHOICE, 5, ITEM_NONE
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq NewProfessor_EventScript_GiveStarter_5
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox HawamCity_ProfessorAriasHouse_Text_Received, MSGBOX_DEFAULT
+	msgbox NewProfessor_EventScript_GiveStarter_Text_1
 	waitfanfare
-	msgbox HawamCity_ProfessorAriasHouse_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
-	waitmessage
-	goto_if_eq VAR_RESULT, YES, HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter
-	goto_if_eq VAR_RESULT, NO, HawamCity_ProfessorAriasHouse_EventScript_VentureForth
+	call NicknamePartyMon
+NewProfessor_EventScript_GiveStarter_1:
+	call GivePokedex
+	closemessage
+	return
 
-HawamCity_ProfessorAriasHouse_EventScript_PickAgain:
+NewProfessor_EventScript_GiveStarter_2:
 	hidemonpic
-	goto HawamCity_ProfessorAriasHouse_EventText_GiveStarter
+	closemessage
+	goto PlayerChoosesStarter
+	goto NewProfessor_EventScript_GiveStarter_1
 
-HawamCity_ProfessorAriasHouse_EventScript_NicknameStarter:
-	call Common_EventScript_GetGiftMonPartySlot
-	call Common_EventScript_NameReceivedPartyMon
-	goto HawamCity_ProfessorAriasHouse_EventScript_VentureForth
+NewProfessor_EventScript_GiveStarter_5:
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox NewProfessor_EventScript_GiveStarter_Text_1
+	waitfanfare
+	call NicknameBoxMon
+	msgbox NewProfessor_EventScript_GiveStarter_Text_2
+	goto NewProfessor_EventScript_GiveStarter_1
 
-HawamCity_ProfessorAriasHouse_EventScript_VentureForth:
-	msgbox HawamCity_ProfessorAriasHouse_Text_VentureForth, MSGBOX_DEFAULT
+
+GivePokedex::
+	msgbox GivePokedex_Text_0
+	playfanfare MUS_OBTAIN_ITEM
+	message GivePokedex_Text_1
+	waitfanfare
+	closemessage
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_ADVENTURE_STARTED
+	special SetUnlockedPokedexFlags
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	msgbox GivePokedex_Text_2, MSGBOX_DEFAULT
+	giveitem ITEM_POKE_BALL, 5
+	msgbox GivePokedex_Text_3, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-	setvar VAR_HAWAM_CITY_INTRO_STATE, 4
-	callnative UpdateFollowingPokemon
-	releaseall
+	release
+	return
+
+
+NicknamePartyMon::
+	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+	hidemonpic
+	compare VAR_RESULT, YES
+	goto_if_eq NicknamePartyMon_1
+	return
+
+NicknamePartyMon_1:
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	return
+
+
+NicknameBoxMon::
+	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
+	hidemonpic
+	compare VAR_RESULT, YES
+	goto_if_eq NicknameBoxMon_1
+	return
+
+NicknameBoxMon_1:
+	call Common_EventScript_NameReceivedBoxMon
+	return
+
+
+ProfessorBirchStudy::
+	lock
+	faceplayer
+	msgbox ProfessorBirchStudy_Text_0
+	release
 	end
 
-HawamCity_ProfessorAriasHouse_Text_VentureForth:
-	.string "Venture forth and enjoy the journey.\p"
-	.string "I'll keep an eye on your progress.$"
+ComeCloser_Text_0:
+	.string "I've been preparing these Pokemon for\n"
+	.string "you. To get started on your journey, I'm\l"
+	.string "gonna let you choose one of my little\l"
+	.string "Pokemon. Choose wisely.$"
 
-
-HawamCity_ProfessorAriasHouse_Text_GiveMon:
-	.string "I've been preparing these POKèMON for\n"
-	.string "you.\p"
-	.string "I'm gonna let you choose one of the baby\n"
-	.string "POKéMON that got hatched recently.\p"
-	.string "As you know I study the\n"
-	.string "pseudo-legendary POKéMON.\l"
-	.string "so you'll select one of those.\p"
-	.string "Choose wisely.$"
-
-HawamCity_ProfessorAriasHouse_Text_Question:
+PlayerChoosesStarter_Text_0:
 	.string "Which starter will you choose?$"
 
-HawamCity_ProfessorAriasHouse_Text_Confirm:
+NewProfessor_EventScript_GiveStarter_Text_0:
 	.string "Do you want to choose {STR_VAR_1}?$"
 
-HawamCity_ProfessorAriasHouse_Text_Received:
+NewProfessor_EventScript_GiveStarter_Text_1:
 	.string "{PLAYER} Recieved {STR_VAR_1}!$"
 
-HawamCity_ProfessorAriasHouse_Text_WhyNotGiveNicknameToMon:
-	.string "While you're at it, why not\n"
-	.string "give a nickname to that {STR_VAR_1}?$"
+NewProfessor_EventScript_GiveStarter_Text_2:
+	.string "Transferred {STR_VAR_1} to PC$"
 
+GivePokedex_Text_0:
+	.string "Also, take this. It is a POKéDEX to help\n"
+	.string "you document Pokemon along your\l"
+	.string "journey.$"
 
+GivePokedex_Text_1:
+	.string "{PLAYER} received the POKéDEX!$"
 
+GivePokedex_Text_2:
+	.string "Also take these with you.$"
 
+GivePokedex_Text_3:
+	.string "These allow you to catch your own\n"
+	.string "Pokemon in tall grass so you can collect\l"
+	.string "research for the POKéDEX.$"
+
+NicknamePartyMon_Text_0:
+	.string "Give a nickname?$"
+
+ProfessorBirchStudy_Text_0:
+	.string "I study the Pseudo-legendary Pokémon\n"
+	.string "who has a lot of strength compared to\l"
+	.string "other Pokémon.$"
