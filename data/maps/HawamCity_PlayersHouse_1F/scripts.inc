@@ -53,7 +53,7 @@ HaifaCity_PlayersHouse_1F_Text_MomTalks:
 	.string "Take care on your journey.$"
 
 HaifaCity_PlayersHouse_1F_Text_DadTalks:
-	.string "{COLOR BLUE}DAD:{COLOR DARK_GRAY}Make sure you have\n"
+	.string "{COLOR BLUE}DAD:{COLOR DARK_GRAY} Make sure you have\n"
 	.string "everything for your trip.\p"
 	.string "It's good to be on top of things.$"
 
