@@ -20,8 +20,8 @@
     },
     {
       "map": "MAP_ROUTE_B",
-      "offset": -36,
-      "direction": "right"
+      "offset": 26,
+      "direction": "up"
     }
   ],
   "object_events": [

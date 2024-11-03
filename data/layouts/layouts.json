@@ -4455,7 +4455,7 @@
       "id": "LAYOUT_ROUTE_B",
       "name": "RouteB_Layout",
       "width": 20,
-      "height": 50,
+      "height": 52,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RouteB/border.bin",
@@ -4520,6 +4520,26 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/HawamCity_ProfessorAriasHouse/border.bin",
       "blockdata_filepath": "data/layouts/HawamCity_ProfessorAriasHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAWAM_CITY_RIVALS_HOUSE",
+      "name": "HawamCity_RivalsHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/HawamCity_RivalsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HawamCity_RivalsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAWAM_CITY_GYM",
+      "name": "HawamCity_Gym_Layout",
+      "width": 12,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/HawamCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/HawamCity_Gym/map.bin"
     }
   ]
 }

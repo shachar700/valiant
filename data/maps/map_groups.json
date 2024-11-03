@@ -50,7 +50,9 @@
     "HawamCity_PlayersHouse_2F",
     "HawamCity_Mart",
     "HawamCity_PokemonCenter",
-    "HawamCity_ProfessorAriasHouse"
+    "HawamCity_ProfessorAriasHouse",
+    "HawamCity_RivalsHouse",
+    "HawamCity_Gym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
