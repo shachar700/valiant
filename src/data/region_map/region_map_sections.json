@@ -1703,6 +1703,38 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_HAWAM_CITY",
+      "name": "HAWAM CITY",
+      "x": 21,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_PTOLEMAIS_CITY",
+      "name": "PTOLEMAIS CITY",
+      "x": 22,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_A",
+      "name": "ROUTE A",
+      "x": 22,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_B",
+      "name": "ROUTE B",
+      "x": 22,
+      "y": 4,
+      "width": 1,
+      "height": 1
     }
   ]
 }

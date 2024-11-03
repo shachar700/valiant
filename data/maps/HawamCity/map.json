@@ -3,7 +3,7 @@
   "name": "HawamCity",
   "layout": "LAYOUT_HAWAM_CITY",
   "music": "MUS_PETALBURG",
-  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "region_map_section": "MAPSEC_HAWAM_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_CITY",
