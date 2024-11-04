@@ -93,6 +93,7 @@ NewProfessor_EventScript_GiveStarter::
 	msgbox NewProfessor_EventScript_GiveStarter_Text_1
 	waitfanfare
 	call NicknamePartyMon
+
 NewProfessor_EventScript_GiveStarter_1:
 	call GivePokedex
 	closemessage
@@ -100,9 +101,9 @@ NewProfessor_EventScript_GiveStarter_1:
 
 NewProfessor_EventScript_GiveStarter_2:
 	hidemonpic
-	closemessage
+	@ closemessage
 	goto PlayerChoosesStarter
-	goto NewProfessor_EventScript_GiveStarter_1
+	@ goto NewProfessor_EventScript_GiveStarter_1
 
 NewProfessor_EventScript_GiveStarter_5:
 	playfanfare MUS_OBTAIN_ITEM
@@ -169,10 +170,11 @@ ProfessorBirchStudy::
 	end
 
 ComeCloser_Text_0:
-	.string "I've been preparing these Pokemon for\n"
-	.string "you. To get started on your journey, I'm\l"
-	.string "gonna let you choose one of my little\l"
-	.string "Pokemon. Choose wisely.$"
+	.string "I've been preparing these POKéMON\n"
+	.string "for you.\p"
+	.string "To start your journey, I'm gonna\n"
+	.string "let you choose one of my baby POKéMON.\p"
+	.string "Choose wisely.$"
 
 PlayerChoosesStarter_Text_0:
 	.string "Which starter will you choose?$"
@@ -187,9 +189,9 @@ NewProfessor_EventScript_GiveStarter_Text_2:
 	.string "Transferred {STR_VAR_1} to PC$"
 
 GivePokedex_Text_0:
-	.string "Also, take this. It is a POKéDEX to help\n"
-	.string "you document Pokemon along your\l"
-	.string "journey.$"
+	.string "Also, take this.\p"
+	.string "It is a POKéDEX to help you document\n"
+	.string "POKéMON along your journey.$"
 
 GivePokedex_Text_1:
 	.string "{PLAYER} received the POKéDEX!$"
@@ -199,13 +201,15 @@ GivePokedex_Text_2:
 
 GivePokedex_Text_3:
 	.string "These allow you to catch your own\n"
-	.string "Pokemon in tall grass so you can collect\l"
-	.string "research for the POKéDEX.$"
+	.string "POKéMON in tall grass so you can collect\l"
+	.string "research data for the POKéDEX.\p"
+	.string "Venture forth and reach new heights\n"
+	.string "in your new adventure. Good luck!$"
 
 NicknamePartyMon_Text_0:
 	.string "Give a nickname?$"
 
 ProfessorBirchStudy_Text_0:
-	.string "I study the Pseudo-legendary Pokémon\n"
-	.string "who has a lot of strength compared to\l"
-	.string "other Pokémon.$"
+	.string "I study the Pseudo-legendary POKéMON\n"
+	.string "who has a lot of power compared to\l"
+	.string "other POKéMON.$"

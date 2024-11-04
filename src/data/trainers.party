@@ -2411,7 +2411,7 @@ Carvanha
 Level: 6
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sharpedo
+Carvanha
 Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -5084,12 +5084,16 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
 Luvdisc
-Level: 8
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Level: 7
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Water Pulse
+- Attract
+- Sweet Kiss
+- Flail
 
 Mudkip
 Level: 8
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
