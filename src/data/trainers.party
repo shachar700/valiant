@@ -5085,15 +5085,11 @@ Mugshot: Blue
 
 Luvdisc
 Level: 8
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Mudkip
 Level: 8
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
