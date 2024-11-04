@@ -5940,8 +5940,9 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
+/* Valiant */
 === TRAINER_CALVIN_1 ===
-Name: CALVIN
+Name: DOR
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5949,7 +5950,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Skitty
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6206,16 +6207,17 @@ Zigzagoon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_ALLEN ===
-Name: ALLEN
-Class: Youngster
-Pic: Youngster
+Name: YUVAL
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Nincada
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11044,8 +11046,9 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+/* Valiant */
 === TRAINER_TIANA ===
-Name: TIANA
+Name: DANA
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11053,7 +11056,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Marill
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11248,16 +11251,17 @@ Wailmer
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+/* Valiant */
 === TRAINER_RICK ===
-Name: RICK
-Class: Bug Catcher
-Pic: Bug Catcher
+Name: YOGEV
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
+Sableye
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12032,8 +12036,9 @@ Swablu
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+/* Valiant */
 === TRAINER_WALLY_MAUVILLE ===
-Name: WALLY
+Name: BEN
 Class: Rival
 Pic: Wally
 Gender: Male

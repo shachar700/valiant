@@ -1,72 +1,50 @@
-Route102_Text_CalvinIntro:
-	.string "If you have POKéMON with you, then\n"
-	.string "you're an official POKéMON TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+RouteB_Text_DorIntro:
+	.string "Hello, That's me.\n"
+	.string "the trainer that you are about to \l"
+	.string "face in POKéMON battle!$"
 
-Route102_Text_CalvinDefeated:
-	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+RouteB_Text_DorDefeated:
+	.string "Oof, I lost…\n"
+	.string "I should have trained more…$"
 
-Route102_Text_CalvinPostBattle:
+RouteB_Text_DorPostBattle:
 	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+	.string "we should train together!$"
 
-Route102_Text_CalvinRegister:
-	.string "I've been working hard at this since\n"
-	.string "I saw you before.\p"
-	.string "I'd like to battle you again, so can\n"
-	.string "you register me in your POKéNAV?$"
+RouteB_Text_YuvalIntro:
+	.string "Most of the POKéMON here are\n"
+	.string "too effective against mine.\p"
+	.string "Let's battle so they get stronger.$"
 
-Route102_Text_CalvinRegisterShort:
-	.string "I'd like to battle you again, so can\n"
-	.string "you register me in your POKéNAV?$"
+RouteB_Text_YuvalDefeated:
+	.string "The experience!\n"
+	.string "Nooo…$"
 
-Route102_Text_CalvinRematchIntro:
-	.string "Ever since I lost to you, I desperately\n"
-	.string "trained my POKéMON.\l"
-	.string "You can't say no to my challenge!$"
+RouteB_Text_YuvalPostBattle:
+	.string "I wish I won…\n"
+	.string "Too many FLYING POKéMON here…$"
 
-Route102_Text_CalvinRematchDefeated:
-	.string "Arrgh, I lost…\n"
-	.string "Is my training method not right?$"
-
-Route102_Text_CalvinRematchPostBattle:
-	.string "If you're going to get stronger,\n"
-	.string "I'll get stronger, too.$"
-
-Route102_Text_AllenIntro:
-	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
-
-Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
-	.string "I could beat you…$"
-
-Route102_Text_AllenPostBattle:
-	.string "I haven't won once yet…\n"
-	.string "I wish I would win soon…$"
-
-Route102_Text_RickIntro:
+RouteB_Text_YogevIntro:
 	.string "Hahah! Our eyes met!\n"
-	.string "I'll take you on with my BUG POKéMON!$"
+	.string "I'll take you on with my DARK POKéMON!$"
 
-Route102_Text_RickDefeated:
+RouteB_Text_YogevDefeated:
 	.string "Ow! Down and out!$"
 
-Route102_Text_RickPostBattle:
+RouteB_Text_YogevPostBattle:
 	.string "If you lock eyes with a TRAINER,\n"
 	.string "you have to challenge! It's a rule!$"
 
-Route102_Text_TianaIntro:
-	.string "I'm going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+RouteB_Text_DanaIntro:
+	.string "I wanna get stronger so I can collect\n"
+	.string "all the eight LAVAN gym badges.\p"
+	.string "Help me pursue my goal!$"
 
-Route102_Text_TianaDefeated:
-	.string "I ended up furthering your career…$"
+RouteB_Text_DanaDefeated:
+	.string "I ended up furthering your goal…$"
 
-Route102_Text_TianaPostBattle:
-	.string "To keep winning my way up, I see that\n"
+RouteB_Text_DanaPostBattle:
+	.string "To pursue the badges, I see that\n"
 	.string "I have to catch more POKéMON.$"
 
 Route103_Text_DaisyIntro:

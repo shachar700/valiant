@@ -50,6 +50,26 @@ RouteB_EventScript_RivalApproachPlayer2::
 	waitmovement 0
 	return
 
+RouteB_EventScript_Dor::
+	trainerbattle_single TRAINER_CALVIN_1, RouteB_Text_DorIntro, RouteB_Text_DorDefeated
+	msgbox RouteB_Text_DorPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteB_EventScript_Yuval::
+	trainerbattle_single TRAINER_ALLEN, RouteB_Text_YuvalIntro, RouteB_Text_YuvalDefeated
+	msgbox RouteB_Text_YuvalPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteB_EventScript_Yogev::
+	trainerbattle_single TRAINER_RICK, RouteB_Text_YogevIntro, RouteB_Text_YogevDefeated
+	msgbox RouteB_Text_YogevPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteB_EventScript_Dana::
+	trainerbattle_single TRAINER_TIANA, RouteB_Text_DanaIntro, RouteB_Text_DanaDefeated
+	msgbox RouteB_Text_DanaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 RouteB_Text_RivalExplore:
 	.string "Where did I put it?$"
 
