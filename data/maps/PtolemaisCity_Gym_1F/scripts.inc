@@ -175,6 +175,16 @@ PtolemaisCity_Gym_1F_EventScript_GymStatue::
 	releaseall
 	end
 
+PtolemaisCity_Gym_1F_EventScript_Trigger::
+	setvar VAR_TEMP_0, 1
+	callnative RemoveFollowingPokemon
+	end
+
+PtolemaisCity_Gym_1F_EventScript_Trigger2::
+	setvar VAR_TEMP_0, 0
+	callnative UpdateFollowingPokemon
+	end
+
 PtolemaisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"

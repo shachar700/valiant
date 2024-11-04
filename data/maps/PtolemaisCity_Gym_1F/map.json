@@ -65,7 +65,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PtolemaisCity_Gym_1F_EventScript_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "PtolemaisCity_Gym_1F_EventScript_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "PtolemaisCity_Gym_1F_EventScript_Trigger2"
+    }
   ],
   "bg_events": [
     {
