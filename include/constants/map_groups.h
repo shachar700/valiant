@@ -21,6 +21,8 @@
 #define MAP_HAWAM_CITY_PROFESSOR_ARIAS_HOUSE (5 | (1 << 8))
 #define MAP_HAWAM_CITY_RIVALS_HOUSE          (6 | (1 << 8))
 #define MAP_HAWAM_CITY_GYM                   (7 | (1 << 8))
+#define MAP_PTOLEMAIS_CITY_POKEMON_CENTER    (8 | (1 << 8))
+#define MAP_SODORI_TUNNELS                   (9 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

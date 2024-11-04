@@ -17,3 +17,29 @@ HawamCity_PokemonCenter_EventScript_Nurse::
 	release
 	end
 
+HawamCity_PokemonCenter_EventScript_Boy::
+	msgbox HawamCity_PokemonCenter_Text_Boy, MSGBOX_NPC
+	end
+
+HawamCity_PokemonCenter_EventScript_Gentleman::
+	msgbox HawamCity_PokemonCenter_Text_Gentleman, MSGBOX_NPC
+	end
+
+HawamCity_PokemonCenter_EventScript_Skitty::
+	msgbox HawamCity_PokemonCenter_Text_Skitty, MSGBOX_NPC
+	end
+
+HawamCity_PokemonCenter_Text_Gentleman:
+	.string "I feel the safest when I'm at the\n"
+	.string "POKéMON Center.\p"
+	.string "There are too many scandals going\n"
+	.string "around outside.$"
+
+HawamCity_PokemonCenter_Text_Boy:
+	.string "My Skitty was not feeling so well\n"
+	.string "so I took her to the POKéMON Center.\p"
+	.string "I'm worried that it will happen when\n"
+	.string "I'm far off HAWAM CITY.$"
+
+HawamCity_PokemonCenter_Text_Skitty:
+	.string "Skitti Ski$"

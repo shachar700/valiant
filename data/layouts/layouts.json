@@ -4540,6 +4540,26 @@
       "secondary_tileset": "gTileset_BattleFactory",
       "border_filepath": "data/layouts/HawamCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/HawamCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY_POKEMON_CENTER",
+      "name": "PtolemaisCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PtolemaisCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SODORI_TUNNELS",
+      "name": "SodoriTunnels_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SodoriTunnels/border.bin",
+      "blockdata_filepath": "data/layouts/SodoriTunnels/map.bin"
     }
   ]
 }
