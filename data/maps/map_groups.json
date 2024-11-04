@@ -54,7 +54,9 @@
     "HawamCity_RivalsHouse",
     "HawamCity_Gym",
     "PtolemaisCity_PokemonCenter",
-    "SodoriTunnels"
+    "SodoriTunnels",
+    "PtolemaisCity_Gym_1F",
+    "PtolemaisCity_Gym_B1F"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

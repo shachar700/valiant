@@ -96,28 +96,28 @@
     },
     {
       "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_PTOLEMAIS_CITY_GYM_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 23,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_PTOLEMAIS_CITY",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 19,
-      "y": 25,
+      "x": 18,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
       "dest_warp_id": "0"
     },
     {
       "x": 18,
-      "y": 18,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"

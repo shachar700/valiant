@@ -23,6 +23,8 @@
 #define MAP_HAWAM_CITY_GYM                   (7 | (1 << 8))
 #define MAP_PTOLEMAIS_CITY_POKEMON_CENTER    (8 | (1 << 8))
 #define MAP_SODORI_TUNNELS                   (9 | (1 << 8))
+#define MAP_PTOLEMAIS_CITY_GYM_1F            (10 | (1 << 8))
+#define MAP_PTOLEMAIS_CITY_GYM_B1F           (11 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

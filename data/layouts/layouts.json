@@ -4560,6 +4560,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SodoriTunnels/border.bin",
       "blockdata_filepath": "data/layouts/SodoriTunnels/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY_GYM_1F",
+      "name": "PtolemaisCity_Gym_1F_Layout",
+      "width": 19,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/PtolemaisCity_Gym_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity_Gym_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY_GYM_B1F",
+      "name": "PtolemaisCity_Gym_B1F_Layout",
+      "width": 19,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/PtolemaisCity_Gym_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity_Gym_B1F/map.bin"
     }
   ]
 }
