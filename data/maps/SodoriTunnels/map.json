@@ -3,7 +3,7 @@
   "name": "SodoriTunnels",
   "layout": "LAYOUT_SODORI_TUNNELS",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region_map_section": "MAPSEC_PTOLEMAIS_CITY",
+  "region_map_section": "MAPSEC_SODORI_TUNNELS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

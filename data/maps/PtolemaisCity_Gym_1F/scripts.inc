@@ -95,11 +95,11 @@ PtolemaisCity_Gym_1F_EventScript_JuanDefeated::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox PtolemaisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
-	setflag FLAG_BADGE08_GET
+	setflag FLAG_BADGE01_GET
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
-	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
+	setvar VAR_PTOLEMAIS_CITY_STATE, 1
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
 	setvar VAR_0x8008, 8
 	call Common_EventScript_SetGymTrainers

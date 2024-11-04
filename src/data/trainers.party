@@ -2128,17 +2128,16 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAPHNE ===
-Name: DAPHNE
-Class: Lady
-Pic: Lady
+Name: MIA
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
 Luvdisc @ Nugget
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
 - Sweet Kiss
@@ -2146,7 +2145,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 Luvdisc @ Nugget
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
 - Safeguard
@@ -2191,17 +2190,16 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 
 === TRAINER_BRIANNA ===
-Name: BRIANNA
+Name: OFEK
 Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Seaking @ Nugget
-Level: 40
+Goldeen @ Nugget
+Level: 5
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_NAOMI ===
@@ -2343,7 +2341,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Crunch
 
 === TRAINER_CONNIE ===
-Name: CONNIE
+Name: LIOR
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2351,8 +2349,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
-Level: 40
+Corphish
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRIDGET ===
@@ -2364,12 +2362,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill
-Level: 40
+Marill
+Level: 6
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_OLIVIA ===
-Name: OLIVIA
+Name: TAMAR
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2378,7 +2376,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Clamperl
-Level: 35
+Level: 6
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Iron Defense
 - Whirlpool
@@ -2386,14 +2384,14 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 Corphish
-Level: 37
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Taunt
 - Crabhammer
 - Water Pulse
 
 Lombre
-Level: 39
+Level: 4
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Uproar
 - Fury Swipes
@@ -2401,7 +2399,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 === TRAINER_TIFFANY ===
-Name: TIFFANY
+Name: NETA
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2410,11 +2408,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 39
+Level: 6
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sharpedo
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JESSICA_2 ===
@@ -5075,54 +5073,27 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Flamethrower
 
 === TRAINER_JUAN_1 ===
-Name: JUAN
+Name: IDO
 Class: Leader
 Pic: Leader Juan
 Gender: Male
 Music: Male
-Items: Hyper Potion / Hyper Potion
+Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
 
 Luvdisc
-Level: 41
+Level: 8
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Water Pulse
 - Attract
 - Sweet Kiss
 - Flail
 
-Whiscash
-Level: 41
+Mudkip
+Level: 8
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
-
-Sealeo
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
-
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
-
-Kingdra @ Chesto Berry
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
@@ -5652,7 +5623,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BETHANY ===
-Name: BETHANY
+Name: ILANA
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
@@ -5660,16 +5631,16 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Azurill @ Oran Berry
-Level: 35
+Feebas @ Oran Berry
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Marill @ Oran Berry
-Level: 37
+Feebas @ Oran Berry
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Azumarill @ Oran Berry
-Level: 39
+Feebas @ Oran Berry
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ISABEL_1 ===
@@ -9159,7 +9130,7 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
-Name: ANNIKA
+Name: YARDEN
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
@@ -9167,8 +9138,8 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Feebas @ Oran Berry
-Level: 39
+Magikarp @ Oran Berry
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Flail
 - Water Pulse
@@ -9176,7 +9147,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
 
 Feebas @ Oran Berry
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Flail
 - Water Pulse
@@ -11222,7 +11193,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDREA ===
-Name: ANDREA
+Name: YAEL
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11231,24 +11202,24 @@ Double Battle: No
 AI: Check Bad Move
 
 Luvdisc
-Level: 40
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CRISSY ===
-Name: CRISSY
-Class: Lass
-Pic: Lass
+Name: REUT
+Class: Lady
+Pic: Lady
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
 Goldeen
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wailmer
-Level: 39
+Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 /* Valiant */

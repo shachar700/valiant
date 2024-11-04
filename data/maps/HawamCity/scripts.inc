@@ -168,7 +168,7 @@ HawamCity_Text_ProfIntro:
 
 HawamCity_EventScript_GymIsLocked:
 	.string "The door is locked.\p"
-	.string "“The gym leader went to errands.$"
+	.string "“The gym leader went to errands.”$"
 
 HawamCity_Text_TheDoorIsOpen:
 	.string "The door is open.$"

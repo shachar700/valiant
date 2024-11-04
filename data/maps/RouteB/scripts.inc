@@ -78,7 +78,8 @@ RouteB_Text_Introduce:
 	.string "My name is Ben. I'm a POKéMON researcher.\n"
 	.string "and you are?\p"
 	.string "Oh, so you are {PLAYER} who just started\n"
-	.string "your journey. That's nice!\l"
+	.string "your journey.\p"
+	.string "That's nice!\n"
 	.string "How about a friendly battle?$"
 
 RouteB_Text_BenDefeat:
