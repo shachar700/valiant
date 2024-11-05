@@ -1,14 +1,6 @@
 {
   "map_sections": [
     {
-      "map_section": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
-      "x": 4,
-      "y": 11,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_OLDALE_TOWN",
       "name": "OLDALE TOWN",
       "x": 4,
@@ -1741,6 +1733,14 @@
       "name": "SODORI TUNNELS",
       "x": 0,
       "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_C",
+      "name": "ROUTE C",
+      "x": 23,
+      "y": 3,
       "width": 1,
       "height": 1
     }

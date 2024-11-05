@@ -23,7 +23,8 @@ RouteC_EventScript_Grunts_Trigger::
 	delay 50
 	applymovement LOCALID_MAIN_GRUNT, RouteC_Movement_GruntMovesToPlayer
 	waitmovement 0
-	trainerbattle_single TRAINER_GRUNT_RUSTURF_TUNNEL, RouteC_EventScript_GruntBattleIntro, RouteC_EventScript_GruntBattleDefeat
+	msgbox RouteC_EventScript_GruntBattleIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RouteC_EventScript_GruntBattleDefeat
 	msgbox RouteC_Text_GruntTakePackage, MSGBOX_DEFAULT
 	giveitem ITEM_DEVON_PARTS
 	closemessage
@@ -42,8 +43,9 @@ RouteC_EventScript_Grunts_Trigger::
 	waitmovement 0
 	msgbox RouteC_Text_ScientistThanksPlayer, MSGBOX_DEFAULT
 	closemessage
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_SCIENTIST
+	fadescreen FADE_FROM_BLACK
 	delay 30
 	setflag FLAG_HIDE_ROUTE_C_SCIENTIST
 	setvar VAR_ROUTE_STATE, 2
@@ -88,7 +90,7 @@ RouteC_Text_GruntTakePackage:
 	.string "The BOSS told us this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All we had to do was steal some package\n"
-	.string "data from a scientist who lives in.\l"
+	.string "data from a scientist who lives in\l"
 	.string "PTOLEMAIS CITY.\p"
 	.string "Tch!\n"
 	.string "You want it back that badly, take it!$"
@@ -114,7 +116,7 @@ RouteC_Text_BetaSign:
 	.string "Please leave feedback or report bugs\n"
 	.string "in the discord server:\p"
 	.string "https://discord.gg/sFrX7AS6HC\p"
-	.string "I hope you enjoyed! :)$"
+	.string "I hope you enjoyed!$"
 
 RouteC_Movement_GruntMovesToPlayer:
 	walk_left
