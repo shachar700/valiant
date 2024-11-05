@@ -34,7 +34,7 @@ RouteB_EventScript_RivalBattle::
 	waitmovement 0
 	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_ROUTE_B_RIVAL
-	setvar VAR_ROUTE_B_STATE, 1
+	setvar VAR_ROUTE_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	release

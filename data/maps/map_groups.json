@@ -56,7 +56,9 @@
     "PtolemaisCity_PokemonCenter",
     "SodoriTunnels",
     "PtolemaisCity_Gym_1F",
-    "PtolemaisCity_Gym_B1F"
+    "PtolemaisCity_Gym_B1F",
+    "PtolemaisCity_Houses",
+    "PtolemaisCity_Mart"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

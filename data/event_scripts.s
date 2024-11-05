@@ -1108,3 +1108,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PtolemaisCity_Gym_1F/scripts.inc"
 
 	.include "data/maps/PtolemaisCity_Gym_B1F/scripts.inc"
+
+	.include "data/maps/PtolemaisCity_Houses/scripts.inc"
+
+	.include "data/maps/PtolemaisCity_Mart/scripts.inc"

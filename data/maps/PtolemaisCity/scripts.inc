@@ -11,6 +11,10 @@ PtolemaisCity_EventScript_CitySign::
 	msgbox PtolemaisCity_Text_CitySign, MSGBOX_SIGN
 	end
 
+PtolemaisCity_EventScript_GymSign::
+	msgbox PtolemaisCity_Text_GymSign, MSGBOX_SIGN
+	end
+
 PtolemaisCity_EventScript_SmashFemale_Trigger::
 	lockall
 	applymovement LOCALID_SMASHFEMALE, Common_Movement_FacePlayer
@@ -158,6 +162,10 @@ PtolemaisCity_Text_LittleGirl:
 PtolemaisCity_Text_LittleBoy:
 	.string "I love the beach.\n"
 	.string "I wish I could stay here forever.$"
+
+PtolemaisCity_Text_GymSign:
+	.string "PTOLEMAIS CITY GYM\n"
+	.string "No stones left unturned.$"
 
 PtolemaisCity_Movement_FaceUp:
 	face_up

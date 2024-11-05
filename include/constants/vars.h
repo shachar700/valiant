@@ -102,7 +102,7 @@
 #define VAR_STARTER_CHOICE /* VAR_DEWFORD_TOWN_STATE*/   0x4052 // Valiant Var
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_ROUTE_B_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var
+#define VAR_ROUTE_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var
 #define VAR_PTOLEMAIS_CITY_STATE /*VAR_PACIFIDLOG_TOWN_STATE*/ 0x4056 // Valiant Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058

@@ -4464,8 +4464,8 @@
     {
       "id": "LAYOUT_ROUTE_C",
       "name": "RouteC_Layout",
-      "width": 40,
-      "height": 20,
+      "width": 60,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/RouteC/border.bin",
@@ -4580,6 +4580,26 @@
       "secondary_tileset": "gTileset_SootopolisGym",
       "border_filepath": "data/layouts/PtolemaisCity_Gym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/PtolemaisCity_Gym_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY_HOUSES",
+      "name": "PtolemaisCity_Houses_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PtolemaisCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_PTOLEMAIS_CITY_MART",
+      "name": "PtolemaisCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PtolemaisCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PtolemaisCity_Mart/map.bin"
     }
   ]
 }
