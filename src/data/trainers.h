@@ -28230,7 +28230,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11248
-            .species = SPECIES_SABLEYE,
+            .species = SPECIES_POOCHYENA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11250
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

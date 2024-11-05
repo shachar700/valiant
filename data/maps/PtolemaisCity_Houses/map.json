@@ -86,7 +86,7 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "5"
     },
     {
       "x": 21,
@@ -121,21 +121,21 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "5"
     },
     {
       "x": 4,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
-      "dest_warp_id": "5"
+      "dest_warp_id": "6"
     },
     {
       "x": 3,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_PTOLEMAIS_CITY",
-      "dest_warp_id": "5"
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [
