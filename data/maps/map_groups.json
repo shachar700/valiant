@@ -42,7 +42,10 @@
     "PtolemaisCity",
     "RouteA",
     "RouteB",
-    "RouteC"
+    "RouteC",
+    "RouteD",
+    "RouteE",
+    "RouteF"
   ],
   "gMapGroup_ValiantIndoor": [
     "SerenityLake",
