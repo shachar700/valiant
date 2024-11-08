@@ -230,7 +230,7 @@ HawamCity_Text_CitySign:
 	.string "A vibrant coastal city.$"
 
 HawamCity_Text_GymSign:
-	.string "HAIFA CITY GYM\n"
+	.string "HAWAM CITY GYM\n"
 	.string "Jona soars the blue sky.$"
 
 HawamCity_Movement_WalkOneUp:
