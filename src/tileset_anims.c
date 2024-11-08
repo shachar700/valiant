@@ -1192,7 +1192,6 @@ static void QueueAnimTiles_BikeShop_BlinkingLights(u16 timer)
 
 static void QueueAnimTiles_Sootopolis_StormyWater(u16 timer)
 {
-    return;
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Sootopolis_StormyWater);
     AppendTilesetAnimToBuffer(gTilesetAnims_Sootopolis_StormyWater[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 240)), 96 * TILE_SIZE_4BPP);
 }
