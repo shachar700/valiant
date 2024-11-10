@@ -29,7 +29,7 @@ RouteB_EventScript_RivalBattle::
 	msgbox RouteB_Text_Introduce, MSGBOX_DEFAULT
 	waitmessage
 	msgbox RouteB_Text_CanYouCatch, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, RouteB_EventScript_Tutorial
+	call_if_eq VAR_RESULT, NO, RouteB_EventScript_Tutorial
 	msgbox RouteB_Text_Introduce2, MSGBOX_DEFAULT
 	waitmessage
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, RouteB_Text_BenDefeat
@@ -46,7 +46,15 @@ RouteB_EventScript_RivalBattle::
 	end
 
 RouteB_EventScript_Tutorial:
+	msgbox RouteB_Text_HereWeGo, MSGBOX_DEFAULT
+	closemessage
+	special SavePlayerParty
+	special LoadWallyZigzagoon
 	special StartWallyTutorialBattle
+	waitstate
+	special LoadPlayerParty
+	msgbox RouteB_Text_Something, MSGBOX_DEFAULT
+	waitmessage
 	return
 
 RouteB_EventScript_RivalApproachPlayer1::
@@ -90,12 +98,19 @@ RouteB_Text_Introduce:
 	.string "your journey.\p"
 	.string "That's nice!$"
 
+RouteB_Text_Something:
+	.string "Well that was something,\n"
+	.string "wasn't it?$"
+
 RouteB_Text_Introduce2:
-	.string "How about a friendly battle?$"
+	.string "Okay, how about a friendly battle?$"
 
 RouteB_Text_CanYouCatch:
 	.string "Do you know how to catch wild POKéMON?\n"
-	.string "I can show you if you don't know.$"
+	.string "I can show you.$"
+
+RouteB_Text_HereWeGo:
+	.string "Well here we go!$"
 
 RouteB_Text_BenDefeat:
 	.string "BEN: … … … … … … …\p"
