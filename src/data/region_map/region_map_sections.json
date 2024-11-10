@@ -1751,6 +1751,30 @@
       "y": 3,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_KEREN_CITY",
+      "name": "KEREN CITY",
+      "x": 24,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_KENKORIA_CITY",
+      "name": "KENKORIA CITY",
+      "x": 26,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_F",
+      "name": "ROUTE F",
+      "x": 21,
+      "y": 6,
+      "width": 1,
+      "height": 1
     }
   ]
 }
