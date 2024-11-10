@@ -14,6 +14,8 @@
 #define MAP_ROUTE_D        (5 | (0 << 8))
 #define MAP_ROUTE_E        (6 | (0 << 8))
 #define MAP_ROUTE_F        (7 | (0 << 8))
+#define MAP_KEREN_CITY     (8 | (0 << 8))
+#define MAP_KENKORIA_CITY  (9 | (0 << 8))
 
 // gMapGroup_ValiantIndoor
 #define MAP_SERENITY_LAKE                    (0 | (1 << 8))

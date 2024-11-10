@@ -4464,7 +4464,7 @@
     {
       "id": "LAYOUT_ROUTE_C",
       "name": "RouteC_Layout",
-      "width": 80,
+      "width": 82,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_ROUTE_D",
       "name": "RouteD_Layout",
-      "width": 50,
+      "width": 60,
       "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4640,6 +4640,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/KerenTunnels/border.bin",
       "blockdata_filepath": "data/layouts/KerenTunnels/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY",
+      "name": "KerenCity_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KerenCity/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY",
+      "name": "KenkoriaCity_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KenkoriaCity/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity/map.bin"
     }
   ]
 }

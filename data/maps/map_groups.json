@@ -45,7 +45,9 @@
     "RouteC",
     "RouteD",
     "RouteE",
-    "RouteF"
+    "RouteF",
+    "KerenCity",
+    "KenkoriaCity"
   ],
   "gMapGroup_ValiantIndoor": [
     "SerenityLake",

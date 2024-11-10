@@ -219,8 +219,13 @@
 #define MAPSEC_ROUTE_A                      0xD7
 #define MAPSEC_ROUTE_B                      0xD8
 #define MAPSEC_ROUTE_C                      0xD9
-#define MAPSEC_SODORI_TUNNELS               0xDA
-#define MAPSEC_NONE                         0xDB
+#define MAPSEC_ROUTE_D                      0xDA
+#define MAPSEC_ROUTE_E                      0xDB
+#define MAPSEC_ROUTE_F                      0xDC
+#define MAPSEC_SODORI_TUNNELS               0xDD
+#define MAPSEC_KEREN_CITY                   0xDE
+#define MAPSEC_KENKORIA_CITY                0xDF
+#define MAPSEC_NONE                         0xE0
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

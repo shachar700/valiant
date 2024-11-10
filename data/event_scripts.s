@@ -1120,3 +1120,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RouteF/scripts.inc"
 
 	.include "data/maps/KerenTunnels/scripts.inc"
+
+	.include "data/maps/KerenCity/scripts.inc"
+
+	.include "data/maps/KenkoriaCity/scripts.inc"
