@@ -30,6 +30,7 @@
 #define MAP_PTOLEMAIS_CITY_GYM_B1F           (11 | (1 << 8))
 #define MAP_PTOLEMAIS_CITY_HOUSES            (12 | (1 << 8))
 #define MAP_PTOLEMAIS_CITY_MART              (13 | (1 << 8))
+#define MAP_KEREN_TUNNELS                    (14 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

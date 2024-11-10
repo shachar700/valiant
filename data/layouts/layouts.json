@@ -4464,7 +4464,7 @@
     {
       "id": "LAYOUT_ROUTE_C",
       "name": "RouteC_Layout",
-      "width": 60,
+      "width": 80,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
@@ -4630,6 +4630,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RouteF/border.bin",
       "blockdata_filepath": "data/layouts/RouteF/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_TUNNELS",
+      "name": "KerenTunnels_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/KerenTunnels/border.bin",
+      "blockdata_filepath": "data/layouts/KerenTunnels/map.bin"
     }
   ]
 }

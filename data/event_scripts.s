@@ -1118,3 +1118,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RouteE/scripts.inc"
 
 	.include "data/maps/RouteF/scripts.inc"
+
+	.include "data/maps/KerenTunnels/scripts.inc"
