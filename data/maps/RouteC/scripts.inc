@@ -3,6 +3,7 @@
 .set LOCALID_MAIN_GRUNT, 3
 .set LOCALID_GRUNT_3, 4
 .set LOCALID_GRUNT_4, 5
+.set LOCALID_NOAM, 11
 
 RouteC_MapScripts::
 	.byte 0
@@ -71,6 +72,34 @@ RouteC_EventScript_Tal::
 	msgbox RouteC_Text_MoreRockMons, MSGBOX_AUTOCLOSE
 	end
 
+RouteC_EventScript_Noam_Trigger::
+	lock
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_NOAM, Common_Movement_FaceDown
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route_C_Movement_FaceNoam
+	waitmovement 0
+	msgbox RouteC_Text_NoamRival, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_ROUTE_STATE, 3
+	release
+	end
+
+RouteC_Text_NoamRival:
+	.string "{COLOR RED}NOAM:{COLOR DARK_GRAY} Hey {PLAYER}!\n"
+	.string "It's good to see you here.\p"
+	.string "I'm glad you started your journey.\p"
+	.string "I was worried I'll be traveling alone\n"
+	.string "all the way to the POKéMON LEAGUE.\p"
+	.string "I'm going to be training here for a\n"
+	.string "bit so you are welcome to challenge me.\p"
+	.string "I'm warning you though,\n"
+	.string "I have more experience than you.\p"
+	.string "So it will be tough for you to face me.\p"
+	.string "There is something I want to give you.\n"
+	.string "If you can beat me, I'll give it to you.$"
+
 RouteC_Text_IHopeYouBroughtFlashlight:
 	.string "I hope you brought a flashlight\n"
 	.string "because there is a cave up ahead!$"
@@ -130,7 +159,6 @@ RouteC_EventScript_GruntBattleIntro:
 RouteC_EventScript_GruntBattleDefeat:
 	.string "Ugh! I can't believe it.$"
 
-
 RouteC_Text_GruntTakePackage:
 	.string "This is plain not right…\p"
 	.string "The BOSS told us this would be a\n"
@@ -173,4 +201,8 @@ RouteC_Movement_ScientistMovesToPlayer:
 	walk_left
 	walk_down
 	walk_down
+	step_end
+
+Route_C_Movement_FaceNoam:
+	walk_in_place_up
 	step_end
