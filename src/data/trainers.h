@@ -28256,7 +28256,7 @@ F_TRAINER_FEMALE |
     [TRAINER_LYLE] =
     {
 #line 11257
-        .trainerName = _("LYLE"),
+        .trainerName = _("KFIR"),
 #line 11258
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11259
@@ -28278,7 +28278,7 @@ F_TRAINER_FEMALE |
 #line 11267
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11266
-            .lvl = 3,
+            .lvl = 4,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28289,7 +28289,7 @@ F_TRAINER_FEMALE |
 #line 11271
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11270
-            .lvl = 3,
+            .lvl = 4,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28300,7 +28300,7 @@ F_TRAINER_FEMALE |
 #line 11275
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11274
-            .lvl = 3,
+            .lvl = 4,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28311,7 +28311,7 @@ F_TRAINER_FEMALE |
 #line 11279
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11278
-            .lvl = 3,
+            .lvl = 4,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

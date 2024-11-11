@@ -52,9 +52,55 @@ RouteC_EventScript_Grunts_Trigger::
 	release
 	end
 
-RouteC_EventScript_BetaSign::
-	msgbox RouteC_Text_BetaSign, MSGBOX_NPC
+@RouteC_EventScript_BetaSign::
+@	msgbox RouteC_Text_BetaSign, MSGBOX_NPC
+@	end
+
+RouteC_EventScript_Kfir::
+	trainerbattle_single TRAINER_LYLE, RouteC_Text_GoBugPokemonTeam, RouteC_Text_ICouldntWin
+	msgbox RouteC_Text_ImOutOfPokeBalls, MSGBOX_AUTOCLOSE
 	end
+
+RouteC_EventScript_Noy::
+	trainerbattle_single TRAINER_JOSE, RouteC_Text_CatMons, RouteC_Text_MoreCats
+	msgbox RouteC_Text_MaybeDogs, MSGBOX_AUTOCLOSE
+	end
+
+RouteC_EventScript_Tal::
+	trainerbattle_single TRAINER_DOUG, RouteC_Text_IHopeYouBroughtFlashlight, RouteC_Text_ThereIsACave
+	msgbox RouteC_Text_MoreRockMons, MSGBOX_AUTOCLOSE
+	end
+
+RouteC_Text_IHopeYouBroughtFlashlight:
+	.string "I hope you brought a flashlight\n"
+	.string "because there is a cave up ahead!$"
+
+RouteC_Text_ThereIsACave:
+	.string "There is a dark cave up ahead!$"
+
+RouteC_Text_MoreRockMons:
+	.string "I should've caught more\n"
+	.string "ROCK POKéMON.$"
+
+RouteC_Text_CatMons:
+	.string "I have cat POKéMON\n"
+	.string "that will surprise you!$"
+
+RouteC_Text_MoreCats:
+	.string "Ugh! I wish I had more cats.$"
+
+RouteC_Text_MaybeDogs:
+	.string "Maybe I should catch some dogs.$"	
+
+RouteC_Text_GoBugPokemonTeam:
+	.string "Go my BUG POKéMON team!$"
+
+RouteC_Text_ICouldntWin:
+	.string "I couldn't win.\n"
+	.string "I hope next time I'll win.$"
+
+RouteC_Text_ImOutOfPokeBalls:
+	.string "I am out of Pokéballs.$"
 
 RouteC_Text_Grunt1Intro:
 	.string "Hey there!\n"
@@ -110,13 +156,13 @@ RouteC_Text_ScientistThanksPlayer:
 	.string "Well look at me rambling, I'm going\n"
 	.string "to take a hot bath and relax. Bye.$"
 
-RouteC_Text_BetaSign:
-	.string "Thank you for playing Beta 1\n"
-	.string "of POKéMON Valiant!\p"
-	.string "Please leave feedback or report bugs\n"
-	.string "in the discord server:\p"
-	.string "https://discord.gg/sFrX7AS6HC\p"
-	.string "I hope you enjoyed!$"
+@RouteC_Text_BetaSign:
+@	.string "Thank you for playing Beta 1\n"
+@	.string "of POKéMON Valiant!\p"
+@	.string "Please leave feedback or report bugs\n"
+@	.string "in the discord server:\p"
+@	.string "https://discord.gg/sFrX7AS6HC\p"
+@	.string "I hope you enjoyed!$"
 
 RouteC_Movement_GruntMovesToPlayer:
 	walk_left

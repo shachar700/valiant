@@ -11253,8 +11253,9 @@ Wurmple
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_LYLE ===
-Name: LYLE
+Name: KFIR
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -11263,53 +11264,55 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 3
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
-Level: 3
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
-Level: 3
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
-Level: 3
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_JOSE ===
-Name: JOSE
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
+Name: NOY
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
+Skitty
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Nincada
+Meowth
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Valiant */
 === TRAINER_DOUG ===
-Name: DOUG
-Class: Bug Catcher
-Pic: Bug Catcher
+Name: TAL
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nincada
-Level: 28
+Geodude
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ninjask
-Level: 28
+Nosepass
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GREG ===
