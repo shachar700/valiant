@@ -78,8 +78,6 @@ RouteC_EventScript_Noam_Trigger::
 	waitmovement 0
 	applymovement LOCALID_NOAM, Common_Movement_FaceDown
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Route_C_Movement_FaceNoam
-	waitmovement 0
 	msgbox RouteC_Text_NoamRival, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_ROUTE_STATE, 3

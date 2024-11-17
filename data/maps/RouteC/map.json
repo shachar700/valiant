@@ -162,8 +162,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GRETA",
-      "x": 71,
-      "y": 23,
+      "x": 75,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -224,30 +224,21 @@
     },
     {
       "type": "trigger",
-      "x": 71,
-      "y": 26,
+      "x": 75,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_ROUTE_STATE",
       "var_value": "2",
-      "script": "RouteC_EventScript_Noam_Trigger"
+      "script": "NULL"
     },
     {
       "type": "trigger",
-      "x": 70,
-      "y": 27,
+      "x": 74,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_ROUTE_STATE",
       "var_value": "2",
-      "script": "RouteC_EventScript_Noam_Trigger"
-    },
-    {
-      "type": "trigger",
-      "x": 69,
-      "y": 26,
-      "elevation": 0,
-      "var": "VAR_ROUTE_STATE",
-      "var_value": "2",
-      "script": "RouteC_EventScript_Noam_Trigger"
+      "script": "NULL"
     }
   ],
   "bg_events": [
