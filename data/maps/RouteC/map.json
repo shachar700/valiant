@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_PTOLEMAIS_CITY",
-      "offset": 14,
+      "offset": 10,
       "direction": "left"
     },
     {
