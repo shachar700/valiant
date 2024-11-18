@@ -712,7 +712,7 @@ static void QueueAnimTiles_General_SandWaterEdge(u16 timer)
 static void QueueAnimTiles_General_Waterfall(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
-    AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(540)), 6 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(506)), 6 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)
