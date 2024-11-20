@@ -81,8 +81,9 @@ Gender: Male
 Music: Male
 Double Battle: No
 
+/* Valiant */
 === TRAINER_SAWYER_1 ===
-Name: SAWYER
+Name: KOBI
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -91,7 +92,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Geodude
-Level: 21
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
@@ -3173,8 +3174,9 @@ Sharpedo
 Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_TAKAO ===
-Name: TAKAO
+Name: OR
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -3184,6 +3186,10 @@ AI: Check Bad Move
 
 Machop
 Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Geodude
+Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -3708,8 +3714,9 @@ Pelipper
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_DREW ===
-Name: DREW
+Name: GAL
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -3718,7 +3725,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Sandshrew
-Level: 23
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dig
+- Sand Attack
+- Poison Sting
+- Slash
+
+Sandshrew
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
 - Sand Attack
@@ -3758,17 +3773,22 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 - Rock Tomb
 
+/* Valiant */
 === TRAINER_LARRY ===
 Name: LARRY
 Class: Camper
 Pic: Camper
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
 Nuzleaf
-Level: 18
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHANE ===
@@ -3818,8 +3838,9 @@ Taillow
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_AUTUMN ===
-Name: AUTUMN
+Name: RONIT
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -3828,7 +3849,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shroomish
-Level: 21
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bellossom
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRAVIS ===
@@ -4109,8 +4134,9 @@ Beautifly
 Level: 38
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_EDWARD ===
-Name: EDWARD
+Name: DAN
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -4122,6 +4148,10 @@ Abra
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
+
+Meditite
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PRESTON ===
 Name: PRESTON
@@ -5470,20 +5500,21 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Focus Energy
 - Arm Thrust
 
+/* Valiant */
 === TRAINER_VICTOR ===
-Name: VICTOR
+Name: BAR
 Class: Winstrate
 Pic: Pokefan M
 Gender: Male
 Music: Twins
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Taillow @ Oran Berry
+Plusle @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Zigzagoon @ Oran Berry
+Minun @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -5938,8 +5969,9 @@ Skitty
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_BILLY ===
-Name: BILLY
+Name: BOAZ
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5948,15 +5980,28 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 5
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seedot
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Poochyena
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wurmple
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+/* Valiant */
 === TRAINER_JOSH ===
-Name: JOSH
+Name: DION
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5968,6 +6013,14 @@ Geodude
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
+
+Rattata
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pidgey
+Level: 10
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -9129,8 +9182,9 @@ Tentacruel
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_ELI ===
-Name: ELI
+Name: YOAV
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -9139,7 +9193,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 23
+Level: 13
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slugma
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
@@ -9850,8 +9908,9 @@ Makuhita
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_DAVIS ===
-Name: DAVIS
+Name: DANIEL
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -9860,7 +9919,27 @@ Double Battle: No
 AI: Check Bad Move
 
 Pinsir
-Level: 27
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wurmple
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Silcoon
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cascoon
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Beautifly
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dustox
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MITCHELL ===
@@ -11048,8 +11127,9 @@ Shroomish
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_HALEY_1 ===
-Name: HALEY
+Name: DANIEL
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11058,11 +11138,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Lotad
-Level: 6
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shroomish
-Level: 6
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JANICE ===
@@ -11438,8 +11518,9 @@ Ninjask
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_BRICE ===
-Name: BRICE
+Name: ILAN
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -11447,12 +11528,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
+Geodude
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Numel
-Level: 17
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machop
-Level: 17
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRENT_1 ===

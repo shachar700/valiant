@@ -172,7 +172,7 @@ PtolemaisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "My advice to you is this…\p"
 	.string "Get a lot of POéMON so that in-case\n"
 	.string "of an emergency you have that backup.\p"
-	.string "go get them champ in the making!$"
+	.string "Go get them champ in the making!$"
 
 PtolemaisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! You've beaten IDO, who\n"
