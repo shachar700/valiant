@@ -14077,4 +14077,18 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_TRADE_STONE] =
+    {
+        .name = _("Trade Stone"),
+        .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
+        .description = sEvolutionStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 80,
+        .iconPic = gItemIcon_TradeStone,
+        .iconPalette = gItemIconPalette_TradeStone,
+    },
 };
