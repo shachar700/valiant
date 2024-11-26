@@ -147,8 +147,8 @@ HawamCity_EventScript_ProfessorAriasMailbox::
 	msgbox HawamCity_Text_ProfessorAriasMailbox, MSGBOX_SIGN
 	end
 
-HawamCity_EventScript_NoamsMailbox::
-	msgbox HawamCity_Text_NoamsMailbox, MSGBOX_SIGN
+HawamCity_EventScript_NoasMailbox::
+	msgbox HawamCity_Text_NoasMailbox, MSGBOX_SIGN
 	end
 
 HawamCity_EventScript_CitySign::
@@ -221,8 +221,8 @@ HawamCity_Text_ProfessorAriasMailbox:
 	.string "PROF. ARAUCARIA'S mailbox…\n"
 	.string "It's full of letters.$"
 
-HawamCity_Text_NoamsMailbox:
-	.string "Noam's family mailbox…\n"
+HawamCity_Text_NoasMailbox:
+	.string "Noa's family mailbox…\n"
 	.string "It would be rude to sniff around.$"
 
 HawamCity_Text_CitySign:

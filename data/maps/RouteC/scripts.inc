@@ -3,7 +3,7 @@
 .set LOCALID_MAIN_GRUNT, 3
 .set LOCALID_GRUNT_3, 4
 .set LOCALID_GRUNT_4, 5
-.set LOCALID_NOAM, 11
+.set LOCALID_RIVAL, 11
 
 RouteC_MapScripts::
 	.byte 0
@@ -53,6 +53,34 @@ RouteC_EventScript_Grunts_Trigger::
 	release
 	end
 
+RouteC_EventScript_Rival::
+	lockall
+	goto_if_eq VAR_RIVAL_NOA, 0, RouteC_EventScript_InitiateRivalSequence
+	faceplayer
+	msgbox RouteC_Text_LovelyView, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+RouteC_EventScript_InitiateRivalSequence::
+	msgbox RouteC_Text_NoaWonderfulPokemon, MSGBOX_DEFAULT
+	closemessage
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+	applymovement LOCALID_RIVAL, Common_Movement_FacePlayer
+	waitmovement 0
+	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_RIVAL, Common_Movement_Delay48
+	waitmovement 0
+	msgbox RouteC_Text_NoaLetsBattle, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, RouteC_Text_NoaDefeated
+	msgbox RouteC_Text_GreatBattle, MSGBOX_DEFAULT
+	giveitem ITEM_LUCKY_EGG
+	setvar VAR_RIVAL_NOA, 1
+	closemessage
+	releaseall
+	end
+
 @RouteC_EventScript_BetaSign::
 @	msgbox RouteC_Text_BetaSign, MSGBOX_NPC
 @	end
@@ -72,22 +100,22 @@ RouteC_EventScript_Tal::
 	msgbox RouteC_Text_MoreRockMons, MSGBOX_AUTOCLOSE
 	end
 
-RouteC_EventScript_Noam_Trigger::
+RouteC_EventScript_Noa_Trigger::
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_NOAM, Common_Movement_FaceDown
+	applymovement LOCALID_RIVAL, Common_Movement_FaceDown
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	msgbox RouteC_Text_NoamRival, MSGBOX_DEFAULT
+	msgbox RouteC_Text_NoaRival, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_ROUTE_STATE, 3
 	release
 	end
 
-RouteC_Text_NoamRival:
-	.string "{COLOR RED}NOAM:{COLOR DARK_GRAY} Hey {PLAYER}!\n"
+RouteC_Text_NoaRival:
+	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} Hey {PLAYER}!\n"
 	.string "It's good to see you here.\p"
 	.string "I'm glad you started your journey.\p"
 	.string "I was worried I'll be traveling alone\n"
@@ -99,6 +127,28 @@ RouteC_Text_NoamRival:
 	.string "So it will be tough for you to face me.\p"
 	.string "There is something I want to give you.\n"
 	.string "If you can beat me, I'll give it to you.$"
+
+RouteC_Text_LovelyView:
+	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} What a lovely view from here.\n"
+	.string "I could stay here for hours.$"
+
+RouteC_Text_NoaWonderfulPokemon:
+	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} Such a wonderful POKéMON is PINSIR.$"
+
+RouteC_Text_NoaLetsBattle:
+	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} I'm glad you showed up.\p"
+	.string "There is a beautiful view from here so I \n"
+	.string "like to come here after my training.\p"
+	.string "I hope you are ready to face me in\n"
+	.string "battle.$"
+
+RouteC_Text_NoaDefeated:
+	.string "Oh, that was a close one!$"
+
+RouteC_Text_GreatBattle:
+	.string "That was a great battle.\p"
+	.string "I'm going to rest here for a bit.\p"
+	.string "As promised here is your reward.$"
 
 RouteC_Text_IHopeYouBroughtFlashlight:
 	.string "I hope you brought a flashlight\n"
@@ -189,7 +239,7 @@ RouteC_Text_ScientistThanksPlayer:
 @	.string "of POKéMON Valiant!\p"
 @	.string "Please leave feedback or report bugs\n"
 @	.string "in the discord server:\p"
-@	.string "https://discord.gg/sFrX7AS6HC\p"
+@	.string "https://discord.gg/wcEwv9bytW\p"
 @	.string "I hope you enjoyed!$"
 
 RouteC_Movement_GruntMovesToPlayer:
@@ -201,8 +251,4 @@ RouteC_Movement_ScientistMovesToPlayer:
 	walk_left
 	walk_down
 	walk_down
-	step_end
-
-Route_C_Movement_FaceNoam:
-	walk_in_place_up
 	step_end

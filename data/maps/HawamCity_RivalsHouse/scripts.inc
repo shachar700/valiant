@@ -6,7 +6,7 @@ HawamCity_RivalsHouse_EventScript_Sis::
 	end
 
 HawamCity_RivalsHouse_MissingSis:
-	.string "My sis? Noam?\n"
+	.string "My sis? Noa?\n"
 	.string "She has been on her adventure for\l"
 	.string "quite some time now.\p"
 	.string "I hope she stays safe out there.\n"
