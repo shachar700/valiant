@@ -36,6 +36,8 @@
 #define MAP_KEREN_CITY_POKEMON_CENTER        (15 | (1 << 8))
 #define MAP_KEREN_CITY_MART                  (16 | (1 << 8))
 #define MAP_KEREN_CITY_GYM                   (17 | (1 << 8))
+#define MAP_KEREN_CITY_RESEARCH_FACILITY     (18 | (1 << 8))
+#define MAP_KEREN_CITY_SCHOOL                (19 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

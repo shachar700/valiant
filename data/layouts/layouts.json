@@ -4690,6 +4690,26 @@
       "secondary_tileset": "gTileset_DewfordGym",
       "border_filepath": "data/layouts/KerenCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/KerenCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY_RESEARCH_FACILITY",
+      "name": "KerenCity_ResearchFacility_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/KerenCity_ResearchFacility/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity_ResearchFacility/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY_SCHOOL",
+      "name": "KerenCity_School_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/KerenCity_School/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity_School/map.bin"
     }
   ]
 }

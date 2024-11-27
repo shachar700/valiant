@@ -118,12 +118,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 7,
-      "y": 24,
+      "x": 5,
+      "y": 27,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_LEFT_DOWN",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "KerenCity_EventScript_ShhImHiding",
@@ -142,14 +142,14 @@
       "x": 23,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_KEREN_CITY",
+      "dest_map": "MAP_KEREN_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_KEREN_CITY",
+      "dest_map": "MAP_KEREN_CITY_SCHOOL",
       "dest_warp_id": "0"
     },
     {
@@ -170,7 +170,7 @@
       "x": 24,
       "y": 34,
       "elevation": 0,
-      "dest_map": "MAP_KEREN_CITY",
+      "dest_map": "MAP_KEREN_CITY_RESEARCH_FACILITY",
       "dest_warp_id": "0"
     }
   ],

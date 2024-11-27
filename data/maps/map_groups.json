@@ -67,7 +67,9 @@
     "KerenTunnels",
     "KerenCity_PokemonCenter",
     "KerenCity_Mart",
-    "KerenCity_Gym"
+    "KerenCity_Gym",
+    "KerenCity_ResearchFacility",
+    "KerenCity_School"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

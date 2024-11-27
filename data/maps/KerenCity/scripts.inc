@@ -43,6 +43,10 @@ KerenCity_EventScript_CelebiSighting::
 	msgbox KerenCity_Text_CelebiSighting, MSGBOX_NPC
 	end
 
+KerenCity_EventScript_SawSmashSighting::
+	msgbox KerenCity_Text_SawSmashSighting, MSGBOX_NPC
+	end
+
 KerenCity_EventScript_GymSign::
 	msgbox KerenCity_Text_GymSign, MSGBOX_SIGN
 	end
@@ -74,6 +78,14 @@ KerenCity_EventScript_EmployeeQuestion_GiveRepel:
 	closemessage
 	releaseall
 	end
+
+KerenCity_Text_SawSmashSighting:
+	.string "I thought I saw TEAM SMASH traveling\n"
+	.string "around here.\p"
+	.string "Ever since they started showing up we\n"
+	.string "had less visitors coming to KEREN CITY.\p"
+	.string "They've been blocking the routes for\n"
+	.string "their own purposes.$"
 
 KerenCity_Text_CelebiSighting:
 	.string "We used to have CELEBI sighting when it\n"
