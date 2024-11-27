@@ -85,6 +85,10 @@ RouteC_EventScript_InitiateRivalSequence::
 @	msgbox RouteC_Text_BetaSign, MSGBOX_NPC
 @	end
 
+RouteC_EventScript_ScribbledSign::
+	msgbox RouteC_Text_ScribbledSign, MSGBOX_NPC
+	end
+
 RouteC_EventScript_Kfir::
 	trainerbattle_single TRAINER_LYLE, RouteC_Text_GoBugPokemonTeam, RouteC_Text_ICouldntWin
 	msgbox RouteC_Text_ImOutOfPokeBalls, MSGBOX_AUTOCLOSE
@@ -113,6 +117,39 @@ RouteC_EventScript_Noa_Trigger::
 	setvar VAR_ROUTE_STATE, 3
 	release
 	end
+
+RouteC_EventScript_Braille_Flames::
+	lockall
+	braillemsgbox RouteC_Braille_Flames
+	closemessage
+	releaseall
+	end
+
+RouteC_EventScript_Braille_Waves::
+	lockall
+	braillemsgbox RouteC_Braille_Waves
+	closemessage
+	releaseall
+	end
+
+RouteC_EventScript_Braille_Lightning::
+	lockall
+	braillemsgbox RouteC_Braille_Lightning
+	closemessage
+	releaseall
+	end
+
+RouteC_Braille_Flames:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "FLAMES$"
+
+RouteC_Braille_Waves:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "WAVES$"
+
+RouteC_Braille_Lightning:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "LIGHTNING$"
 
 RouteC_Text_NoaRival:
 	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} Hey {PLAYER}!\n"
@@ -241,6 +278,9 @@ RouteC_Text_ScientistThanksPlayer:
 @	.string "in the discord server:\p"
 @	.string "https://discord.gg/wcEwv9bytW\p"
 @	.string "I hope you enjoyed!$"
+
+RouteC_Text_ScribbledSign:
+	.string "The sign got scribbled and erased.$"
 
 RouteC_Movement_GruntMovesToPlayer:
 	walk_left

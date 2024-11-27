@@ -1056,7 +1056,7 @@
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF // Valiant
 #define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 // Valiant
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
+#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 // Valiant
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
