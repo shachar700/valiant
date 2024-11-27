@@ -51,6 +51,10 @@ KerenCity_EventScript_GymSign::
 	msgbox KerenCity_Text_GymSign, MSGBOX_SIGN
 	end
 
+KerenCity_EventScript_PokemonSchoolSign::
+	msgbox KerenCity_Text_PokemonSchoolSign, MSGBOX_SIGN
+	ned
+
 KerenCity_EventScript_EmployeeQuestionOpportunity::
 	lockall
 	faceplayer
@@ -149,3 +153,6 @@ KerenCity_Text_CitySign:
 
 KerenCity_Text_ResearchFacilitySign:
 	.string "KEREN CITY Research Facility$"
+
+KerenCity_Text_PokemonSchoolSign:
+	.string "KEREN CITY POKéMON School"

@@ -55,6 +55,10 @@ KerenCity_School_EventScript_StudentNotebook::
 	msgbox KerenCity_School_Text_StudentsNotes, MSGBOX_SIGN
 	end
 
+KerenCity_School_EventScript_EmptyNotebook::
+	msgbox KerenCity_School_Text_EmptyNotebook, MSGBOX_SIGN
+	end
+
 
 KerenCity_School_EventScript_Teacher::
 	lock
@@ -91,8 +95,64 @@ KerenCity_School_EventScript_GaveQuickClaw::
 	release
 	end
 
+KerenCity_School_EventScript_RichBoy::
+	msgbox KerenCity_School_Text_PokemonHealItselfWithBerry, MSGBOX_NPC
+	end
+
+
+KerenCity_School_Eventscript_LittleBoy3Right::
+	msgbox KerenCity_School_Text_PokemontCantUseManMadeItems, MSGBOX_NPC
+	end
+
+KerenCity_School_Eventscript_LittleBoy3Left::
+	msgbox KerenCity_School_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC
+	end
+
+KerenCity_School_Eventscript_GameboyKid::
+	msgbox KerenCity_School_Text_GameboyKid, MSGBOX_NPC
+	end
+
+KerenCity_School_Eventscript_LittleGirlRight::
+	msgbox KerenCity_School_Text_ArtClass, MSGBOX_NPC
+	end
+
+KerenCity_School_Eventscript_LittleGirlLeft::
+	msgbox KerenCity_School_Text_Past, MSGBOX_NPC
+	end
+
+KerenCity_School_Eventscript_LittleBoy::
+	msgbox KerenCity_School_Text_LittleBoy, MSGBOX_NPC
+	end
+
+KerenCity_School_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_RUSTBORO_NPC_TRADE_COMPLETED, RustboroCity_House1_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_SEEDOT
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox RustboroCity_House1_Text_IllTradeIfYouWant, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_House1_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_House1_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_House1_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox RustboroCity_House1_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_RUSTBORO_NPC_TRADE_COMPLETED
+	release
+	end
+
 KerenCity_School_Movement_TeacherCheckOnStudentsWest:
-	walk_left
 	walk_down
 	walk_down
 	walk_right
@@ -113,12 +173,10 @@ KerenCity_School_Movement_TeacherCheckOnStudentsWest:
 	walk_left
 	walk_up
 	walk_up
-	walk_right
+	face_right
 	step_end
 
 KerenCity_School_Movement_TeacherCheckOnStudentsEast:
-	walk_right
-	walk_right
 	walk_down
 	walk_down
 	walk_left
@@ -139,8 +197,7 @@ KerenCity_School_Movement_TeacherCheckOnStudentsEast:
 	walk_right
 	walk_up
 	walk_up
-	walk_left
-	walk_left
+	face_left
 	step_end
 
 KerenCity_School_Text_BlackboardListsStatusChanges:
@@ -203,14 +260,9 @@ KerenCity_School_Text_ExplainQuickClaw:
 	.string "Just those alone will give you many\n"
 	.string "topics to study!$"
 
-
-KerenCity_School_Text_TradingRightNow:
+KerenCity_School_Text_GameboyKid:
 	.string "I'm trading POKéMON with my friend\n"
 	.string "right now.$"
-
-KerenCity_School_Text_AlwaysWantedSeedot:
-	.string "I always wanted a SEEDOT, and\n"
-	.string "I'm finally getting one!$"
 
 KerenCity_School_Text_PokemontCantUseManMadeItems:
 	.string "POKéMON can hold items, but they\n"
@@ -245,3 +297,18 @@ KerenCity_School_Text_StudentsNotes:
 	.string "A TRAINER's mission is to defeat\n"
 	.string "the strong TRAINERS who await\l"
 	.string "challengers in POKéMON GYMS.$"
+
+KerenCity_School_Text_EmptyNotebook:
+	.string "An empty notebook…$"
+
+KerenCity_School_Text_ArtClass:
+	.string "I thought this was art class.$"
+
+KerenCity_School_Text_Past:
+	.string "My papa told me CELEBI was here in the\n"
+	.string "PAST.\p"
+	.string "Why is it not here now?$"
+
+KerenCity_School_Text_LittleBoy:
+	.string "I can't really draw but it's therapeutic\n"
+	.string "for me.$"
