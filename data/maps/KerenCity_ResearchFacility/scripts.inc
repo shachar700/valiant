@@ -3,6 +3,25 @@
 KerenCity_ResearchFacility_MapScripts::
 	.byte 0
 
+KerenCity_EventScript_BenTalks::
+	goto_if_eq VAR_KEREN_CITY_STATE, 0, KerenCity_ResearchFacility_EventScript_GoodToSeeYou
+	goto_if_eq VAR_KEREN_CITY_STATE, 1, KerenCity_ResearchFacility_EventScript_NectarResearch
+	goto_if_eq VAR_KEREN_CITY_STATE, 2, KerenCity_ResearchFacility_EventScript_BenAlerts
+	goto_if_eq VAR_KEREN_CITY_STATE, 3, KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver
+	end
+
+@ VAR_KEREN_CITY_STATE at 0
+KerenCity_ResearchFacility_EventScript_GoodToSeeYou::	
+	msgbox KerenCity_ResearchFacility_Text_GoodToSeeYou, MSGBOX_NPC
+	setvar VAR_KEREN_CITY_STATE, 1
+	end
+
+@ VAR_KEREN_CITY_STATE at 1
+KerenCity_ResearchFacility_EventScript_NectarResearch::
+	msgbox KerenCity_ResearchFacility_Text_NectarResearch, MSGBOX_NPC
+	end
+
+@ VAR_KEREN_CITY_STATE at 2
 KerenCity_ResearchFacility_EventScript_BenAlerts::
 	lockall
 	applymovement LOCALID_BEN, Common_Movement_ExclamationMark
@@ -24,17 +43,56 @@ KerenCity_ResearchFacility_EventScript_DeclineHelping:
 
 KerenCity_ResearchFacility_EventScript_AgreeToHelp:
 	msgbox KerenCity_ResearchFacility_Text_ImGladYouAgree, MSGBOX_DEFAULT
+	setvar VAR_KEREN_CITY_STATE, 2
 	releaseall
 	end
 
-KerenCity_ResearchFacility_Text_BenAlerts:
+@ VAR_KEREN_CITY_STATE at 3
+KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver::
+	msgbox KerenCity_ResearchFacility_Text_BenAsksForYouToDeliver, MSGBOX_NPC
+	end
+
+KerenCity_ResearchFacility_EventScript_Scientist1::
+	msgbox KerenCity_ResearchFacility_Text_Scientist1, MSGBOX_NPC
+	end
+
+KerenCity_ResearchFacility_EventScript_Scientist2::
+	msgbox KerenCity_ResearchFacility_Text_Scientist2, MSGBOX_NPC
+	end
+
+KerenCity_ResearchFacility_EventScript_OldMan::
+	msgbox KerenCity_ResearchFacility_Text_OldMan, MSGBOX_NPC
+	end
+
+KerenCity_ResearchFacility_Text_Scientist1:
+	.string "We study POKéMON, flowers, fossils, you\n"
+	.string "name it.$"
+
+KerenCity_ResearchFacility_Text_Scientist2:
+	.string "CELEBI loves flowers.\p"
+	.string "That's why we planted many of them in\n"
+	.string "KEREN CITY.$"
+
+KerenCity_ResearchFacility_Text_OldMan:
+	.string "Our gym leader loves Flowers.$"
+
+KerenCity_ResearchFacility_Text_BenAsksForYouToDeliver:
+	.string "I'm waiting for you to deliver the\n"
+	.string "goods.$"
+
+KerenCity_ResearchFacility_Text_GoodToSeeYou:
 	.string "Oh hi there {PLAYER}\n"
 	.string "It's good to see you.\p"
 	.string "You've got the DEVON PARTS?\n"
 	.string "That's good.\p"
-	.string "That will allow our machines to have\n"
-	.string "enough energy.\p"
-	.string "As for the matter in hands…\p"
+	.string "That will allow the machines to have\n"
+	.string "enough energy.$"
+
+KerenCity_ResearchFacility_Text_NectarResearch:
+	.string "I'm currently working on a research\n"
+	.string "involving flower nectar.$"
+
+KerenCity_ResearchFacility_Text_BenAlerts:
 	.string "Somebody stole valuable data from our\n"
 	.string "research facility.\p"
 	.string "I assume it's TEAM SMASH as they are\n"

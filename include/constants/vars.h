@@ -102,13 +102,13 @@
 #define VAR_STARTER_CHOICE /* VAR_DEWFORD_TOWN_STATE*/   0x4052 // Valiant Var
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_ROUTE_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var
+#define VAR_ROUTE_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var (0-1 ben encounter) (1-2 devon parts) (2-3 noa encounter)
 #define VAR_PTOLEMAIS_CITY_STATE /*VAR_PACIFIDLOG_TOWN_STATE*/ 0x4056 // Valiant Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_RIVAL_NOA/*VAR_MAUVILLE_CITY_STATE*/         0x4059 // Valiant Var
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
+#define VAR_KEREN_CITY_STATE/*VAR_FORTREE_CITY_STATE*/  0x405B // Unused Var
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
