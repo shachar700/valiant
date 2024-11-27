@@ -64,7 +64,10 @@
     "PtolemaisCity_Gym_B1F",
     "PtolemaisCity_Houses",
     "PtolemaisCity_Mart",
-    "KerenTunnels"
+    "KerenTunnels",
+    "KerenCity_PokemonCenter",
+    "KerenCity_Mart",
+    "KerenCity_Gym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

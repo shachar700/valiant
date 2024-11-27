@@ -4660,6 +4660,36 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/KenkoriaCity/border.bin",
       "blockdata_filepath": "data/layouts/KenkoriaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY_POKEMON_CENTER",
+      "name": "KerenCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KerenCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY_MART",
+      "name": "KerenCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KerenCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CITY_GYM",
+      "name": "KerenCity_Gym_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordGym",
+      "border_filepath": "data/layouts/KerenCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCity_Gym/map.bin"
     }
   ]
 }

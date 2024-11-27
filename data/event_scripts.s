@@ -1124,3 +1124,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KerenCity/scripts.inc"
 
 	.include "data/maps/KenkoriaCity/scripts.inc"
+
+	.include "data/maps/KerenCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/KerenCity_Mart/scripts.inc"
+
+	.include "data/maps/KerenCity_Gym/scripts.inc"
