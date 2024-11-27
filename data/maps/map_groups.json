@@ -69,7 +69,8 @@
     "KerenCity_Mart",
     "KerenCity_Gym",
     "KerenCity_ResearchFacility",
-    "KerenCity_School"
+    "KerenCity_School",
+    "KerenCave"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

@@ -1134,3 +1134,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KerenCity_ResearchFacility/scripts.inc"
 
 	.include "data/maps/KerenCity_School/scripts.inc"
+
+	.include "data/maps/KerenCave/scripts.inc"

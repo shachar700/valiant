@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/KerenCity_School/border.bin",
       "blockdata_filepath": "data/layouts/KerenCity_School/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEREN_CAVE",
+      "name": "KerenCave_Layout",
+      "width": 19,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/KerenCave/border.bin",
+      "blockdata_filepath": "data/layouts/KerenCave/map.bin"
     }
   ]
 }
