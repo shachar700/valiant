@@ -3032,6 +3032,12 @@ extern const u8 gText_Larvitar[];
 extern const u8 gText_Bagon[];
 extern const u8 gText_Beldum[];
 
+// Repel Question
+extern const u8 gText_ans500[];
+extern const u8 gText_ans550[];
+extern const u8 gText_ans600[];
+extern const u8 gText_ans750[];
+
 // Naming Screen
 extern const u8 gText_MoveOkBack[];
 extern const u8 gText_YourName[];

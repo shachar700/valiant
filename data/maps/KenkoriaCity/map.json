@@ -3,7 +3,7 @@
   "name": "KenkoriaCity",
   "layout": "LAYOUT_KENKORIA_CITY",
   "music": "MUS_SLATEPORT",
-  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "region_map_section": "MAPSEC_KENKORIA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_CITY",

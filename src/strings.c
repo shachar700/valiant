@@ -1840,3 +1840,9 @@ const u8 gText_Dratini[] = _("Dratini");
 const u8 gText_Larvitar[] = _("Larvitar");
 const u8 gText_Bagon[] = _("Bagon");
 const u8 gText_Beldum[] = _("Beldum");
+
+// Repel Question options
+const u8 gText_ans500[] = _("500");
+const u8 gText_ans550[] = _("550");
+const u8 gText_ans600[] = _("600");
+const u8 gText_ans750[] = _("750");

@@ -786,6 +786,14 @@ static const struct MenuAction MultichoiceList_ChooseStarter[] =
     {gText_Beldum},
 };
 
+static const struct MenuAction MultichoiceList_RepelQuestion[] =
+{
+    {gText_ans500},
+    {gText_ans550},
+    {gText_ans600},
+    {gText_ans750},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -915,6 +923,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_CHOOSE_STARTER]             = MULTICHOICE(MultichoiceList_ChooseStarter),
+    [MULTI_REPEL_QUESTION]             = MULTICHOICE(MultichoiceList_RepelQuestion),
 };
 
 const u8 *const gStdStrings[] =

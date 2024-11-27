@@ -3,7 +3,7 @@
   "name": "KerenCity",
   "layout": "LAYOUT_KEREN_CITY",
   "music": "MUS_VERDANTURF",
-  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "region_map_section": "MAPSEC_KEREN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_CITY",
@@ -30,9 +30,9 @@
       "x": 18,
       "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
       "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -43,12 +43,12 @@
       "x": 3,
       "y": 23,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_CollectingNectar",
       "flag": "0"
     },
     {
@@ -61,7 +61,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_EmployeeQuestionOpportunity",
       "flag": "0"
     },
     {
@@ -69,12 +69,12 @@
       "x": 37,
       "y": 20,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_CelebiSighting",
       "flag": "0"
     },
     {
@@ -82,12 +82,12 @@
       "x": 14,
       "y": 31,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_DanceFestival",
       "flag": "0"
     },
     {
@@ -95,12 +95,12 @@
       "x": 30,
       "y": 20,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_SawSmashSighting",
       "flag": "0"
     },
     {
@@ -108,12 +108,12 @@
       "x": 22,
       "y": 35,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_ResearchFacility",
       "flag": "0"
     },
     {
@@ -121,12 +121,12 @@
       "x": 7,
       "y": 24,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KerenCity_EventScript_ShhImHiding",
       "flag": "0"
     }
   ],
@@ -184,7 +184,7 @@
       "y": 33,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "KerenCity_EventScript_CitySign"
     },
     {
       "type": "sign",
@@ -192,7 +192,7 @@
       "y": 27,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "KerenCity_EventScript_GymSign"
     },
     {
       "type": "sign",
@@ -200,7 +200,7 @@
       "y": 35,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "KerenCity_EventScript_ResearchFacilitySign"
     }
   ]
 }

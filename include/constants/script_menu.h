@@ -124,6 +124,7 @@
 #define MULTI_TAG_MATCH_TYPE               113
 #define MULTI_BERRY_PLOT                   114
 #define MULTI_CHOOSE_STARTER               115
+#define MULTI_REPEL_QUESTION               116
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0
