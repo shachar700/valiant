@@ -10,13 +10,13 @@ KerenCity_Gym_EventScript_SetFlashLevel::
 	goto_if_defeated TRAINER_BRAWLY_1, KerenCity_Gym_EventScript_SetLightsOn
 	call KerenCity_Gym_EventScript_CountTrainersDefeated
 	copyvar VAR_0x8001, VAR_0x8000
-	goto_if_eq VAR_0x8000, 0, KerenCity_Gym_EventScript_SetFlashLevel8
-	goto_if_eq VAR_0x8000, 1, KerenCity_Gym_EventScript_SetFlashLevel7
-	goto_if_eq VAR_0x8000, 2, KerenCity_Gym_EventScript_SetFlashLevel6
-	goto_if_eq VAR_0x8000, 3, KerenCity_Gym_EventScript_SetFlashLevel5
-	goto_if_eq VAR_0x8000, 4, KerenCity_Gym_EventScript_SetFlashLevel4
-	goto_if_eq VAR_0x8000, 5, KerenCity_Gym_EventScript_SetFlashLevel3
-	goto_if_eq VAR_0x8000, 5, KerenCity_Gym_EventScript_SetFlashLevel2
+	goto_if_eq VAR_0x8000, 1, KerenCity_Gym_EventScript_SetFlashLevel8
+	goto_if_eq VAR_0x8000, 2, KerenCity_Gym_EventScript_SetFlashLevel7
+	goto_if_eq VAR_0x8000, 3, KerenCity_Gym_EventScript_SetFlashLevel6
+	goto_if_eq VAR_0x8000, 4, KerenCity_Gym_EventScript_SetFlashLevel5
+	goto_if_eq VAR_0x8000, 5, KerenCity_Gym_EventScript_SetFlashLevel4
+	goto_if_eq VAR_0x8000, 6, KerenCity_Gym_EventScript_SetFlashLevel3
+	goto_if_eq VAR_0x8000, 7, KerenCity_Gym_EventScript_SetFlashLevel2
 	goto KerenCity_Gym_EventScript_SetFlashLevel1
 
 KerenCity_Gym_EventScript_SetLightsOn::
