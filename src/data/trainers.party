@@ -4872,6 +4872,7 @@ Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
 
 Machop
 Level: 16
@@ -7871,29 +7872,33 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Sludge
 
 === TRAINER_JOCELYN ===
-Name: JOCELYN
+Name: AYELET
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Meditite
-Level: 13
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tyrogue
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LAURA ===
-Name: LAURA
-Class: Battle Girl
-Pic: Battle Girl
+Name: LILAH
+Class: Triathlete
+Pic: Running Triathlete F
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move  / Try To Faint / Check Viability
 
-Meditite
-Level: 13
+Machop
+Level: 15
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -10640,33 +10645,34 @@ Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_BRENDEN ===
-Name: BRENDEN
+Name: RON
 Class: Sailor
 Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move  / Try To Faint / Check Viability
 
-Machop
-Level: 13
+Tyrogue
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LILITH ===
-Name: LILITH
+Name: DAFNA
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+Items: Potion
+AI: Check Bad Move  / Try To Faint / Check Viability
 
 Meditite
-Level: 13
+Level: 15
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
-Name: CRISTIAN
+Name: LEV
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -10675,7 +10681,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 13
+Level: 14
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Mankey
+Level: 14
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SYLVIA ===
@@ -13142,26 +13152,26 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARCOS ===
-Name: MARCOS
-Class: Guitarist
-Pic: Guitarist
-Gender: Male
+Name: MIA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
+Mankey
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RHETT ===
-Name: RHETT
+Name: ITZIK
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Makuhita
 Level: 15
@@ -13271,7 +13281,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WYATT ===
-Name: WYATT
+Name: RAM
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -13279,12 +13289,8 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Aron
-Level: 18
+Mankey
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELINA ===
@@ -13952,21 +13958,21 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOHNSON ===
-Name: JOHNSON
-Class: Youngster
-Pic: Youngster
+Name: FREDDY
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
 Shroomish
-Level: 8
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Leech Seed
+- Drain Punch
+- Mega Drain
+- Toxic
 
 === TRAINER_MELINA ===
 Name: MELINA

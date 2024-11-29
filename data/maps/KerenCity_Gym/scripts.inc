@@ -121,25 +121,36 @@ KerenCity_Gym_EventScript_AnimateFlashFullBrightness::
 	animateflash 0
 	call KerenCity_Gym_EventScript_SetFlashLevel
 	return
+
 KerenCity_Gym_EventScript_CountTrainersDefeated::
 	setvar VAR_0x8000, 0
 	goto_if_not_defeated TRAINER_TAKAO, KerenCity_Gym_EventScript_CheckJocelyn
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_CheckJocelyn::
+	goto_if_not_defeated TRAINER_JOCELYN, KerenCity_Gym_EventScript_CheckMia
+	addvar VAR_0x8000, 1
+
+KerenCity_Gym_EventScript_CheckMia::
 	goto_if_not_defeated TRAINER_JOCELYN, KerenCity_Gym_EventScript_CheckLaura
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_CheckLaura::
 	goto_if_not_defeated TRAINER_LAURA, KerenCity_Gym_EventScript_CheckBrenden
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_CheckBrenden::
 	goto_if_not_defeated TRAINER_BRENDEN, KerenCity_Gym_EventScript_CheckCristian
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_CheckCristian::
 	goto_if_not_defeated TRAINER_CRISTIAN, KerenCity_Gym_EventScript_CheckLilith
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_CheckLilith::
 	goto_if_not_defeated TRAINER_LILITH, KerenCity_Gym_EventScript_StopCountingTrainers
 	addvar VAR_0x8000, 1
+
 KerenCity_Gym_EventScript_StopCountingTrainers::
 	return
 
@@ -175,7 +186,7 @@ KerenCity_Gym_EventScript_GiveBulkUp::
 	return
 
 KerenCity_Gym_EventScript_Takao::
-	trainerbattle_single TRAINER_TAKAO, KerenCity_Gym_Text_TakaoIntro, KerenCity_Gym_Text_TakaoDefeat, KerenCity_Gym_EventScript_TakaoBrightenRoom
+	trainerbattle_single TRAINER_RHETT, KerenCity_Gym_Text_TakaoIntro, KerenCity_Gym_Text_TakaoDefeat, KerenCity_Gym_EventScript_TakaoBrightenRoom
 	msgbox KerenCity_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -234,6 +245,26 @@ KerenCity_Gym_EventScript_LilithBrightenRoom::
 	release
 	end
 
+KerenCity_Gym_EventScript_Mia::
+	trainerbattle_single TRAINER_MARC, KerenCity_Gym_Text_MiaIntro, KerenCity_Gym_Text_MiaDefeat, KerenCity_Gym_EventScript_MiaBrightenRoom
+	msgbox KerenCity_Gym_Text_MiaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+KerenCity_Gym_EventScript_MiaBrightenRoom::
+	call KerenCity_Gym_EventScript_BrightenRoom
+	release
+	end
+
+KerenCity_EventScript_Freddy::
+	trainerbattle_single TRAINER_JOHNSON, KerenCity_Gym_Text_FreddyIntro, KerenCity_Gym_Text_FreddyDefeat
+	msgbox KerenCity_Gym_Text_FreddyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+KerenCity_EventScript_Ram::
+	trainerbattle_single TRAINER_WYATT, KerenCity_Gym_Text_RamIntro, KerenCity_Gym_Text_RamDefeat
+	msgbox KerenCity_Gym_Text_RamPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 KerenCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
@@ -290,20 +321,20 @@ KerenCity_Gym_Text_GymGuidePostVictory:
 	.string "Your future is bright, too!$"
 
 KerenCity_Gym_Text_TakaoIntro:
-	.string "Might is right!\n"
-	.string "Come on!$"
+	.string "I hope you brought power because here\n"
+	.string "I come! Might on!$"
 
 KerenCity_Gym_Text_TakaoDefeat:
-	.string "Not enough power…$"
+	.string "That was not enough power…$"
 
 KerenCity_Gym_Text_TakaoPostBattle:
-	.string "Your skill overcame my strength!\n"
-	.string "Your technique is commendable!$"
+	.string "Your skill got the best of my strength!\n"
+	.string "Your technique is incredible!$"
 
 KerenCity_Gym_Text_JocelynIntro:
-	.string "There's no need for BRAWLY to be\n"
-	.string "involved!\p"
-	.string "I'll crush you!$"
+	.string "You are almost there\n"
+	.string "I guess you want more trainig!\p"
+	.string "Count me in. I'll crush you!$"
 
 KerenCity_Gym_Text_JocelynDefeat:
 	.string "But… How?\n"
@@ -317,8 +348,8 @@ KerenCity_Gym_Text_JocelynPostBattle:
 	.string "CHAMPION!$"
 
 KerenCity_Gym_Text_LauraIntro:
-	.string "Don't you dare brush me off!\n"
-	.string "It's not my fault if you cry!$"
+	.string "Can you see me now?\n"
+	.string "It's not my fault if you can't!$"
 
 KerenCity_Gym_Text_LauraDefeat:
 	.string "Waaaaaaah!\n"
@@ -328,7 +359,7 @@ KerenCity_Gym_Text_LauraPostBattle:
 	.string "I battle in the dark to make my heart\n"
 	.string "stronger.\p"
 	.string "But because it's so dark, I can never\n"
-	.string "see BRAWLY's face…$"
+	.string "see my POKéMON's face…$"
 
 KerenCity_Gym_Text_LilithIntro:
 	.string "Ufufu…\n"
@@ -338,12 +369,24 @@ KerenCity_Gym_Text_LilithDefeat:
 	.string "Oh, you…\n"
 	.string "I don't want to know you!$"
 
+KerenCity_Gym_Text_MiaIntro:
+	.string "This gym is so cool.\n"
+	.string "I could stay here forever.$"
+
+KerenCity_Gym_Text_MiaDefeat:
+	.string "That is okay.\n"
+	.string "You can now proceed.$"
+
+KerenCity_Gym_Text_MiaPostBattle:
+	.string "When I was young, I wanted to beat the\n"
+	.string "gym leader but now I help him.$"
+
 KerenCity_Gym_Text_LilithPostBattle:
 	.string "You deserve to stay lost and end up\n"
 	.string "back at the entrance again!$"
 
 KerenCity_Gym_Text_BrendenIntro:
-	.string "I'll show you the gumption of\n"
+	.string "I'll show you the story of\n"
 	.string "a sailing man!$"
 
 KerenCity_Gym_Text_BrendenDefeat:
@@ -365,6 +408,30 @@ KerenCity_Gym_Text_CristianDefeat:
 KerenCity_Gym_Text_CristianPostBattle:
 	.string "You win!\n"
 	.string "Go after that BADGE!$"
+
+KerenCity_Gym_Text_FreddyIntro:
+
+KerenCity_Gym_Text_FreddyIntro:
+	.string "No rest for the wicked.\p"
+	.string "I love to climb walls but there's no\n"
+	.string "walls to climb here.$"
+
+KerenCity_Gym_Text_FreddyDefeat:
+	.string "Good one.$"
+
+KerenCity_Gym_Text_FreddyPostBattle:
+	.string "I definitely need more training.\n"
+	.string "I should climb more.$"
+
+KerenCity_Gym_Text_RamIntro:
+	.string "My POKéMON are not afraid of the dark.\p"
+	.string "I am though.$"
+KerenCity_Gym_Text_RamDefeat:
+	.string "Grr you got me fair and square.$"
+
+KerenCity_Gym_Text_RamPostBattle:
+	.string "Nice battle.\n"
+	.string "I can tell you've been training.$"
 
 KerenCity_Gym_Text_BrawlyIntro:
 	.string "I'm BRAWLY!\n"
