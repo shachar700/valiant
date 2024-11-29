@@ -164,14 +164,6 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	call KerenCity_Gym_EventScript_GiveBulkUp
 	closemessage
 	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox KerenCity_Gym_Text_RegisteredBrawly, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_BRAWLY_MATCH_CALL
-	setvar VAR_ROXANNE_CALL_STEP_COUNTER, 0
-	setflag FLAG_ENABLE_ROXANNE_FIRST_CALL
 	release
 	end
 
@@ -278,19 +270,19 @@ KerenCity_Gym_EventScript_GymStatue::
 	end
 
 KerenCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
-	.string "FIGHTING-type POKéMON.\p"
-	.string "Going against him with NORMAL-type\n"
+	.string "AAAAAAAAAAAAAAAAAAAAAAAAAAAA\p"
+	.string "You spooked me.\p"
+	.string "It's too dark in here. If you beat the\n"
+	.string "trainers here it will lighten up.\p"
+	.string "It is known. Yes. It is known.\p"
+	.string "Anyway, AMIT loves to train his\n"
+	.string "FIGHTING-type POKéMON in the dark.\p"
+	.string "That's why we can't really see in here.\p"
+	.string "Going against him with low level\n"
 	.string "POKéMON is asking for trouble.\p"
 	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "smack down on NORMAL POKéMON,\l"
+	.string "punch on NORMAL POKéMON,\l"
 	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
-	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
 	.string "Hey, okay, go for it!$"
 
 KerenCity_Gym_Text_GymGuidePostVictory:
@@ -409,19 +401,15 @@ KerenCity_Gym_Text_ExplainBulkUp:
 	.string "and DEFENSE stats.\p"
 	.string "… … … … … …$"
 
-KerenCity_Gym_Text_RegisteredBrawly:
-	.string "Registered GYM LEADER BRAWLY\n"
-	.string "in the POKéNAV.$"
-
 KerenCity_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among TRAINERS one day!$"
 
 KerenCity_Gym_Text_GymStatue:
-	.string "DEWFORD TOWN POKéMON GYM$"
+	.string "KEREN CITY POKéMON GYM$"
 
 KerenCity_Gym_Text_GymStatueCertified:
-	.string "DEWFORD TOWN POKéMON GYM\p"
-	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
+	.string "KEREN CITY POKéMON GYM\p"
+	.string "AMIT'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
