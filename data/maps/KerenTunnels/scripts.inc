@@ -1,5 +1,10 @@
 KerenTunnels_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION KerenTunnels_OnTransition
 	.byte 0
+
+KerenTunnels_OnTransition:
+	setflashlevel 7
+	end
 
 KerenTunnels_EventScript_Ilan::
 	trainerbattle_single TRAINER_BRICE, KerenTunnels_Text_HereIcome, KerenTunnels_Text_UghITried
@@ -65,6 +70,29 @@ KerenTunnels_EventScript_Daniel_M::
 	trainerbattle_single TRAINER_DAVIS, KerenTunnels_Text_BugPokemon, KerenTunnels_Text_SoManyOfThem
 	msgbox KerenTunnels_Text_IGaveItMyAll, MSGBOX_AUTOCLOSE
 	end
+
+KerenTunnels_EventScript_Bag::
+	goto_if_unset FLAG_TEMP_1, KerenTunnels_EventScript_Candle
+	msgbox KerenTunnels_Text_BagOfCandles MSGBOX_SIGN
+	end
+
+KerenTunnels_EventScript_Candle::
+	lock
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox KerenTunnels_Text_Candle MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	animateflash 6
+	setflashlevel 6
+	setflag FLAG_TEMP_1
+	releaseall
+	end
+
+KerenTunnels_Text_Candle:
+	.string "{PLAYER} found a candle in a bag.$"
+
+KerenTunnels_Text_BagOfCandles:
+	.string "A bag of candles.$"
 
 KerenTunnels_Text_HereIcome:
 	.string "Watch out for my POKéMON.$"
