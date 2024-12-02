@@ -153,27 +153,11 @@ const u8 *const gPokeblockWasTooXStringTable[FLAVOR_COUNT] =
     [FLAVOR_SOUR]   = COMPOUND_STRING("was too sour!"),
 };
 
-static const u8 sText_PlayerUsedItem[] = _("You used\n{B_LAST_ITEM}!");
-static const u8 sText_WallyUsedItem[] = _("BEN used\n{B_LAST_ITEM}!");
-static const u8 sText_Trainer1UsedItem[] = _("{B_ATK_TRAINER_CLASS} {B_ATK_TRAINER_NAME}\nused {B_LAST_ITEM}!");
-static const u8 sText_TrainerBlockedBall[] = _("The TRAINER blocked the BALL!");
-static const u8 sText_DontBeAThief[] = _("Don't be a thief!");
-static const u8 sText_ItDodgedBall[] = _("It dodged the thrown BALL!\nThis POKéMON can't be caught!");
-static const u8 sText_YouMissedPkmn[] = _("You missed the POKéMON!");
-static const u8 sText_PkmnBrokeFree[] = _("Oh, no!\nThe POKéMON broke free!");
-static const u8 sText_ItAppearedCaught[] = _("Aww!\nIt appeared to be caught!");
-static const u8 sText_AarghAlmostHadIt[] = _("Aargh!\nAlmost had it!");
-static const u8 sText_ShootSoClose[] = _("Shoot!\nIt was so close, too!");
-static const u8 sText_GotchaPkmnCaughtPlayer[] = _("Gotcha!\n{B_DEF_NAME} was caught!{WAIT_SE}{PLAY_BGM MUS_CAUGHT}\p");
-static const u8 sText_GotchaPkmnCaughtWally[] = _("Gotcha!\n{B_DEF_NAME} was caught!{WAIT_SE}{PLAY_BGM MUS_CAUGHT}{PAUSE 127}");
-static const u8 sText_GiveNicknameCaptured[] = _("Give a nickname to the\ncaptured {B_DEF_NAME}?");
-static const u8 sText_PkmnSentToPC[] = _("{B_DEF_NAME} was sent to\n{B_PC_CREATOR_NAME} PC.");
 static const u8 sText_Someones[] = _("someone's");
 static const u8 sText_Lanettes[] = _("LANETTE's"); //no decapitalize until it is everywhere
 static const u8 sText_EnigmaBerry[] = _("ENIGMA BERRY"); //no decapitalize until it is everywhere
 static const u8 sText_BerrySuffix[] = _(" BERRY"); //no decapitalize until it is everywhere
 const u8 gText_EmptyString3[] = _("");
-static const u8 sText_YouThrowABallNowRight[] = _("When their HP is low, throw a BALL\nIt… will have higher catch rate!");
 
 static const u8 sText_TwoInGameTrainersDefeated[] = _("You defeated {B_TRAINER1_NAME_WITH_CLASS} and {B_TRAINER2_NAME_WITH_CLASS}!\p");
 
@@ -1424,8 +1408,8 @@ const u8 gText_PkmnIsEvolving[] = _("What?\n{STR_VAR_1} is evolving!");
 const u8 gText_CongratsPkmnEvolved[] = _("Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{WAIT_SE}\p");
 const u8 gText_PkmnStoppedEvolving[] = _("Huh? {STR_VAR_1}\nstopped evolving!\p");
 const u8 gText_EllipsisQuestionMark[] = _("……?\p");
-const u8 gText_WhatWillPkmnDo[] = _("What will\n{B_BUFF1} do?");
-const u8 gText_WhatWillPkmnDo2[] = _("What will\n{B_PLAYER_NAME} do?");
+const u8 gText_WhatWillPkmnDo[] = _("What will {B_BUFF1} do?");
+const u8 gText_WhatWillPkmnDo2[] = _("What will {B_PLAYER_NAME} do?");
 const u8 gText_WhatWillWallyDo[] = _("What will\nBEN do?");
 const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
 const u8 gText_BattleMenu[] = _("Battle{CLEAR_TO 56}Bag\nPokémon{CLEAR_TO 56}Run");
