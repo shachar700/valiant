@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_ValiantTownsAndRoutes",
+    "gMapGroup_ValiantDungeons",
     "gMapGroup_ValiantIndoor",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -49,6 +50,11 @@
     "KerenCity",
     "KenkoriaCity"
   ],
+  "gMapGroup_ValiantDungeons": [
+    "SodoriTunnels",
+    "KerenTunnels",
+    "KerenCave"
+  ],
   "gMapGroup_ValiantIndoor": [
     "SerenityLake",
     "HawamCity_PlayersHouse_1F",
@@ -59,18 +65,15 @@
     "HawamCity_RivalsHouse",
     "HawamCity_Gym",
     "PtolemaisCity_PokemonCenter",
-    "SodoriTunnels",
     "PtolemaisCity_Gym_1F",
     "PtolemaisCity_Gym_B1F",
     "PtolemaisCity_Houses",
     "PtolemaisCity_Mart",
-    "KerenTunnels",
     "KerenCity_PokemonCenter",
     "KerenCity_Mart",
     "KerenCity_Gym",
     "KerenCity_ResearchFacility",
-    "KerenCity_School",
-    "KerenCave"
+    "KerenCity_School"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
