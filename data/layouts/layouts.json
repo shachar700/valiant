@@ -4722,14 +4722,14 @@
       "blockdata_filepath": "data/layouts/KerenCave/map.bin"
     },
     {
-      "id": "LAYOUT_TIPSIDE_CITY",
-      "name": "TipsideCity_Layout",
+      "id": "LAYOUT_PINPOINT_CITY",
+      "name": "PinpointCity_Layout",
       "width": 60,
       "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/TipsideCity/border.bin",
-      "blockdata_filepath": "data/layouts/TipsideCity/map.bin"
+      "border_filepath": "data/layouts/PinpointCity/border.bin",
+      "blockdata_filepath": "data/layouts/PinpointCity/map.bin"
     }
   ]
 }

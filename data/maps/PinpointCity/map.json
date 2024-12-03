@@ -1,7 +1,7 @@
 {
-  "id": "MAP_TIPSIDE_CITY",
-  "name": "TipsideCity",
-  "layout": "LAYOUT_TIPSIDE_CITY",
+  "id": "MAP_PINPOINT_CITY",
+  "name": "PinpointCity",
+  "layout": "LAYOUT_PINPOINT_CITY",
   "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_KENKORIA_CITY",
   "requires_flash": false,
