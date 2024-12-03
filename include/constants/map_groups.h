@@ -16,6 +16,7 @@
 #define MAP_ROUTE_F        (7 | (0 << 8))
 #define MAP_KEREN_CITY     (8 | (0 << 8))
 #define MAP_KENKORIA_CITY  (9 | (0 << 8))
+#define MAP_TIPSIDE_CITY   (10 | (0 << 8))
 
 // gMapGroup_ValiantDungeons
 #define MAP_SODORI_TUNNELS (0 | (1 << 8))
