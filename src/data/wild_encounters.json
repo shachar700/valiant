@@ -11920,32 +11920,32 @@
             "mons": [
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_SLAKOTH"
               },
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_MAKUHITA"
               },
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_VOLBEAT"
               },
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_ILLUMISE"
               },
               {
                 "min_level": 12,
-                "max_level": 12,
+                "max_level": 13,
                 "species": "SPECIES_ELECTRIKE"
               },
               {

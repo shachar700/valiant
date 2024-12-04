@@ -51,7 +51,7 @@
 #define FLAG_HIDE_ROUTE_C_SCIENTIST/*UNUSED_0x026*/    0x26 // Valiant Flag
 #define FLAG_HIDE_ROUTE_C_RIVAL/*FLAG_UNUSED_0x027*/    0x27 // Valiant Flag
 #define FLAG_REPEL_QUESTION_ENCOUNTER/*FLAG_UNUSED_0x028*/    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_DEFEATED_KEREN_GYM/*FLAG_UNUSED_0x029*/    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
@@ -1051,13 +1051,13 @@
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA //Valiant
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB //Valiant
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC //Valiant
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
+#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED //Valiant
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE // Valiant
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF // Valiant
 #define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 // Valiant
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
+#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1 // Valiant
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 // Valiant
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
+#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3 // Valiant
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6

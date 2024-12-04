@@ -166,11 +166,9 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox KerenCity_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_DEWFORD_GYM
+	setflag FLAG_DEFEATED_KEREN_GYM
 	setflag FLAG_BADGE02_GET
-	addvar VAR_PETALBURG_GYM_STATE, 1
-	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
-	setvar VAR_0x8008, 2
+	addvar VAR_KEREN_CITY_GYM_STATE, 1
 	call Common_EventScript_SetGymTrainers
 	call KerenCity_Gym_EventScript_GiveBulkUp
 	closemessage
@@ -268,7 +266,7 @@ KerenCity_EventScript_Ram::
 KerenCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, KerenCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_DEFEATED_KEREN_GYM, KerenCity_Gym_EventScript_GymGuidePostVictory
 	msgbox KerenCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -434,27 +432,27 @@ KerenCity_Gym_Text_RamPostBattle:
 	.string "I can tell you've been training.$"
 
 KerenCity_Gym_Text_BrawlyIntro:
-	.string "I'm BRAWLY!\n"
-	.string "DEWFORD's GYM LEADER!\p"
-	.string "I've been churned in the rough waves\n"
-	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
+	.string "I'm AMIT!\n"
+	.string "KEREN's GYM LEADER!\p"
+	.string "I've been training here all my life,\n"
+	.string "mastering martial arts, I've grown tough\l"
+	.string "blooming in the dark spaces!\p"
 	.string "So you wanted to challenge me?\n"
 	.string "Let me see what you're made of!$"
 
 KerenCity_Gym_Text_BrawlyDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
-	.string "You swamped me!\p"
+	.string "impact than I expected!\p"
+	.string "You thrashed me!\p"
 	.string "Okay, you've got me.\n"
 	.string "Take this GYM BADGE!$"
 
 KerenCity_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
-	.string "from BRAWLY.$"
+	.string "{PLAYER} received the STUBBORN BADGE\n"
+	.string "from AMIT.$"
 
 KerenCity_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The KNUCKLE BADGE makes all POKéMON\n"
+	.string "The STUBBORN BADGE makes all POKéMON\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
@@ -470,8 +468,8 @@ KerenCity_Gym_Text_ExplainBulkUp:
 
 KerenCity_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "force that stops at nothing,\l"
+	.string "you'll overcome all TRAINERS one day!$"
 
 KerenCity_Gym_Text_GymStatue:
 	.string "KEREN CITY POKéMON GYM$"
