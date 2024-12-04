@@ -1,14 +1,46 @@
+.set LOCALID_SMASH_FEMALE, 9 
+.set LOCALID_SMASH_MALE_L, 11 
+.set LOCALID_SMASH_MALE_R, 10 
+
 KerenCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, KerenCity_OnTransition
 	.byte 0
 
 KerenCity_OnTransition::
 	call_if_eq VAR_RIVAL_NOA, 1, KerenCity_EventScript_SetNoaOut
+	call_if_set FLAG_DEFEATED_KEREN_GYM, KerenCity_EventScript_SetGrunts
 	end
+
+KerenCity_EventScript_SetGrunts:
+	setobjectxyperm LOCALID_SMASH_FEMALE, 34, 32
+	setobjectmovementtype LOCALID_SMASH_FEMALE, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectxyperm LOCALID_SMASH_MALE_L, 33, 33
+	setobjectmovementtype LOCALID_SMASH_MALE_L, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectxyperm LOCALID_SMASH_MALE_R, 35, 33
+	setobjectmovementtype LOCALID_SMASH_MALE_R, MOVEMENT_TYPE_LOOK_AROUND
+	return
 
 KerenCity_EventScript_SetNoaOut::
 	setflag FLAG_HIDE_ROUTE_C_RIVAL
 	setvar VAR_RIVAL_NOA, 2
+	end
+
+KerenCity_EventScript_GruntsMoveOut::
+	lock
+	msgbox KerenCity_Text_GruntsMoveOut, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_SMASH_FEMALE, KerenCity_Movement_SmashFemaleToRow
+	waitmovement 0
+	applymovement LOCALID_SMASH_MALE_R, KerenCity_Movement_SmashMaleROut
+	applymovement LOCALID_SMASH_FEMALE, KerenCity_Movement_SmashFemaleOut
+	applymovement LOCALID_SMASH_MALE_L, KerenCity_Movement_SmashMaleLOut
+	waitmovement 0
+	removeobject LOCALID_SMASH_FEMALE
+	removeobject LOCALID_SMASH_MALE_L
+	removeobject LOCALID_SMASH_MALE_R
+	setflag FLAG_HIDE_KEREN_CITY_SMASH_GRUNTS
+	addvar VAR_KEREN_CITY_GYM_STATE, 1
+	release
 	end
 
 KerenCity_EventScript_CitySign::
@@ -156,3 +188,43 @@ KerenCity_Text_ResearchFacilitySign:
 
 KerenCity_Text_PokemonSchoolSign:
 	.string "KEREN CITY POKéMON School$"
+
+KerenCity_Text_GruntsMoveOut:
+	.string "Lets move out.\n"
+	.string "No point in wasting time here.$"
+
+KerenCity_Movement_SmashFemaleToRow:
+	walk_down
+	walk_in_place_faster_right
+	delay_8
+	step_end
+
+KerenCity_Movement_SmashMaleLOut:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+KerenCity_Movement_SmashMaleROut:
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+KerenCity_Movement_SmashFemaleOut:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	step_end
