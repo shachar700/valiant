@@ -1429,8 +1429,9 @@ Starmie
 Level: 46
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+/* Valiant */
 === TRAINER_WILTON_1 ===
-Name: WILTON
+Name: EREZ
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1448,6 +1449,10 @@ Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Makuhita
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Electrike
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2634,8 +2639,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Odor Sleuth
 - Sand Attack
 
+/* Valiant */
 === TRAINER_STEVE_1 ===
-Name: STEVE
+Name: MICAH
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2644,6 +2650,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Aron
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mawile
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3856,8 +3866,9 @@ Bellossom
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_TRAVIS ===
-Name: TRAVIS
+Name: IDAN
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -3865,7 +3876,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Vulpix
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vaporeon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6839,8 +6854,9 @@ Magneton
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_DYLAN_1 ===
-Name: DYLAN
+Name: RAZ
 Class: Triathlete
 Pic: Running Triathlete M
 Gender: Male
@@ -6849,6 +6865,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Voltorb
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6904,8 +6924,9 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_MARIA_1 ===
-Name: MARIA
+Name: RONI
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -6914,7 +6935,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
-Level: 17
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARIA_2 ===
@@ -8013,7 +8038,7 @@ Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MADELINE_1 ===
-Name: MADELINE
+Name: ALISA
 Class: Parasol Lady
 Pic: Parasol Lady
 Gender: Female
@@ -8028,6 +8053,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Magnitude
 - Sunny Day
+
+Magma
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARISSA ===
 Name: CLARISSA
@@ -8567,8 +8596,9 @@ Starmie
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_HEIDI ===
-Name: HEIDI
+Name: LIEM
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -8576,21 +8606,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
+Azurill
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
 
-Baltoy
-Level: 22
+Marill
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
 
 === TRAINER_BECKY ===
 Name: BECKY
@@ -11556,8 +11578,9 @@ Machop
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_TRENT_1 ===
-Name: TRENT
+Name: SHLOMI
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -11569,11 +11592,11 @@ Geodude
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
+Phanpy
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
+Sandshrew
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13280,6 +13303,7 @@ Sandshrew
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_WYATT ===
 Name: RAM
 Class: Pokemaniac
