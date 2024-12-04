@@ -12029,7 +12029,7 @@ F_TRAINER_FEMALE |
     [TRAINER_BRAWLY_1] =
     {
 #line 4867
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("AMIT"),
 #line 4868
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4869
