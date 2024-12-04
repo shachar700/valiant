@@ -141,15 +141,18 @@ RouteC_EventScript_Braille_Lightning::
 
 RouteC_Braille_Flames:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "FLAMES$"
+	.braille "FOUR PINS\n"
+	.braille "IN YOUR LIMB$"
 
 RouteC_Braille_Waves:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "WAVES$"
+	.braille "SIX BIRDS\n"
+	.braille "HELD IN POCKET$"
 
 RouteC_Braille_Lightning:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "LIGHTNING$"
+	.braille "SIT AND RELAX\n"
+	.braille "RIGHT FOR ME$"
 
 RouteC_Text_NoaRival:
 	.string "{COLOR RED}NOA:{COLOR DARK_GRAY} Hey {PLAYER}!\n"
