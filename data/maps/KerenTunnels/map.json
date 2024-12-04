@@ -3,7 +3,7 @@
   "name": "KerenTunnels",
   "layout": "LAYOUT_KEREN_TUNNELS",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region_map_section": "MAPSEC_ALTERING_CAVE",
+  "region_map_section": "MAPSEC_KEREN_TUNNELS",
   "requires_flash": true,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

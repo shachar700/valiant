@@ -3,7 +3,7 @@
   "name": "KerenCave",
   "layout": "LAYOUT_KEREN_CAVE",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region_map_section": "MAPSEC_KEREN_CITY",
+  "region_map_section": "MAPSEC_KEREN_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
