@@ -118,38 +118,38 @@ RouteC_EventScript_Noa_Trigger::
 	release
 	end
 
-RouteC_EventScript_Braille_Flames::
+RouteC_EventScript_Braille_Pins::
 	lockall
-	braillemsgbox RouteC_Braille_Flames
+	braillemsgbox RouteC_Braille_Pins
 	closemessage
 	releaseall
 	end
 
-RouteC_EventScript_Braille_Waves::
+RouteC_EventScript_Braille_Birds::
 	lockall
-	braillemsgbox RouteC_Braille_Waves
+	braillemsgbox RouteC_Braille_Birds
 	closemessage
 	releaseall
 	end
 
-RouteC_EventScript_Braille_Lightning::
+RouteC_EventScript_Braille_Relax::
 	lockall
-	braillemsgbox RouteC_Braille_Lightning
+	braillemsgbox RouteC_Braille_Relax
 	closemessage
 	releaseall
 	end
 
-RouteC_Braille_Flames:
+RouteC_Braille_Pins:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "FOUR PINS\n"
 	.braille "IN YOUR LIMB$"
 
-RouteC_Braille_Waves:
+RouteC_Braille_Birds:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "SIX BIRDS\n"
 	.braille "HELD IN POCKET$"
 
-RouteC_Braille_Lightning:
+RouteC_Braille_Relax:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "SIT AND RELAX\n"
 	.braille "RIGHT FOR ME$"

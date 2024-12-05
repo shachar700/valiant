@@ -290,7 +290,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RouteC_EventScript_Braille_Flames"
+      "script": "RouteC_EventScript_Braille_Pins"
     },
     {
       "type": "sign",
@@ -298,7 +298,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RouteC_EventScript_Braille_Waves"
+      "script": "RouteC_EventScript_Braille_Birds"
     },
     {
       "type": "sign",
@@ -306,7 +306,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RouteC_EventScript_Braille_Lightning"
+      "script": "RouteC_EventScript_Braille_Relax"
     }
   ]
 }
