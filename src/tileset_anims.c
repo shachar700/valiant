@@ -692,8 +692,11 @@ static void QueueAnimTiles_General_Yellow_Flower(u16 timer)
 
 static void QueueAnimTiles_General_Flower(u16 timer)
 {
+    return;
+    /*
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Flower);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(540)), 4 * TILE_SIZE_4BPP); //476
+    */
 }
 
 
@@ -999,8 +1002,11 @@ static void TilesetAnim_BattleFrontierOutsideEast(u16 timer)
 
 static void QueueAnimTiles_General_LandWaterEdge(u16 timer)
 {
+    return;
+    /*
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_LandWaterEdge);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_LandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(540)), 10 * TILE_SIZE_4BPP); //464
+    */
 }
 
 static void QueueAnimTiles_Lavaridge_Steam(u8 timer)
