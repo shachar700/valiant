@@ -1215,3 +1215,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KerenCave/scripts.inc"
 
 	.include "data/maps/PinpointCity/scripts.inc"
+
+	.include "data/maps/KenkoriaCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/KenkoriaCity_Mart/scripts.inc"
+
+	.include "data/maps/KenkoriaCity_PrettyPetalFlowerShop/scripts.inc"
+
+	.include "data/maps/KenkoriaCity_Gym/scripts.inc"

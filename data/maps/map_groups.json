@@ -74,7 +74,11 @@
     "KerenCity_Mart",
     "KerenCity_Gym",
     "KerenCity_ResearchFacility",
-    "KerenCity_School"
+    "KerenCity_School",
+    "KenkoriaCity_PokemonCenter",
+    "KenkoriaCity_Mart",
+    "KenkoriaCity_PrettyPetalFlowerShop",
+    "KenkoriaCity_Gym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

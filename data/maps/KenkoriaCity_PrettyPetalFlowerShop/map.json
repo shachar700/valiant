@@ -1,0 +1,41 @@
+{
+  "id": "MAP_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
+  "name": "KenkoriaCity_PrettyPetalFlowerShop",
+  "layout": "LAYOUT_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
+  "music": "MUS_LILYCOVE",
+  "region_map_section": "MAPSEC_KENKORIA_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

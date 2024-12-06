@@ -4730,6 +4730,46 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/PinpointCity/border.bin",
       "blockdata_filepath": "data/layouts/PinpointCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY_POKEMON_CENTER",
+      "name": "KenkoriaCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KenkoriaCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY_MART",
+      "name": "KenkoriaCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KenkoriaCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
+      "name": "KenkoriaCity_PrettyPetalFlowerShop_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "border_filepath": "data/layouts/KenkoriaCity_PrettyPetalFlowerShop/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity_PrettyPetalFlowerShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY_GYM",
+      "name": "KenkoriaCity_Gym_Layout",
+      "width": 15,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "border_filepath": "data/layouts/KenkoriaCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity_Gym/map.bin"
     }
   ]
 }
