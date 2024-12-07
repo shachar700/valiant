@@ -4780,6 +4780,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/KenkoriaSea/border.bin",
       "blockdata_filepath": "data/layouts/KenkoriaSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_CITY_BIKE_SHOP",
+      "name": "KenkoriaCity_BikeShop_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/KenkoriaCity_BikeShop/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaCity_BikeShop/map.bin"
     }
   ]
 }

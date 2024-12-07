@@ -79,7 +79,8 @@
     "KenkoriaCity_PokemonCenter",
     "KenkoriaCity_Mart",
     "KenkoriaCity_PrettyPetalFlowerShop",
-    "KenkoriaCity_Gym"
+    "KenkoriaCity_Gym",
+    "KenkoriaCity_BikeShop"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

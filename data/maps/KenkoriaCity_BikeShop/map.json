@@ -1,8 +1,8 @@
 {
-  "id": "MAP_KENKORIA_CITY_MART",
-  "name": "KenkoriaCity_Mart",
-  "layout": "LAYOUT_KENKORIA_CITY_MART",
-  "music": "MUS_POKE_MART",
+  "id": "MAP_KENKORIA_CITY_BIKE_SHOP",
+  "name": "KenkoriaCity_BikeShop",
+  "layout": "LAYOUT_KENKORIA_CITY_BIKE_SHOP",
+  "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_KENKORIA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -15,24 +15,11 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 1,
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 7,
       "y": 3,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "KenkoriaCity_Mart_EventScript_Clerk",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
-      "x": 8,
-      "y": 2,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -41,9 +28,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
-      "x": 7,
-      "y": 2,
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 6,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -54,22 +41,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
       "x": 9,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-      "x": 5,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -83,17 +57,17 @@
   "warp_events": [
     {
       "x": 3,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_KENKORIA_CITY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "3"
     },
     {
       "x": 4,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_KENKORIA_CITY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
