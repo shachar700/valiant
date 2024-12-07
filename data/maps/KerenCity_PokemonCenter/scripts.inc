@@ -1,3 +1,5 @@
+.set LOCALID_NURSE, 1
+
 KerenCity_PokemonCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, KerenCity_PokemonCenter_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume

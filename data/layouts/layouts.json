@@ -4654,7 +4654,7 @@
     {
       "id": "LAYOUT_KENKORIA_CITY",
       "name": "KenkoriaCity_Layout",
-      "width": 42,
+      "width": 44,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
