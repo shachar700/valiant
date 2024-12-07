@@ -14107,4 +14107,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_TradeStone,
         .iconPalette = gItemIconPalette_TradeStone,
     },
+
+        [ITEM_OLD_FLASHLIGHT] =
+    {
+        .name = _("Old Flashlight"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An old fashlight\n"
+            "resembling a\n"
+            "Pokémon."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },
 };

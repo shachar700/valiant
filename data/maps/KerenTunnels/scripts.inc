@@ -1,9 +1,16 @@
+.set LOCALID_BAG, 20
+
 KerenTunnels_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION KerenTunnels_OnTransition
 	.byte 0
 
 KerenTunnels_OnTransition:
+	call_if_set FLAG_OBTAINED_OLD_FLASHLIGHT, KerenTunnels_OnTransition_Lighter
 	setflashlevel 7
+	end
+
+KerenTunnels_OnTransition_Lighter:
+	setflashlevel 6
 	end
 
 KerenTunnels_EventScript_Ilan::
@@ -72,27 +79,14 @@ KerenTunnels_EventScript_Daniel_M::
 	end
 
 KerenTunnels_EventScript_Bag::
-	goto_if_unset FLAG_TEMP_1, KerenTunnels_EventScript_Candle
-	msgbox KerenTunnels_Text_BagOfCandles MSGBOX_SIGN
-	end
-
-KerenTunnels_EventScript_Candle::
 	lock
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox KerenTunnels_Text_Candle MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
+	giveitem ITEM_OLD_FLASHLIGHT
+	removeobject LOCALID_BAG
 	animateflash 6
 	setflashlevel 6
-	setflag FLAG_TEMP_1
-	releaseall
+	setflag FLAG_OBTAINED_OLD_FLASHLIGHT
+	release
 	end
-
-KerenTunnels_Text_Candle:
-	.string "{PLAYER} found a candle in a bag.$"
-
-KerenTunnels_Text_BagOfCandles:
-	.string "A bag of candles.$"
 
 KerenTunnels_Text_HereIcome:
 	.string "Watch out for my POKéMON.$"

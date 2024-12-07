@@ -1,5 +1,5 @@
 gText_ObtainedTheItem::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "{PLAYER} obtained the {STR_VAR_2}!$"
 
 gText_TheBagIsFull::
 	.string "The BAG is full…$"
@@ -20,7 +20,7 @@ gText_PlayerPutItemInBag::
 	.string "in the BAG.$"
 
 gText_ObtainedTheDecor::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "{PLAYER} obtained the {STR_VAR_2}!$"
 
 gText_NoRoomLeftForAnother::
 	.string "Too bad! There's no room left for\n"
@@ -31,7 +31,7 @@ gText_TheDecorWasTransferredToThePC::
 	.string "to the PC.$"
 
 gText_ObtainedTheItems::
-	.string "Obtained {STR_VAR_1} {STR_VAR_2}!$"
+	.string "{PLAYER} obtained {STR_VAR_1} {STR_VAR_2}!$"
 
 gText_PlayerFoundItems::
 	.string "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$"
