@@ -107,8 +107,7 @@ RouteD_Text_SmashGruntMiddle:
 RouteD_Text_SmashGruntRight:
 	.string "… … …\n"
 	.string "… … …\p"
-	.string "The route is blocked as our team has\n"
-	.string "important matters to attend to.$"
+	.string "The route is blocked.$"
 
 RouteD_Text_HardWorkMakesIt:
 	.string "Hard work makes it worth your while.$"

@@ -21,15 +21,15 @@
       "x": 2,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KENKORIA_CITY",
+      "dest_warp_id": "4"
     },
     {
       "x": 3,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY_PRETTY_PETAL_FLOWER_SHOP",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KENKORIA_CITY",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
