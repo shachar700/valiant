@@ -1223,3 +1223,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KenkoriaCity_PrettyPetalFlowerShop/scripts.inc"
 
 	.include "data/maps/KenkoriaCity_Gym/scripts.inc"
+
+	.include "data/maps/KenkoriaSea/scripts.inc"

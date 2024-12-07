@@ -4770,6 +4770,16 @@
       "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
       "border_filepath": "data/layouts/KenkoriaCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/KenkoriaCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_KENKORIA_SEA",
+      "name": "KenkoriaSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KenkoriaSea/border.bin",
+      "blockdata_filepath": "data/layouts/KenkoriaSea/map.bin"
     }
   ]
 }
