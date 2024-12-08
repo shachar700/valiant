@@ -448,11 +448,11 @@ KerenCity_Gym_Text_BrawlyDefeat:
 	.string "Take this GYM BADGE!$"
 
 KerenCity_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} received the STUBBORN BADGE\n"
+	.string "{PLAYER} received the EXTREME BADGE\n"
 	.string "from AMIT.$"
 
 KerenCity_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The STUBBORN BADGE makes all POKéMON\n"
+	.string "The EXTREME BADGE makes all POKéMON\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
