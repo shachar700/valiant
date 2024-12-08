@@ -26,7 +26,7 @@ KenkoriaCity_Gym_EventScript_NoWailmerPail:
 	release
 	end
 
-KenkoriaCity_Gym_EventScript_Receptionist:
+KenkoriaCity_Gym_EventScript_Receptionist::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_KENKORIA_CITY_GYM, KenkoriaCity_Gym_EventScript_GymGuidePostVictory
@@ -39,8 +39,36 @@ KenkoriaCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
+KenkoriaCity_Gym_EventScript_Girl2::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_KENKORIA_CITY_GYM, KenkoriaCity_Gym_EventScript_WellDone
+	trainerbattle_single TRAINER_DAISY, KenkoriaCity_Gym_Text_LetsBattle, KenkoriaCity_Gym_Text_Ouchies
+	msgbox KenkoriaCity_Gym_Text_FlowerPotLocation, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+KenkoriaCity_Gym_EventScript_WellDone:
+	msgbox KenkoriaCity_Gym_Text_WellDone, MSGBOX_NPC
+	release
+	end
+
+KenkoriaCity_Gym_Text_Ouchies:
+	.string "Ouchies. Good fight pal.$"
+
+KenkoriaCity_Gym_Text_LetsBattle:
+	.string "Lets battle! I'll show you where my plant is\n"
+	.string "if you win.$"
+
+KenkoriaCity_Gym_Text_FlowerPotLocation:
+	.string "My flower pot is down from here on the left.$"
+
+KenkoriaCity_Gym_Text_WellDone:
+	.string "Well done beating the gym.$"
+
 KenkoriaCity_Gym_Text_GymGuideAdvice:
-	.string "Welcome to this unique flower gym\p"
+	.string "Welcome to this unique flower shop gym\p"
 	.string "In here you will have to find\n"
 	.string "{COLOR BLUE}3 blue{COLOR DARK_GRAY}, {COLOR RED}3 red{COLOR DARK_GRAY}, and {COLOR GREEN}3 green flowers{COLOR DARK_GRAY}.\p"
 	.string "You will need to battle trainers, water\n"
