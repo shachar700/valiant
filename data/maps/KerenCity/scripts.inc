@@ -8,7 +8,7 @@ KerenCity_MapScripts::
 
 KerenCity_OnTransition::
 	call_if_eq VAR_RIVAL_NOA, 1, KerenCity_EventScript_SetNoaOut
-	call_if_set FLAG_DEFEATED_KEREN_GYM, KerenCity_EventScript_SetGrunts
+	call_if_set FLAG_DEFEATED_KEREN_CITY_GYM, KerenCity_EventScript_SetGrunts
 	end
 
 KerenCity_EventScript_SetGrunts:

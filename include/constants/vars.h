@@ -108,7 +108,7 @@
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_RIVAL_NOA/*VAR_MAUVILLE_CITY_STATE*/         0x4059 // Valiant Var
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_KEREN_CITY_STATE/*VAR_FORTREE_CITY_STATE*/  0x405B // Unused Var
+#define VAR_KEREN_CITY_STATE/*VAR_FORTREE_CITY_STATE*/   0x405B // Unused Var
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
@@ -156,7 +156,7 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_KEREN_CITY_GYM_STATE/*VAR_UNUSED_0x408B*/    0x408B // Valiant Var
+#define VAR_KEREN_CITY_GYM_STATE/*VAR_UNUSED_0x408B*/    0x408B // Valiant Var (0 shiny hunter, ++1 in gym) (1 in keren city grunts meetup, ++1 after) (2 in kenkoria gym, ++1 in flower shop)
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E

@@ -33,6 +33,10 @@ KenkoriaCity_EventScript_Beauty::
 	msgbox KenkoriaCity_Text_Beauty, MSGBOX_NPC
 	end
 
+KenkoriaCity_EventScript_Boy2::
+	msgbox KenkoriaCity_Text_Boy2, MSGBOX_NPC
+	end
+
 KenkoriaCity_Text_BikeShopSign:
 	.string "KENKORIA CITY Bike Shop\n"
 	.string "“Get your new shiny bicycle today!”$"
@@ -70,3 +74,12 @@ KenkoriaCity_Text_Beauty:
 	.string "flowers grow as beautiful as they can be.\p"
 	.string "We are looking for CELEBI to visit so that\n"
 	.string "the plants will flourish.$"
+
+KenkoriaCity_Text_Boy2:
+	.string "There's a rumor about a trainer that rose\n"
+	.string "from KENKORIA CITY\p"
+	.string "They travelled to the woods to find\n"
+	.string "CELEBI to learn about it.\p"
+	.string "Rumor says the trainer got sucked into\n"
+	.string "a wormhole and never came back.\p"
+	.string "Now that's a scary tail.$"

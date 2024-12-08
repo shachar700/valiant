@@ -5,7 +5,7 @@ RouteD_MapScripts::
 	.byte 0
 
 RouteD_OnTransition:
-	call_if_set FLAG_DEFEATED_KEREN_GYM, RouteD_EventScript_MoveShinyHunter
+	call_if_set FLAG_DEFEATED_KEREN_CITY_GYM, RouteD_EventScript_MoveShinyHunter
 	end
 
 RouteD_EventScript_MoveShinyHunter:

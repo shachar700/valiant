@@ -166,7 +166,7 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox KerenCity_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_KEREN_GYM
+	setflag FLAG_DEFEATED_KEREN_CITY_GYM
 	setflag FLAG_BADGE02_GET
 	addvar VAR_KEREN_CITY_GYM_STATE, 1
 	call Common_EventScript_SetGymTrainers
@@ -266,7 +266,7 @@ KerenCity_EventScript_Ram::
 KerenCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_KEREN_GYM, KerenCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_DEFEATED_KEREN_CITY_GYM, KerenCity_Gym_EventScript_GymGuidePostVictory
 	msgbox KerenCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
