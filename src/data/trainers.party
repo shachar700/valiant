@@ -637,6 +637,7 @@ Spoink
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_DAISY ===
 Name: MIRIAM
 Class: Aroma Lady
@@ -647,15 +648,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Shroomish
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Roselia
-Level: 14
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_ROSE_1 ===
-Name: ROSE
+Name: NITZAN
 Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Female
@@ -664,15 +666,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Roselia
-Level: 14
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
+Nuzleaf
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Roselia
-Level: 14
+Lombre
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -1769,8 +1771,9 @@ Manectric
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+/* Valiant */
 === TRAINER_BROOKE_1 ===
-Name: BROOKE
+Name: SIVAN
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1779,15 +1782,15 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wingull
+Parass
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Numel
+Tangela
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Roselia
+Oddish
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2132,8 +2135,9 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Valiant */
 === TRAINER_CINDY_1 ===
-Name: CINDY
+Name: VERED
 Class: Lady
 Pic: Lady
 Gender: Female
@@ -2142,9 +2146,9 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bulbasaur @ Leftovers
+Level: 15
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_DAPHNE ===
 Name: MIA
@@ -2295,8 +2299,9 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
+/* Valiant */
 === TRAINER_MELISSA ===
-Name: MELISSA
+Name: AGAM
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2304,9 +2309,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 21
+Exeggcute
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Treecko
+Level: 15
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_SHEILA ===
 Name: SHEILA
@@ -5648,8 +5657,9 @@ Delcatty @ Sitrus Berry
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_VICTORIA ===
-Name: VICTORIA
+Name: DVORA
 Class: Winstrate
 Pic: Pokefan F
 Gender: Female
@@ -5657,8 +5667,16 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Roselia @ Oran Berry
-Level: 17
+Cacnea @ Oran Berry
+Level: 20
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Lileep @ Oran Berry
+Level: 20
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Tropius @ Oran Berry
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VANESSA ===
@@ -8029,6 +8047,7 @@ Hariyama
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
+/* Valiant */
 === TRAINER_MADELINE_1 ===
 Name: ALISA
 Class: Parasol Lady
@@ -14077,6 +14096,7 @@ Numel
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_RACHEL ===
 Name: RACHEL
 Class: Parasol Lady
@@ -14086,8 +14106,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
-Level: 26
+Gloom
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oddish
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEONEL ===
