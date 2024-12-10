@@ -1782,7 +1782,7 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Parass
+Paras
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2147,7 +2147,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Bulbasaur @ Leftovers
-Level: 15
+Level: 19
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_DAPHNE ===
@@ -2196,21 +2196,24 @@ Numel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_CINDY_2 ===
-Name: CINDY
-Class: Lady
-Pic: Lady
+Name: TAIR
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Female
 Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 11
+Shroomish @ Eviolite
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Tail Whip
+
+Weepinbell
+Level: 22
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BRIANNA ===
 Name: OFEK
@@ -4915,46 +4918,47 @@ Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_WATTSON_1 ===
-Name: WATTSON
+Name: MICHAL
 Class: Leader
-Pic: Leader Wattson
-Gender: Male
-Music: Male
+Pic: Elite Four Glacia
+Gender: Female
+Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Pink
 
-Voltorb
-Level: 20
+Breloom @ Toxic Orb
+Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+- Leech Seed
+- Spore
+- Drain Punch
+- Sky Uppercut 
 
-Electrike
-Level: 20
+Shiftry @ Sitrus Berry
+Level: 24 
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+- Snarl
+- Leaf Blade
+- Razor Leaf
+- Bullet Seed
 
-Magneton
-Level: 22
+Grovyle @ Miracle Seed
+Level: 22 
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+- Grass Knot
+- Bullet Seed
+- Leaf Blade
+- Quick Attack
 
-Manectric @ Sitrus Berry
+Exeggutor @ Sitrus Berry
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+- Seed Bomb
+- Psychic
+- Solar Beam
+- Bullet Seed
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -5879,8 +5883,9 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Sand Attack
 - Dig
 
+/* Valiant */
 === TRAINER_VICKY ===
-Name: VICKY
+Name: LIORA
 Class: Winstrate
 Pic: Expert F
 Gender: Female
@@ -5888,13 +5893,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
+Sunkern
 Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+
+Skiploom
+Level: 20
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -10207,6 +10212,7 @@ Sandslash
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_LYDIA_2 ===
 Name: LYDIA
 Class: Pkmn Breeder
@@ -10216,28 +10222,28 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 22
+Sunkern
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Shroomish
-Level: 22
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Marill
-Level: 22
+Sunflora
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Roselia
-Level: 22
+Grovyle
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Skitty
-Level: 22
+Ivysaur
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Goldeen
-Level: 22
+Bayleef
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_LYDIA_3 ===
@@ -13224,8 +13230,9 @@ Sandshrew
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_CELINA ===
-Name: CELINA
+Name: SIVAN
 Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Female
@@ -13235,6 +13242,10 @@ AI: Check Bad Move
 
 Roselia
 Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Breloom
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIANCA ===
@@ -13805,8 +13816,9 @@ Skarmory
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_CELIA ===
-Name: CELIA
+Name: KARIN
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -13814,12 +13826,16 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 22
+Oddish
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lombre
-Level: 22
+Gloom
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chikorita
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYAN ===
