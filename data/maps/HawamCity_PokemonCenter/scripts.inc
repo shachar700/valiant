@@ -26,7 +26,13 @@ HawamCity_PokemonCenter_EventScript_Gentleman::
 	end
 
 HawamCity_PokemonCenter_EventScript_Skitty::
-	msgbox HawamCity_PokemonCenter_Text_Skitty, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	msgbox HawamCity_PokemonCenter_Text_Skitty, MSGBOX_DEFAULT
+	waitmoncry
+	release
 	end
 
 HawamCity_PokemonCenter_Text_Gentleman:

@@ -793,6 +793,7 @@ KenkoriaCity_Gym_EventScript_Michal::
 	goto_if_lt VAR_KENKORIA_CITY_GYM_FLOWERS_COUNTER, 10, KenkoriaCity_Gym_EventScript_NotEnoughFlowers
 	trainerbattle_single TRAINER_WATTSON_1, KenkoriaCity_Gym_Text_MichalIntro, KenkoriaCity_Gym_Text_MichalDefeat, KenkoriaCity_Gym_EventScript_MichalDefeated, NO_MUSIC
 	msgbox KenkoriaCity_Gym_Text_MichalPostBattle, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -808,11 +809,16 @@ KenkoriaCity_Gym_EventScript_MichalDefeated::
 	setflag FLAG_DEFEATED_KENKORIA_CITY_GYM
 	setflag FLAG_BADGE03_GET
 	addvar VAR_KEREN_CITY_STATE, 1
-	call Common_EventScript_SetGymTrainers
 	call KenkoriaCity_Gym_EventScript_GiveBulletSeed
-	closemessage
-	release
-	end
+	setvar VAR_0x8008, 3
+	call Common_EventScript_SetGymTrainers
+	return
+
+KenkoriaCity_Gym_EventScript_GiveBulletSeed::
+	giveitem ITEM_TM_BULLET_SEED
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	msgbox KenkoriaCity_Gym_Text_GiveBulletSeed, MSGBOX_DEFAULT
+	return
 
 
 KenkoriaCity_Gym_EventScript_Teala::
@@ -867,7 +873,7 @@ KenkoriaCity_Gym_Text_NotEnoughFlowers:
 	.string "Hello there and welcome to my POKéMON\n"
 	.string "gym challenge.\p"
 	.string "I'm MICHAL, I attend these flowers with\n"
-	.string "my helpful assistants."
+	.string "my helpful assistants.\p"
 	.string "Lets see how many flowers you have\n"
 	.string "collected.\p"
 	.string "… … …\n"
@@ -887,7 +893,7 @@ KenkoriaCity_Gym_Text_MichalIntro:
 	.string "with our attention to the planet.\p"
 	.string "It seems like you have collected\n"
 	.string "enough flowers to challenge me,\l"
-	.string "after attending with the Wailmer Pail."
+	.string "after tending with the Wailmer Pail.\p"
 	.string "Lets see if you are good in battle as\n"
 	.string "much as you are good at gardening.$"
 
@@ -895,7 +901,7 @@ KenkoriaCity_Gym_Text_MichalDefeat:
 	.string "Wow! Such power! Such performance!\n"
 	.string "You have beaten my powerful team!\p"
 	.string "You've got me, I'm very impressed.\n"
-	.string "Please, Take this GYM BADGE.$"
+	.string "Please, take this GYM BADGE.$"
 
 KenkoriaCity_Gym_Text_ReceivedBloomBadge:
 	.string "{PLAYER} received the BLOOM BADGE\n"
@@ -909,15 +915,15 @@ MauvilleCity_Gym_Text_ExplainBloomBadgeTakeThis:
 	.string "Hmm…\n"
 	.string "You should take this, too!$"
 
-KenkoriaCity_Gym_EventScript_GiveBulletSeed:
-	.string "That TM09 contains Bullet Seed,\p"
+KenkoriaCity_Gym_Text_GiveBulletSeed:
+	.string "That TM09 contains Bullet Seed.\p"
 	.string "It shoots 2 to 5 seeds in a row to\n"
 	.string "strike your opponent into submission!\p"
 	.string "… … … … … …$"
 
 KenkoriaCity_Gym_Text_MichalPostBattle:
 	.string "Good luck in your future endeavors. I\n"
-	.string "hope you had fun attending the flowers.$"
+	.string "hope you had fun tending the flowers.$"
 
 KenkoriaCity_Gym_EventScript_Teala_LetsSee:
 	.string "Lets see how many flowers you have\n"
@@ -1033,7 +1039,8 @@ KenkoriaCity_Gym_Text_RestWhenImDead:
 	.string "I'll rest when I die.$"
 
 KenkoriaCity_Gym_Text_Woman4PotLocation:
-	.string "I like my flowers at the center of attention.$"
+	.string "I like my flowers at the center of\n"
+	.string "attention.$"
 
 KenkoriaCity_Gym_Text_LoveWeed:
 	.string "I love weed. It's so relaxing.$"
@@ -1053,12 +1060,12 @@ KenkoriaCity_Gym_Text_HopeMichalDidntSee:
 	.string "Ugh I hope MICHAL didn't see that.$"
 
 KenkoriaCity_Gym_Text_Woman2PotLocation:
-	.string "I've put my flower pot near MICHAL so that\n"
-	.string "she notices me.$"
+	.string "I've put my flower pot near MICHAL so\n"
+	.string "that she will notice me.$"
 
 KenkoriaCity_Gym_Text_FlowersAreBeautiful:
 	.string "Flowers are beautiful.\n"
-	.string "Don't you think?"
+	.string "Don't you think?$"
 
 KenkoriaCity_Gym_Text_NoWay:
 	.string "No way… how did that happen?$"

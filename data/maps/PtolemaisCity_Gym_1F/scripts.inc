@@ -81,8 +81,8 @@ PtolemaisCity_Gym_1F_Movement_FallThroughIce:
 
 PtolemaisCity_Gym_1F_EventScript_Ido::
 	trainerbattle_single TRAINER_JUAN_1, PtolemaisCity_Gym_1F_Text_IdoIntro, PtolemaisCity_Gym_1F_Text_IdoDefeat, PtolemaisCity_Gym_1F_EventScript_IdoDefeated, NO_MUSIC
-	goto_if_unset FLAG_RECEIVED_TM_WATER_PULSE, PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse2
 	msgbox PtolemaisCity_Gym_1F_Text_IdoPostBattle, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -94,13 +94,10 @@ PtolemaisCity_Gym_1F_EventScript_IdoDefeated::
 	setflag FLAG_BADGE01_GET
 	setvar VAR_PTOLEMAIS_CITY_STATE, 1
 	setflag FLAG_HIDE_PTOLEMAIS_CITY_SMASH_FEMALE
-	setvar VAR_0x8008, 8
-	call Common_EventScript_SetGymTrainers
 	call PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse
-	closemessage
-	delay 30
-	release
-	end
+	setvar VAR_0x8008, 1
+	call Common_EventScript_SetGymTrainers
+	return
 
 PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse::
 	giveitem ITEM_TM_WATER_PULSE
@@ -108,14 +105,6 @@ PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse::
 	msgbox PtolemaisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
 	return
-
-PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse2::
-	giveitem ITEM_TM_WATER_PULSE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox PtolemaisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM_WATER_PULSE
-	release
-	end
 
 PtolemaisCity_Gym_1F_EventScript_GymGuide::
 	lock

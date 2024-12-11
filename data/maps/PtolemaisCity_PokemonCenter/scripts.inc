@@ -20,7 +20,13 @@ PtolemaisCity_PokemonCenter_EventScript_RichBoy::
 	end
 
 PtolemaisCity_PokemonCenter_EventScript_Dusclops::
-	msgbox PtolemaisCity_PokemonCenter_Text_Dusclops, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DUSCLOPS, CRY_MODE_NORMAL
+	msgbox PtolemaisCity_PokemonCenter_Text_Dusclops, MSGBOX_DEFAULT
+	waitmoncry
+	release
 	end
 
 PtolemaisCity_PokemonCenter_EventScript_Youngster1::

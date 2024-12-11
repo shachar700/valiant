@@ -157,6 +157,7 @@ KerenCity_Gym_EventScript_StopCountingTrainers::
 KerenCity_Gym_EventScript_Brawly::
 	trainerbattle_single TRAINER_BRAWLY_1, KerenCity_Gym_Text_BrawlyIntro, KerenCity_Gym_Text_BrawlyDefeat, KerenCity_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 	msgbox KerenCity_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -169,12 +170,10 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	setflag FLAG_DEFEATED_KEREN_CITY_GYM
 	setflag FLAG_BADGE02_GET
 	addvar VAR_KEREN_CITY_GYM_STATE, 1
-	call Common_EventScript_SetGymTrainers
 	call KerenCity_Gym_EventScript_GiveBulkUp
-	closemessage
-	delay 30
-	release
-	end
+	setvar VAR_0x8008, 2
+	call Common_EventScript_SetGymTrainers
+	return
 
 KerenCity_Gym_EventScript_GiveBulkUp::
 	giveitem ITEM_TM_BULK_UP

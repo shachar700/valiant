@@ -26,7 +26,13 @@ KenkoriaCity_EventScript_Elder::
 	end
 
 KenkoriaCity_EventScript_Zigzagoon::
-	msgbox KenkoriaCity_Text_Zigzagoon, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	msgbox KenkoriaCity_Text_Zigzagoon, MSGBOX_DEFAULT
+	waitmoncry
+	release
 	end
 
 KenkoriaCity_EventScript_Beauty::

@@ -22,7 +22,13 @@ KerenCity_PokemonCenter_EventScript_Youngster::
 	end
 	
 KerenCity_PokemonCenter_EventScript_Poochyena::
-	msgbox KerenCity_PokemonCenter_Text_Poochyena, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_POOCHYENA, CRY_MODE_NORMAL
+	msgbox KerenCity_PokemonCenter_Text_Poochyena, MSGBOX_DEFAULT
+	waitmoncry
+	release
 	end
 
 KerenCity_PokemonCenter_EventScript_Girl::
