@@ -54,12 +54,12 @@ RouteC_EventScript_Grunts_Trigger::
 	end
 
 RouteC_EventScript_Rival::
-	lockall
+	lock
 	goto_if_eq VAR_RIVAL_NOA, 0, RouteC_EventScript_InitiateRivalSequence
 	faceplayer
 	msgbox RouteC_Text_LovelyView, MSGBOX_DEFAULT
 	closemessage
-	releaseall
+	release
 	end
 
 RouteC_EventScript_InitiateRivalSequence::

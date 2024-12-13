@@ -80,7 +80,9 @@
     "KenkoriaCity_Mart",
     "KenkoriaCity_PrettyPetalFlowerShop",
     "KenkoriaCity_Gym",
-    "KenkoriaCity_BikeShop"
+    "KenkoriaCity_BikeShop",
+    "KenkoriaCity_Houses",
+    "KenkoriaCity_GameCorner"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

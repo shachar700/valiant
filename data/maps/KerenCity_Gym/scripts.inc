@@ -132,7 +132,7 @@ KerenCity_Gym_EventScript_CheckJocelyn::
 	addvar VAR_0x8000, 1
 
 KerenCity_Gym_EventScript_CheckMia::
-	goto_if_not_defeated TRAINER_JOCELYN, KerenCity_Gym_EventScript_CheckLaura
+	goto_if_not_defeated TRAINER_MARC, KerenCity_Gym_EventScript_CheckLaura
 	addvar VAR_0x8000, 1
 
 KerenCity_Gym_EventScript_CheckLaura::

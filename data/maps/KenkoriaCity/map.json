@@ -87,7 +87,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KenkoriaCity_EventScript_Sailor",
       "flag": "0"
     },
     {
@@ -297,6 +297,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 39,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -336,32 +349,32 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
-      "y": 15,
+      "x": 26,
+      "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY",
+      "dest_map": "MAP_KENKORIA_CITY_HOUSES",
       "dest_warp_id": "0"
     },
     {
       "x": 22,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KENKORIA_CITY_HOUSES",
+      "dest_warp_id": "2"
     },
     {
       "x": 29,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY",
+      "dest_map": "MAP_KENKORIA_CITY_GAME_CORNER",
       "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 31,
       "elevation": 0,
-      "dest_map": "MAP_KENKORIA_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KENKORIA_CITY_HOUSES",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
