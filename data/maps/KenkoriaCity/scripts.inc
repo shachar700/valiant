@@ -1,7 +1,7 @@
 .equ LOCALID_SAILOR_CITY, 5
-.equ LOCALID_SAILOR_SEA, 5
+.equ LOCALID_SAILOR_SEA, 1
 .equ LOCALID_BOAT_CITY, 21
-.equ LOCALID_BOAT_SEA, 6
+.equ LOCALID_BOAT_SEA, 2
 
 KenkoriaCity_MapScripts::
 	.byte 0
@@ -62,7 +62,6 @@ KenkoriaCity_EventScript_Sailor::
 	closemessage
 	@round trip to safari
 	call KenkoriaCity_EventScript_SailToSafari
-	hidemoneybox
 	release
 	end
 
@@ -85,8 +84,8 @@ KenkoriaCity_EventScript_RemoveMoney::
 	return
 
 KenkoriaCity_EventScript_SailToSafari::
-	copyvar VAR_0x8008, VAR_BRINEY_LOCATION
-	setvar VAR_BRINEY_LOCATION, 0
+	copyvar VAR_0x8008, VAR_SAILOR_LOCATION
+	setvar VAR_SAILOR_LOCATION, 0
 	setobjectsubpriority LOCALID_SAILOR_CITY, MAP_KENKORIA_CITY, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_KENKORIA_CITY, 0
 	applymovement LOCALID_SAILOR_CITY, KenkoriaCity_Movement_SailorBoardBoat
@@ -98,22 +97,22 @@ KenkoriaCity_EventScript_SailToSafari::
 	call Common_EventScript_PlayBrineysBoatMusic
 	applymovement LOCALID_BOAT_CITY, KenkoriaCity_Movement_SailToSafari
 	applymovement OBJ_EVENT_ID_PLAYER, KenkoriaCity_Movement_SailToSafari
+	waitmovement 0
 	call Common_EventScript_StopBrineysBoatMusic
 	showobjectat OBJ_EVENT_ID_PLAYER, MAP_KENKORIA_SEA
 	applymovement OBJ_EVENT_ID_PLAYER, KenkoriaCity_Movement_ExitBoatSafari
 	waitmovement 0
-	setobjectxyperm LOCALID_SAILOR_SEA, 61, 37
+	setobjectxyperm LOCALID_SAILOR_SEA, 61, 36
 	addobject LOCALID_SAILOR_SEA
 	setobjectsubpriority LOCALID_SAILOR_SEA, MAP_KENKORIA_SEA, 0
 	applymovement LOCALID_SAILOR_SEA, KenkoriaCity_Movement_SailorExitBoat
 	waitmovement 0
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
+	clearflag FLAG_HIDE_SAILOR_KENKORIA_SEA
 	addobject LOCALID_BOAT_SEA
 	clearflag FLAG_HIDE_SAILOR_BOAT_KENKORIA_SEA
 	setflag FLAG_HIDE_SAILOR_BOAT_KENKORIA_CITY
 	hideobjectat LOCALID_BOAT_CITY, MAP_KENKORIA_CITY
-	closemessage
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+	copyvar VAR_SAILOR_LOCATION, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_KENKORIA_CITY
 	resetobjectsubpriority LOCALID_SAILOR_SEA, MAP_KENKORIA_SEA
 	copyobjectxytoperm LOCALID_SAILOR_SEA
@@ -210,7 +209,6 @@ KenkoriaCity_Movement_SailToSafari:
 	step_end
 
 KenkoriaCity_Movement_ExitBoatSafari:
-	walk_down
 	walk_down
 	walk_right
 	face_left
