@@ -126,7 +126,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "KenkoriaCity_EventScript_SalesMan",
       "flag": "0"
     },
     {
@@ -336,15 +336,15 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
-      "y": 14,
+      "x": 22,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_KENKORIA_CITY_HOUSES",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
-      "y": 11,
+      "x": 29,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_KENKORIA_CITY_HOUSES",
       "dest_warp_id": "2"

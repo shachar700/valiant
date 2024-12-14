@@ -17,6 +17,11 @@
       "map": "MAP_KENKORIA_CITY",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_KENKORIA_SAFARI_ZONE",
+      "offset": 46,
+      "direction": "down"
     }
   ],
   "object_events": [

@@ -48,6 +48,31 @@ KenkoriaCity_EventScript_Boy2::
 	msgbox KenkoriaCity_Text_Boy2, MSGBOX_NPC
 	end
 
+KenkoriaCity_EventScript_SalesMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_COIN_CASE, KenkoriaCity_EventScript_HappyGamba
+	msgbox KenkoriaCity_Text_LikeToGamble, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, KenkoriaCity_EventScript_DeclineSalesMan
+	msgbox KenkoriaCity_Text_MeToo, MSGBOX_DEFAULT
+	giveitem ITEM_COIN_CASE
+	setflag FLAG_RECEIVED_COIN_CASE
+	waitmessage
+	msgbox KenkoriaCity_Text_CheckGameCorner, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+KenkoriaCity_EventScript_HappyGamba:
+	msgbox KenkoriaCity_Text_HappyGamba, MSGBOX_DEFAULT
+	release
+	end
+
+KenkoriaCity_EventScript_DeclineSalesMan:
+	msgbox KenkoriaCity_Text_DeclineSalesMan, MSGBOX_DEFAULT
+	release
+	end
+
 KenkoriaCity_EventScript_Sailor::
 	lock
 	faceplayer
@@ -304,9 +329,30 @@ KenkoriaCity_Text_Beauty:
 
 KenkoriaCity_Text_Boy2:
 	.string "There's a rumor about a trainer that rose\n"
-	.string "from KENKORIA CITY\p"
+	.string "from KENKORIA CITY.\p"
 	.string "They travelled to the woods to find\n"
-	.string "CELEBI to learn about it.\p"
+	.string "CELEBI to learn about its mysteries.\p"
 	.string "Rumor says the trainer got sucked into\n"
 	.string "a wormhole and never came back.\p"
 	.string "Now that's a scary tail.$"
+
+KenkoriaCity_Text_LikeToGamble:
+	.string "Hey pal, do you like to gamble?$"
+
+KenkoriaCity_Text_DeclineSalesMan:
+	.string "That's unfortunate.$"
+
+KenkoriaCity_Text_MeToo:
+	.string "Me too. We are best of buddies.\p"
+	.string "Since I like you so much, I'd like you to\n"
+	.string "have this COIN CASE.$"
+
+KenkoriaCity_Text_CheckGameCorner:
+	.string "It will keep your coins in check.\p"
+	.string "Speaking of in check, how about you\n"
+	.string "check our lovely game corner?$"
+
+KenkoriaCity_Text_HappyGamba:
+	.string "Happy gambling. Visit our game corner.\n"
+	.string "May the odds be ever in your favor,\l"
+	.string "and in your pocket.$"

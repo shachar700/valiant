@@ -26,3 +26,36 @@ KenkoriaCity_Mart_Pokemart:
 	.2byte ITEM_NONE
 	release
 	end
+
+KenkoriaCity_Mart_EventScript_FatMan::
+	msgbox KenkoriaCity_Mart_Text_FatMan, MSGBOX_NPC
+	end
+
+KenkoriaCity_Mart_EventScript_Girl2::
+	msgbox KenkoriaCity_Mart_Text_Girl2, MSGBOX_NPC
+	end
+
+KenkoriaCity_Mart_EventScript_GameBoyKidL::
+	msgbox KenkoriaCity_Mart_Text_GameBoyKidL, MSGBOX_NPC
+	end
+
+KenkoriaCity_Mart_EventScript_GameBoyKidR::
+	msgbox KenkoriaCity_Mart_Text_GameBoyKidR, MSGBOX_NPC
+	end
+
+KenkoriaCity_Mart_Text_FatMan:
+	.string "I can't find REVIVEs in this mart.\p"
+	.string "I don't want to run back to the POKéMON\n"
+	.string "CENTER if my POKéMON gets fainted.$"
+
+KenkoriaCity_Mart_Text_Girl2:
+	.string "The POKéMON in ROUTE D were too fast\n"
+	.string "for my SKITTY.$"
+
+KenkoriaCity_Mart_Text_GameBoyKidL:
+	.string "I'm trading my SPINDA,\n"
+	.string "It's very exciting.$"
+
+KenkoriaCity_Mart_Text_GameBoyKidR:
+	.string "Goodbye KECLEON, you were always\n"
+	.string "missing and you will be missed.$"

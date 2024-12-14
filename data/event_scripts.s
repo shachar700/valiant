@@ -1231,3 +1231,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KenkoriaCity_Houses/scripts.inc"
 
 	.include "data/maps/KenkoriaCity_GameCorner/scripts.inc"
+
+	.include "data/maps/KenkoriaSafariZone/scripts.inc"

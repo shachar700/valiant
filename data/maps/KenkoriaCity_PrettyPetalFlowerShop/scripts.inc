@@ -19,8 +19,12 @@ KenkoriaCity_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::
 	release
 	end
 
-KenkoriaCity_EventScript_NoCelebiThisYear::
-	msgbox KenkoriaCity_Text_NoCelebiThisYear, MSGBOX_NPC
+KenkoriaCity_PrettyPetalFlowerShop_EventScript_NoCelebiThisYear::
+	msgbox KenkoriaCity_PrettyPetalFlowerShop_Text_NoCelebiThisYear, MSGBOX_NPC
+	end
+
+KenkoriaCity_PrettyPetalFlowerShop_EventScript_Woman4::
+	msgbox KenkoriaCity_PrettyPetalFlowerShop_Text_LessVisitors, MSGBOX_NPC
 	end
 
 KenkoriaCity_PrettyPetalFlowerShop_Text_YouCanHaveThis:
@@ -41,7 +45,11 @@ KenkoriaCity_PrettyPetalFlowerShop_Text_WailmerPailExplanation:
 	.string "Isn't that awesome?\n"
 	.string "It's like they have the will to live.$"
 	
-KenkoriaCity_Text_NoCelebiThisYear:
+KenkoriaCity_PrettyPetalFlowerShop_Text_NoCelebiThisYear:
 	.string "This time of year CELEBI didn't appear\n"
 	.string "to flourish our flowers.\p"
 	.string "I wonder what happened…$"
+
+KenkoriaCity_PrettyPetalFlowerShop_Text_LessVisitors:
+	.string "Ever since TEAM SMASH showed up,\n"
+	.string "we had less visitors coming to the store.$"
