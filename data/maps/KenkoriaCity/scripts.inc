@@ -61,7 +61,9 @@ KenkoriaCity_EventScript_Sailor::
 	hidemoneybox
 	closemessage
 	@round trip to safari
-	call KenkoriaCity_EventScript_SailToSafari
+	call KenkoriaCity_EventScript_StartSailToSafari
+	msgbox KenkoriaSea_Text_WeHaveArrived, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -83,7 +85,7 @@ KenkoriaCity_EventScript_RemoveMoney::
 	updatemoneybox
 	return
 
-KenkoriaCity_EventScript_SailToSafari::
+KenkoriaCity_EventScript_StartSailToSafari::
 	copyvar VAR_0x8008, VAR_SAILOR_LOCATION
 	setvar VAR_SAILOR_LOCATION, 0
 	setobjectsubpriority LOCALID_SAILOR_CITY, MAP_KENKORIA_CITY, 0
@@ -91,8 +93,24 @@ KenkoriaCity_EventScript_SailToSafari::
 	applymovement LOCALID_SAILOR_CITY, KenkoriaCity_Movement_SailorBoardBoat
 	waitmovement 0
 	removeobject LOCALID_SAILOR_CITY
-	applymovement OBJ_EVENT_ID_PLAYER, KenkoriaCity_Movement_PlayerBoardBoat
+	switch VAR_FACING
+	case DIR_NORTH, KenkoriaCity_EventScript_EnterBoatNorth
+	case DIR_EAST, KenkoriaSea_EventScript_EnterBoatEast
+	end
+
+KenkoriaCity_EventScript_EnterBoatNorth:
+	applymovement OBJ_EVENT_ID_PLAYER, KenkoriaCity_Movement_PlayerEnterBoatNorth
 	waitmovement 0
+	call KenkoriaCity_EventScript_SailToSafari
+	return
+
+KenkoriaSea_EventScript_EnterBoatEast:
+	applymovement OBJ_EVENT_ID_PLAYER, KenkoriaCity_Movement_PlayerEnterBoatEast
+	waitmovement 0
+	call KenkoriaCity_EventScript_SailToSafari
+	return
+
+KenkoriaCity_EventScript_SailToSafari::
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_KENKORIA_CITY
 	call Common_EventScript_PlayBrineysBoatMusic
 	applymovement LOCALID_BOAT_CITY, KenkoriaCity_Movement_SailToSafari
@@ -122,7 +140,12 @@ KenkoriaCity_Movement_SailorBoardBoat:
 	walk_up
 	step_end
 
-KenkoriaCity_Movement_PlayerBoardBoat:
+KenkoriaCity_Movement_PlayerEnterBoatNorth:
+	walk_up
+	walk_up
+	step_end
+
+KenkoriaCity_Movement_PlayerEnterBoatEast:
 	walk_right
 	walk_up
 	step_end
@@ -225,13 +248,21 @@ KenkoriaCity_Text_SafariVisit5000:
 	.string "KENKORIA's SAFARI ZONE for ¥5000.$"
 
 KenkoriaCity_Text_YouHaventGotEnoughMoney:
-	.string "You haven't got enough money.$"
+	.string "You don't have enough money.$"
 
 KenkoriaCity_Text_AlrightThen:
 	.string "Alright then.$"
 
 KenkoriaCity_Text_HereWeGo:
 	.string "Here we go.$"
+
+KenkoriaSea_Text_WeHaveArrived:
+	.string "We have arrived.\n"
+	.string "Let me know when you want to go back.$"
+
+KenkoriaCity_Text_SailorLandedInKenkoriaCity:
+	.string "We are back in KENKORIA CITY.\n"
+	.string "Let me know when you wanna sail again.$"
 
 KenkoriaCity_Text_BikeShopSign:
 	.string "KENKORIA CITY Bike Shop\n"
