@@ -56,7 +56,8 @@
   "gMapGroup_ValiantDungeons": [
     "SodoriTunnels",
     "KerenTunnels",
-    "KerenCave"
+    "KerenCave",
+    "PeaksOfArbel"
   ],
   "gMapGroup_ValiantIndoor": [
     "SerenityLake",

@@ -41,7 +41,7 @@ SerenityLake_EventScript_SmashMale2::
 	end
 
 SerenityLake_Text_Celebi::
-	.string "{COLOR GREEN}Celebi:{COLOR DARK_GRAY} Cele…biiiii…\p"
+	.string "{COLOR GREEN}CELEBI:{COLOR DARK_GRAY} Cele…biiiii…\p"
 	.string "The sound coming from Celebi's voice\n"
 	.string "sounded like a stress signal.$"
 

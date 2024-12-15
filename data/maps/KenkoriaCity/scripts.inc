@@ -328,7 +328,7 @@ KenkoriaCity_Text_Beauty:
 	.string "the plants will flourish.$"
 
 KenkoriaCity_Text_Boy2:
-	.string "There's a rumor about a trainer that rose\n"
+	.string "There's a rumor about a trainer that came\n"
 	.string "from KENKORIA CITY.\p"
 	.string "They travelled to the woods to find\n"
 	.string "CELEBI to learn about its mysteries.\p"

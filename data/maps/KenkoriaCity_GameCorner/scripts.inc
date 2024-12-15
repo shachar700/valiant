@@ -460,7 +460,7 @@ KenkoriaCity_GameCorner_EventScript_NoCoinCase::
 	end
 
 KenkoriaCity_GameCorner_Text_ThisIsMauvilleGameCorner:
-	.string "This is MAUVILLE GAME CORNER.$"
+	.string "This is KENKORIA GAME CORNER.$"
 
 KenkoriaCity_GameCorner_Text_NeedCoinCaseForCoins:
 	.string "Okay, you wanted some COINS for\n"
@@ -552,7 +552,7 @@ KenkoriaCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins:
 	.string "Here, take some COINS!$"
 
 KenkoriaCity_GameCorner_Text_MauvilleSomethingForEveryone:
-	.string "MAUVILLE has something for\n"
+	.string "KENKORIA has something for\n"
 	.string "everyone.\p"
 	.string "For me, it's the GAME CORNER.$"
 

@@ -624,8 +624,9 @@ Sharpedo
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+/* Valiant */
 === TRAINER_LEAH ===
-Name: LEAH
+Name: ESTER
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -634,7 +635,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Spoink
-Level: 31
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Scyther
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 /* Valiant */
@@ -11450,8 +11455,9 @@ Nosepass
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Valiant */
 === TRAINER_GREG ===
-Name: GREG
+Name: DAVID
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -11460,11 +11466,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Volbeat
-Level: 25
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Illumise
-Level: 25
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Venonat
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KENT ===

@@ -102,7 +102,7 @@
 #define VAR_STARTER_CHOICE /* VAR_DEWFORD_TOWN_STATE*/   0x4052 // Valiant Var
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_ROUTE_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var (0-1 ben encounter) (1-2 devon parts) (2-3 noa encounter) (3-4 shiny hunt)
+#define VAR_ROUTE_STATE /* VAR_VERDANTURF_TOWN_STATE*/   0x4055 // Valiant Var (0-1 ben encounter) (1-2 devon parts) (2-3 noa encounter)
 #define VAR_PTOLEMAIS_CITY_STATE /*VAR_PACIFIDLOG_TOWN_STATE*/ 0x4056 // Valiant Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
@@ -156,7 +156,7 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_KEREN_CITY_GYM_STATE/*VAR_UNUSED_0x408B*/    0x408B // Valiant Var (0 shiny hunter, +1 in gym) (1 in keren city grunts meetup, +1 after) (2 in kenkoria gym, +1 in flower shop) (3 in kenkoria gym, +1 after trainer pots init)
+#define VAR_KEREN_CITY_GYM_STATE/*VAR_UNUSED_0x408B*/    0x408B // Valiant Var (0 shiny hunter, +1 in gym) (1 in keren city grunts meetup, +1 after) (2 in kenkoria gym, +1 in flower shop) (3 in kenkoria gym, +1 after trainer pots init) (+1 after gym, 5 at route d grunts encounter)
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E

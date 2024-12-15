@@ -81,10 +81,6 @@ RouteC_EventScript_InitiateRivalSequence::
 	releaseall
 	end
 
-@RouteC_EventScript_BetaSign::
-@	msgbox RouteC_Text_BetaSign, MSGBOX_NPC
-@	end
-
 RouteC_EventScript_ScribbledSign::
 	msgbox RouteC_Text_ScribbledSign, MSGBOX_NPC
 	end
@@ -273,14 +269,6 @@ RouteC_Text_ScientistThanksPlayer:
 	.string "I would not survive in their custody.\p"
 	.string "Well look at me rambling, I'm going\n"
 	.string "to take a hot bath and relax. Bye.$"
-
-@RouteC_Text_BetaSign:
-@	.string "Thank you for playing Beta 1\n"
-@	.string "of POKéMON Valiant!\p"
-@	.string "Please leave feedback or report bugs\n"
-@	.string "in the discord server:\p"
-@	.string "https://discord.gg/wcEwv9bytW\p"
-@	.string "I hope you enjoyed!$"
 
 RouteC_Text_ScribbledSign:
 	.string "The sign got scribbled and erased.$"

@@ -1,4 +1,10 @@
 .set LOCALID_MAN_4, 12
+.set LOCALID_SMASHMALEL, 8
+.set LOCALID_SMASHFEMALE, 6
+.set LOCALID_SMASHMALER, 7
+.set LOCALID_POOCHYENA, 24
+.set LOCALID_LITTLE_KID, 25
+.set LOCALID_CELEBI, 22
 
 RouteD_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RouteD_OnTransition
@@ -6,7 +12,17 @@ RouteD_MapScripts::
 
 RouteD_OnTransition:
 	call_if_set FLAG_DEFEATED_KEREN_CITY_GYM, RouteD_EventScript_MoveShinyHunter
+	call_if_set FLAG_DEFEATED_KENKORIA_CITY_GYM, RouteD_EventScript_MoveGrunts
 	end
+
+RouteD_EventScript_MoveGrunts:
+	setobjectxyperm LOCALID_SMASHMALEL, 2, 12
+	setobjectmovementtype LOCALID_SMASHMALEL, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_SMASHFEMALE, 4, 14
+	setobjectmovementtype LOCALID_SMASHFEMALE, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_SMASHMALER, 6, 13
+	setobjectmovementtype LOCALID_SMASHMALER, MOVEMENT_TYPE_FACE_UP
+	return
 
 RouteD_EventScript_MoveShinyHunter:
 	setobjectxyperm LOCALID_MAN_4, 16, 38
@@ -91,10 +107,250 @@ RouteD_EventScript_SmashGruntRight::
 	msgbox RouteD_Text_SmashGruntRight, MSGBOX_NPC
 	end
 
+RouteD_EventScript_Trigger_CelebiEncounter::
+	lock
+	special Script_FadeOutMapMusic
+	applymovement OBJ_EVENT_ID_PLAYER, RouteD_Movement_MoveLeft
+	waitmovement 0
+	delay 50
+	waitse
+	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
+	msgbox RouteD_Text_CelebiCries, MSGBOX_DEFAULT
+	waitmoncry
+	msgbox RouteD_Text_AttackPooch, MSGBOX_DEFAULT
+	waitmessage
+	waitse
+	playmoncry SPECIES_POOCHYENA, CRY_MODE_NORMAL
+	applymovement LOCALID_POOCHYENA, Common_Movement_WalkInPlaceFasterUp
+	waitmoncry
+	waitmovement 0
+	waitse
+	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
+	msgbox RouteD_Text_CelebiHurt, MSGBOX_DEFAULT
+	waitmoncry
+	closemessage
+	dofieldeffectsparkle 5, 12, 0
+	waitfieldeffect FLDEFF_SPARKLE
+	playfanfare MUS_AWAKEN_LEGEND
+	playse SE_ORB
+	special DoOrbEffect
+	delay 150
+	special FadeOutOrbEffect
+	waitstate
+	delay 50
+	fadedefaultbgm
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_POOCHYENA
+	removeobject LOCALID_SMASHMALEL
+	removeobject LOCALID_SMASHFEMALE
+	removeobject LOCALID_SMASHMALER
+	setobjectxyperm LOCALID_LITTLE_KID, 5, 13
+	addobject LOCALID_LITTLE_KID
+	setweather WEATHER_RAIN_THUNDERSTORM
+	doweather
+	fadescreen FADE_FROM_BLACK
+	special Script_FadeOutMapMusic
+	delay 30
+	msgbox RouteD_Text_LovesCelebi, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_CELEBI, RouteD_Movement_Celebi_Out
+	delay 20
+	applymovement LOCALID_LITTLE_KID, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox RouteD_Text_Arr, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_LITTLE_KID, RouteD_Movement_WalkOut
+	waitmovement 0
+	removeobject LOCALID_LITTLE_KID
+	setobjectxyperm LOCALID_LITTLE_KID, 53, 28
+	fadescreen FADE_TO_BLACK
+	addobject LOCALID_POOCHYENA
+	addobject LOCALID_SMASHMALEL
+	addobject LOCALID_SMASHFEMALE
+	addobject LOCALID_SMASHMALER
+	setweather WEATHER_NONE
+	doweather
+	fadescreen FADE_FROM_BLACK
+	delay 30
+	setobjectmovementtype LOCALID_SMASHMALEL, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectmovementtype LOCALID_SMASHMALER, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectmovementtype LOCALID_SMASHFEMALE, MOVEMENT_TYPE_LOOK_AROUND
+	msgbox RouteD_Text_WhereDidCelebiGo, MSGBOX_DEFAULT
+	removeobject LOCALID_POOCHYENA
+	playse SE_BALL_OPEN
+	setobjectxyperm 14, 5, 13
+	addobject 14
+	delay 50
+	removeobject 14
+	setobjectxyperm 14, 42, 11
+	waitmessage
+	closemessage
+	applymovement LOCALID_SMASHFEMALE, RouteD_Movement_SmashFemaleMovesOut
+	applymovement LOCALID_SMASHMALEL, RouteD_Movement_SmashMaleLMovesOut
+	applymovement LOCALID_SMASHMALER, RouteD_Movement_SmashMaleRMovesOut
+	waitmovement 0
+	removeobject LOCALID_SMASHMALEL
+	removeobject LOCALID_SMASHFEMALE
+	removeobject LOCALID_SMASHMALER
+	removeobject LOCALID_CELEBI
+	setflag FLAG_HIDE_ROUTE_D_GRUNTS
+	setflag FLAG_HIDE_ROUTE_D_CELEBI
+	setvar VAR_KEREN_CITY_GYM_STATE, 6
+	playbgm MUS_ROUTE104, FALSE
+	release
+	end
+
+RouteD_EventScript_PsychicM::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_HM_FLASH, RouteD_EventScript_ReceivedFlash
+	msgbox RouteD_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
+	giveitem ITEM_HM_FLASH
+	setflag FLAG_RECEIVED_HM_FLASH
+	msgbox RouteD_Text_ExplainFlash, MSGBOX_DEFAULT
+	release
+	end
+
+RouteD_EventScript_ReceivedFlash::
+	msgbox RouteD_Text_ExplainFlash, MSGBOX_DEFAULT
+	release
+	end
+
+RouteD_EventScript_Ester::
+	trainerbattle_single TRAINER_LEAH, RouteD_Text_ThereIsADarkCave, RouteD_Text_Mysteries
+	msgbox RouteD_Text_NoPass, MSGBOX_AUTOCLOSE
+	end
+
+RouteD_EventScript_David::
+	trainerbattle_single TRAINER_GREG, RouteD_Text_GonnaWin, RouteD_Text_NotHappening
+	msgbox RouteD_Text_ShouldveTrainedHarder, MSGBOX_AUTOCLOSE
+	end
+
+RouteD_EventScript_BetaSign::
+	msgbox RouteD_Text_BetaSign, MSGBOX_SIGN
+	end
+
+RouteD_EventScript_Snorlax::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SNORLAX, CRY_MODE_NORMAL
+	msgbox RouteD_Text_Snorlax, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RouteD_Movement_Celebi_Out:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+RouteD_Movement_SmashFemaleMovesOut:
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+RouteD_Movement_SmashMaleLMovesOut:
+	walk_left
+	step_end
+
+RouteD_Movement_SmashMaleRMovesOut:
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
 RouteD_Movement_PlayerStepBack:
 	delay_8
 	walk_right
 	step_end
+
+RouteD_Movement_MoveLeft:
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+RouteD_Movement_WalkOut:
+	walk_fast_down
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+RouteD_Text_ThereIsADarkCave:
+	.string "There is a dark cave ahead. It is bound\n"
+	.string "to have good treasures in it.$"
+
+RouteD_Text_Mysteries:
+	.string "Mystries lie ahead. I want to discover them.$"
+
+RouteD_Text_NoPass:
+	.string "No pass in this path.\n"
+	.string "As I have learned in the past.$"
+
+RouteD_Text_GonnaWin:
+	.string "My BUG POKéMON are gonna win.\n"
+	.string "I'm sure of it.$"
+	
+RouteD_Text_NotHappening:
+	.string "Uh uh this is not happening.$"
+
+RouteD_Text_ShouldveTrainedHarder:
+	.string "I should've trained harder.\n"
+	.string "The gym challenge is waiting for me.$"
+
+RouteD_Text_GetsDarkAheadHereYouGo:
+	.string "Hey, you.\n"
+	.string "It gets awfully dark ahead.\l"
+	.string "It'll be tough trying to explore.\p"
+	.string "Those guys who came by earlier…\n"
+	.string "TEAM SMASH, I think it was.\p"
+	.string "They knew how to use FLASH, as they\n"
+	.string "were using POKéMON that knew FLASH.\p"
+	.string "Well, since I'm not planning to enter,\n"
+	.string "You can have this HM05 FLASH.\p"
+	.string "Here you go, I'll pass this on to you.$"
+
+RouteD_Text_ExplainFlash:
+	.string "Teach that hidden move FLASH to\n"
+	.string "a POKéMON and use it.\p"
+	.string "It lights up even the inky darkness\n"
+	.string "of caves.$"
+
+RouteD_Text_CelebiCries:
+	.string "{COLOR GREEN}CELEBI:{COLOR DARK_GRAY} Cele…biiiii…$"
+
+RouteD_Text_CelebiHurt:
+	.string "{COLOR GREEN}CELEBI:{COLOR DARK_GRAY} Cele… biii!!!$"
+
+RouteD_Text_LovesCelebi:
+	.string "Little Kid: Please CELEBI, don't go away.\n"
+	.string "I need you. You are my remedy.$"
+
+RouteD_Text_Arr:
+	.string "Arr… … …\p"
+	.string "… … …\n"
+	.string "… … …\p"
+	.string "… … …\n"
+	.string "… … You will regret that.$"
+
+RouteD_Text_AttackPooch:
+	.string "Female Grunt: POOCHYENA, bite CELEBI!$"
+
+RouteD_Text_WhereDidCelebiGo:
+	.string "Female Grunt: Where did he go?!\n"
+	.string "How is this possible?\p"
+	.string "Lets go to the cave\n"
+	.string "CELEBI must be in it.\l"
+	.string "POOCHYENA, return$"
 
 RouteD_Text_SmashGruntLeft:
 	.string "There's no going NORTH from here.\n"
@@ -207,3 +463,18 @@ RouteD_Text_Boy_3:
 	.string "You can use {COLOR RED}HM01 CUT{COLOR DARK_GRAY} to clear a path.\n"
 	.string "Just teach it to one of your POKéMON\l"
 	.string "and use it on tall grass.$"
+
+RouteD_Text_BetaSign:
+	.string "Thank you for playing Beta 2\n"
+	.string "of POKéMON Valiant!\p"
+	.string "Official thread is in Pokecommunity.\p"
+	.string "Please leave feedback or report bugs\n"
+	.string "there or in the discord server:\p"
+	.string "https://discord.gg/wcEwv9bytW\p"
+	.string "I hope you enjoyed!\n"
+	.string "ROM HACK made by Shahar.$"
+
+RouteD_Text_Snorlax:
+	.string "Snor… … …\p"
+	.string "A SNORLAX is snoring and blocking the\n"
+	.string "way.$"

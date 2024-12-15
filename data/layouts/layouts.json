@@ -4777,7 +4777,7 @@
       "width": 80,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/KenkoriaSea/border.bin",
       "blockdata_filepath": "data/layouts/KenkoriaSea/map.bin"
     },
@@ -4820,6 +4820,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/KenkoriaSafariZone/border.bin",
       "blockdata_filepath": "data/layouts/KenkoriaSafariZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEAKS_OF_ARBEL",
+      "name": "PeaksOfArbel_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/PeaksOfArbel/border.bin",
+      "blockdata_filepath": "data/layouts/PeaksOfArbel/map.bin"
     }
   ]
 }
