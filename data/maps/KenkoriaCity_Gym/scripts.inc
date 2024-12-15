@@ -790,16 +790,17 @@ KenkoriaCity_Gym_EventScript_Lass_PickedFlower:
 @ End of Lass
 
 KenkoriaCity_Gym_EventScript_Michal::
+	lock
 	goto_if_lt VAR_KENKORIA_CITY_GYM_FLOWERS_COUNTER, 10, KenkoriaCity_Gym_EventScript_NotEnoughFlowers
 	trainerbattle_single TRAINER_WATTSON_1, KenkoriaCity_Gym_Text_MichalIntro, KenkoriaCity_Gym_Text_MichalDefeat, KenkoriaCity_Gym_EventScript_MichalDefeated, NO_MUSIC
-	lock
 	msgbox KenkoriaCity_Gym_Text_MichalPostBattle, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
 KenkoriaCity_Gym_EventScript_NotEnoughFlowers:
-	msgbox KenkoriaCity_Gym_Text_NotEnoughFlowers, MSGBOX_NPC
+	msgbox KenkoriaCity_Gym_Text_NotEnoughFlowers, MSGBOX_DEFAULT
+	release
 	end
 
 KenkoriaCity_Gym_EventScript_MichalDefeated::

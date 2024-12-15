@@ -1815,6 +1815,30 @@
       "y": 9,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_KENKORIA_SEA",
+      "name": "KENKORIA SEA",
+      "x": 27,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_KENKORIA_SAFARI_ZONE",
+      "name": "KENKORIA SAFARI",
+      "x": 27,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_PEAKS_OF_ARBEL",
+      "name": "PEAKS OF ARBEL",
+      "x": 24,
+      "y": 1,
+      "width": 1,
+      "height": 1
     }
   ]
 }

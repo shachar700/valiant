@@ -228,8 +228,11 @@
 #define MAPSEC_PINPOINT_CITY                0xE0
 #define MAPSEC_KEREN_TUNNELS                0xE2
 #define MAPSEC_KEREN_CAVE                   0xE3
+#define MAPSEC_KENKORIA_SEA                 0xE4
+#define MAPSEC_KENKORIA_SAFARI_ZONE         0xE5
+#define MAPSEC_PEAKS_OF_ARBEL               0xE6
 
-#define MAPSEC_NONE                         0xE4
+#define MAPSEC_NONE                         0xE7
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -95,7 +95,7 @@ KerenCity_ResearchFacility_AideGiveExpShare::
 	waitse
 	delay 60
 	msgbox KerenCity_ResearchFacility_Text_Aide_CongratulationsHeresYourReward, MSGBOX_AUTOCLOSE
-	giveitem ITEM_EXP_SHARE
+	giveitem ITEM_EXP_ALL
 	setflag FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE
 	goto KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
 	end
