@@ -64,6 +64,42 @@ KerenCity_ResearchFacility_EventScript_OldMan::
 	msgbox KerenCity_ResearchFacility_Text_OldMan, MSGBOX_NPC
 	end
 
+KerenCity_ResearchFacility_EventScript_Aide::
+	lock
+	faceplayer
+	goto_if_set FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE, KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
+	setvar VAR_0x8004, 0
+	specialvar VAR_RESULT, ScriptGetPokedexInfo
+	copyvar VAR_0x8008, VAR_0x8005
+	copyvar VAR_0x8009, VAR_0x8006
+	copyvar VAR_0x800A, VAR_RESULT
+	buffernumberstring STR_VAR_1, VAR_0x8008  @ Num Hoenn seen
+	buffernumberstring STR_VAR_2, VAR_0x8009  @ Num Hoenn caught
+	msgbox KerenCity_ResearchFacility_Text_Aide_HelloImProfessor, MSGBOX_AUTOCLOSE
+	compare VAR_0x8009, 15
+	goto_if_ge KerenCity_ResearchFacility_AideGiveExpShare
+	playse SE_PIN
+	waitse
+	delay 60
+	msgbox KerenCity_ResearchFacility_Text_Aide_CatchMoreMons, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given::
+	msgbox KerenCity_ResearchFacility_Text_Aide_TheExpShare, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KerenCity_ResearchFacility_AideGiveExpShare::
+	playse SE_PIN
+	waitse
+	delay 60
+	msgbox KerenCity_ResearchFacility_Text_Aide_CongratulationsHeresYourReward, MSGBOX_AUTOCLOSE
+	giveitem ITEM_EXP_SHARE
+	setflag FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE
+	goto KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
+	end
+
 KerenCity_ResearchFacility_Text_Scientist1:
 	.string "We study POKéMON, flowers, fossils, you\n"
 	.string "name it.$"
@@ -120,5 +156,35 @@ KerenCity_ResearchFacility_Text_NoRefuse:
 
 KerenCity_ResearchFacility_Text_ImGladYouAgree:
 	.string "I'm glad you agree.$"
+
+KerenCity_ResearchFacility_Text_Aide_HelloImProfessor:
+	.string "Hello, there.\n"
+	.string "I'm BEN's assistant.\p"
+	.string "I can reward trainers who are\n"
+	.string "working on their Pokédex.\p"
+	.string "If you have caught 15 or more Pokémon,\n"
+	.string "you will win a fabulous prize!\p"
+	.string "Here, let me take a look at your\n"
+	.string "Pokédex…\p"
+	.string "… … …\n"
+	.string "… … …\p"
+	.string "Hmhm…\p"
+	.string "So, you've seen {STR_VAR_1} Pokémon,\n"
+	.string "and you've caught {STR_VAR_2} Pokémon…$"
+
+KerenCity_ResearchFacility_Text_Aide_CatchMoreMons:
+	.string "I'm sorry…\n"
+	.string "That's not quite 15 POKéMON\p"
+	.string "Come back when you have caught more.$"
+
+KerenCity_ResearchFacility_Text_Aide_TheExpShare:
+	.string "The Exp. Share awards your Pokémon\n"
+	.string "experience from a battle, even if\l"
+	.string "they don't directly participate in it.\p"
+	.string "I hope it helps you in your journey!$"
+
+KerenCity_ResearchFacility_Text_Aide_CongratulationsHeresYourReward:
+	.string "Congratulations!\p"
+	.string "Here's your reward!$"
 
 

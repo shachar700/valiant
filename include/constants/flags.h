@@ -62,7 +62,7 @@
 #define FLAG_HIDE_SAILOR_BOAT_KENKORIA_SEA/*FLAG_UNUSED_0x030*/    0x30 // Unused Flag
 #define FLAG_HIDE_ROUTE_D_GRUNTS/*FLAG_UNUSED_0x031*/    0x31 // Unused Flag
 #define FLAG_HIDE_ROUTE_D_CELEBI/*FLAG_UNUSED_0x032*/    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
+#define FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE/*FLAG_UNUSED_0x033*/    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
@@ -1068,11 +1068,11 @@
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7 // Valiant
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8 // Valiant
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9 // Valiant
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
+#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA // Valiant
+#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB // Valiant
 #define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC // Valiant
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
+#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // Valiant
+#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE // Valiant
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401

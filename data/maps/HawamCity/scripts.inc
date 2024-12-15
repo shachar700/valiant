@@ -83,8 +83,17 @@ HawamCity_Movement_ProfAndPlayerTwoUp::
 
 HawamCity_EventScript_BlockSouth_Trigger::
 	lock
+	goto_if_set FLAG_RECEIVED_BIKE HawamCity_EventScript_Worried
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown
 	msgbox HawamCity_Text_Man_Block, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_GoOneUp
+	waitmovement 0
+	release
+	end
+
+HawamCity_EventScript_Worried::
+	msgbox HawamCity_Text_Worried, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, HawamCity_Movement_GoOneUp
 	waitmovement 0
@@ -158,6 +167,12 @@ HawamCity_EventScript_CitySign::
 HawamCity_EventScript_GymSign::
 	msgbox HawamCity_Text_GymSign, MSGBOX_SIGN
 	end
+
+HawamCity_Text_Worried:
+	.string "The gym leader JONAH, went to SODORI\n"
+	.string "TUNNELS and haven't come back yet.\p"
+	.string "I'm worried about him. Could you\n"
+	.string "please check it out?$"
 
 HawamCity_Text_ProfIntro:
 	.string "{COLOR GREEN}PROF ARIA:{COLOR DARK_GRAY} Oh hello there {PLAYER}!\p"
