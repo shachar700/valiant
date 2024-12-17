@@ -94,17 +94,21 @@ PtolemaisCity_Gym_1F_EventScript_IdoDefeated::
 	setflag FLAG_BADGE01_GET
 	setvar VAR_PTOLEMAIS_CITY_STATE, 1
 	setflag FLAG_HIDE_PTOLEMAIS_CITY_SMASH_FEMALE
-	call PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
-	return
+	goto PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse
+	end
 
 PtolemaisCity_Gym_1F_EventScript_GiveWaterPulse::
 	giveitem ITEM_TM_WATER_PULSE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox PtolemaisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
-	return
+	waitmessage
+	msgbox PtolemaisCity_Gym_1F_Text_IdoPostBattle, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 PtolemaisCity_Gym_1F_EventScript_GymGuide::
 	lock

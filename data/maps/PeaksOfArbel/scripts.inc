@@ -8,4 +8,5 @@ PeaksOfArbel_EventScript_Box::
 PeaksOfArbel_Text_Box:
 	.string "It says on the box:\n"
 	.string "PROPERTY OF TEAM SMASH.\p"
-	.string "Tasked with blocking unwanted guests.$"
+	.string "Tasked with blocking unwanted guests.\n"
+	.string "(End of Beta 2)$"

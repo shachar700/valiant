@@ -68,13 +68,13 @@ KerenCity_ResearchFacility_EventScript_Aide::
 	lock
 	faceplayer
 	goto_if_set FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE, KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
-	setvar VAR_0x8004, 0
+	setvar VAR_0x8004, 1
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
 	copyvar VAR_0x8008, VAR_0x8005
 	copyvar VAR_0x8009, VAR_0x8006
 	copyvar VAR_0x800A, VAR_RESULT
-	buffernumberstring STR_VAR_1, VAR_0x8008  @ Num Hoenn seen
-	buffernumberstring STR_VAR_2, VAR_0x8009  @ Num Hoenn caught
+	buffernumberstring STR_VAR_1, VAR_0x8008  @ Num National seen
+	buffernumberstring STR_VAR_2, VAR_0x8009  @ Num National caught
 	msgbox KerenCity_ResearchFacility_Text_Aide_HelloImProfessor, MSGBOX_AUTOCLOSE
 	compare VAR_0x8009, 15
 	goto_if_ge KerenCity_ResearchFacility_AideGiveExpShare
@@ -95,7 +95,7 @@ KerenCity_ResearchFacility_AideGiveExpShare::
 	waitse
 	delay 60
 	msgbox KerenCity_ResearchFacility_Text_Aide_CongratulationsHeresYourReward, MSGBOX_AUTOCLOSE
-	giveitem ITEM_EXP_ALL
+	giveitem ITEM_EXP_SHARE
 	setflag FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE
 	goto KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
 	end

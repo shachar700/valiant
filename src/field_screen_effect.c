@@ -1092,13 +1092,17 @@ void DoSpinExitWarp(void)
     CreateTask(Task_SpinExitWarp, 10);
 }
 
-static void LoadOrbEffectPalette(bool8 blueOrb)
+static void LoadOrbEffectPalette(u8 colorOrb)
 {
     int i;
     u16 color[1];
 
-    if (!blueOrb)
+    if (colorOrb == 0)
         color[0] = RGB_RED;
+    else if (colorOrb == 1)
+        color[0] = RGB_BLUE;
+    else if (colorOrb == 2)
+        color[0] = RGB_GREEN;
     else
         color[0] = RGB_BLUE;
 
@@ -1130,7 +1134,7 @@ static bool8 UpdateOrbEffectBlend(u16 shakeDir)
         return FALSE;
 }
 
-#define tBlueOrb     data[1]
+#define tColorOrb     data[1]
 #define tCenterX     data[2]
 #define tCenterY     data[3]
 #define tShakeDelay  data[4]
@@ -1167,7 +1171,7 @@ static void Task_OrbEffect(u8 taskId)
         break;
     case 1:
         BgDmaFill(0, PIXEL_FILL(1), 0, 1);
-        LoadOrbEffectPalette(tBlueOrb);
+        LoadOrbEffectPalette(tColorOrb);
         StartUpdateOrbFlashEffect(tCenterX, tCenterY, 1, 160, 1, 2);
         tState = 2;
         break;
@@ -1236,28 +1240,33 @@ void DoOrbEffect(void)
     u8 taskId = CreateTask(Task_OrbEffect, 80);
     s16 *data = gTasks[taskId].data;
 
+    tCenterY = 80;
     if (gSpecialVar_Result == 0)
     {
-        tBlueOrb = FALSE;
+        tColorOrb = 0;
         tCenterX = 104;
     }
     else if (gSpecialVar_Result == 1)
     {
-        tBlueOrb = TRUE;
+        tColorOrb = 1;
         tCenterX = 136;
     }
     else if (gSpecialVar_Result == 2)
     {
-        tBlueOrb = FALSE;
+        tColorOrb = 0;
         tCenterX = 120;
+    }
+    else if (gSpecialVar_Result == 3)
+    {
+        tColorOrb = 2;
+        tCenterX = 56;
+        tCenterY = 48;
     }
     else
     {
-        tBlueOrb = TRUE;
+        tColorOrb = 1;
         tCenterX = 120;
     }
-
-    tCenterY = 80;
 }
 
 void FadeOutOrbEffect(void)
@@ -1266,7 +1275,7 @@ void FadeOutOrbEffect(void)
     gTasks[taskId].tState = 6;
 }
 
-#undef tBlueOrb
+#undef tColorOrb
 #undef tCenterX
 #undef tCenterY
 #undef tShakeDelay

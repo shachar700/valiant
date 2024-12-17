@@ -10,13 +10,13 @@ KerenCity_Gym_EventScript_SetFlashLevel::
 	goto_if_defeated TRAINER_BRAWLY_1, KerenCity_Gym_EventScript_SetLightsOn
 	call KerenCity_Gym_EventScript_CountTrainersDefeated
 	copyvar VAR_0x8001, VAR_0x8000
-	goto_if_eq VAR_0x8000, 1, KerenCity_Gym_EventScript_SetFlashLevel8
-	goto_if_eq VAR_0x8000, 2, KerenCity_Gym_EventScript_SetFlashLevel7
-	goto_if_eq VAR_0x8000, 3, KerenCity_Gym_EventScript_SetFlashLevel6
-	goto_if_eq VAR_0x8000, 4, KerenCity_Gym_EventScript_SetFlashLevel5
-	goto_if_eq VAR_0x8000, 5, KerenCity_Gym_EventScript_SetFlashLevel4
-	goto_if_eq VAR_0x8000, 6, KerenCity_Gym_EventScript_SetFlashLevel3
-	goto_if_eq VAR_0x8000, 7, KerenCity_Gym_EventScript_SetFlashLevel2
+	goto_if_eq VAR_0x8000, 0, KerenCity_Gym_EventScript_SetFlashLevel8
+	goto_if_eq VAR_0x8000, 1, KerenCity_Gym_EventScript_SetFlashLevel7
+	goto_if_eq VAR_0x8000, 2, KerenCity_Gym_EventScript_SetFlashLevel6
+	goto_if_eq VAR_0x8000, 3, KerenCity_Gym_EventScript_SetFlashLevel5
+	goto_if_eq VAR_0x8000, 4, KerenCity_Gym_EventScript_SetFlashLevel4
+	goto_if_eq VAR_0x8000, 5, KerenCity_Gym_EventScript_SetFlashLevel3
+	goto_if_eq VAR_0x8000, 6, KerenCity_Gym_EventScript_SetFlashLevel2
 	goto KerenCity_Gym_EventScript_SetFlashLevel1
 
 KerenCity_Gym_EventScript_SetLightsOn::
@@ -170,17 +170,20 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	setflag FLAG_DEFEATED_KEREN_CITY_GYM
 	setflag FLAG_BADGE02_GET
 	addvar VAR_KEREN_CITY_GYM_STATE, 1
-	call KerenCity_Gym_EventScript_GiveBulkUp
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
-	return
+	goto KerenCity_Gym_EventScript_GiveBulkUp
+	end
 
 KerenCity_Gym_EventScript_GiveBulkUp::
 	giveitem ITEM_TM_BULK_UP
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
 	msgbox KerenCity_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
+	waitmessage
 	setflag FLAG_RECEIVED_TM_BULK_UP
-	return
+	msgbox KerenCity_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
+	release
+	end
 
 KerenCity_Gym_EventScript_Takao::
 	trainerbattle_single TRAINER_RHETT, KerenCity_Gym_Text_TakaoIntro, KerenCity_Gym_Text_TakaoDefeat, KerenCity_Gym_EventScript_TakaoBrightenRoom

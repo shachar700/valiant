@@ -132,13 +132,10 @@ RouteD_EventScript_Trigger_CelebiEncounter::
 	dofieldeffectsparkle 5, 12, 0
 	waitfieldeffect FLDEFF_SPARKLE
 	playfanfare MUS_AWAKEN_LEGEND
+	setvar VAR_RESULT, 3
 	playse SE_ORB
 	special DoOrbEffect
 	delay 150
-	special FadeOutOrbEffect
-	waitstate
-	delay 50
-	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_POOCHYENA
 	removeobject LOCALID_SMASHMALEL
@@ -149,10 +146,13 @@ RouteD_EventScript_Trigger_CelebiEncounter::
 	setweather WEATHER_RAIN_THUNDERSTORM
 	doweather
 	fadescreen FADE_FROM_BLACK
-	special Script_FadeOutMapMusic
 	delay 30
+	special FadeOutOrbEffect
+	waitstate
+	delay 50
 	msgbox RouteD_Text_LovesCelebi, MSGBOX_DEFAULT
 	waitmessage
+	waitfanfare
 	applymovement LOCALID_CELEBI, RouteD_Movement_Celebi_Out
 	delay 20
 	applymovement LOCALID_LITTLE_KID, Common_Movement_FaceDown
@@ -350,7 +350,7 @@ RouteD_Text_WhereDidCelebiGo:
 	.string "How is this possible?\p"
 	.string "Lets go to the cave\n"
 	.string "CELEBI must be in it.\l"
-	.string "POOCHYENA, return$"
+	.string "POOCHYENA, return.$"
 
 RouteD_Text_SmashGruntLeft:
 	.string "There's no going NORTH from here.\n"

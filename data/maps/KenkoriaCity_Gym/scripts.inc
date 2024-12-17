@@ -791,6 +791,7 @@ KenkoriaCity_Gym_EventScript_Lass_PickedFlower:
 
 KenkoriaCity_Gym_EventScript_Michal::
 	lock
+	faceplayer
 	goto_if_lt VAR_KENKORIA_CITY_GYM_FLOWERS_COUNTER, 10, KenkoriaCity_Gym_EventScript_NotEnoughFlowers
 	trainerbattle_single TRAINER_WATTSON_1, KenkoriaCity_Gym_Text_MichalIntro, KenkoriaCity_Gym_Text_MichalDefeat, KenkoriaCity_Gym_EventScript_MichalDefeated, NO_MUSIC
 	msgbox KenkoriaCity_Gym_Text_MichalPostBattle, MSGBOX_DEFAULT
@@ -800,6 +801,7 @@ KenkoriaCity_Gym_EventScript_Michal::
 
 KenkoriaCity_Gym_EventScript_NotEnoughFlowers:
 	msgbox KenkoriaCity_Gym_Text_NotEnoughFlowers, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -812,16 +814,20 @@ KenkoriaCity_Gym_EventScript_MichalDefeated::
 	setflag FLAG_BADGE03_GET
 	addvar VAR_KEREN_CITY_STATE, 1
 	addvar VAR_KEREN_CITY_GYM_STATE, 1
-	call KenkoriaCity_Gym_EventScript_GiveBulletSeed
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers
-	return
+	goto KenkoriaCity_Gym_EventScript_GiveBulletSeed
+	end
 
 KenkoriaCity_Gym_EventScript_GiveBulletSeed::
 	giveitem ITEM_TM_BULLET_SEED
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox KenkoriaCity_Gym_Text_GiveBulletSeed, MSGBOX_DEFAULT
-	return
+	setflag FLAG_RECEIVED_TM_BULLET_SEED
+	waitmessage
+	msgbox KenkoriaCity_Gym_Text_MichalPostBattle, MSGBOX_DEFAULT
+	release
+	end
 
 
 KenkoriaCity_Gym_EventScript_Teala::
