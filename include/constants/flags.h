@@ -1073,9 +1073,9 @@
 #define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC // Valiant
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // Valiant
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE // Valiant
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
+#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF // Valiant
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
+#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401 // Valiant
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
 #define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
 #define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
