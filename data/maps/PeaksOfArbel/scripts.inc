@@ -145,6 +145,34 @@ PeaksOfArbel_EventScript_ButtonAlready:
 	release
 	end
 
+PeaksOfArbel_EventScript_Scientist2::
+	msgbox PeaksOfArbel_Text_Scientist2, MSGBOX_NPC
+	end
+
+
+PeaksOfArbel_EventScript_Vigoroth::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VIGOROTH, CRY_MODE_ENCOUNTER
+	delay 40
+	msgbox PeaksOfArbel_Text_Vigoroth, MSGBOX_AUTOCLOSE
+	waitmoncry
+	setwildbattle SPECIES_VIGOROTH, 30, ITEM_NONE
+	dowildbattle
+	playmoncry SPECIES_VIGOROTH, CRY_MODE_FAINT
+	waitmoncry
+	fadescreen 1
+	delay 60
+	removeobject LOCALID_VIGOROTH_1
+	setflag FLAG_HIDE_VIGOROTH_1
+	fadescreen 0
+	release
+	end
+
+PeaksOfArbel_Text_Vigoroth:
+	.string "Vigo Vigoroth!$"
+
 PeaksOfArbel_Text_Button_Question:
 	.string "Push the button?$"
 
@@ -243,3 +271,7 @@ PeaksOfArbel_Text_Scientist1Defeat:
 PeaksOfArbel_Text_Scientist1PostBattle:
 	.string "What can we expect from what comes next?\n"
 	.string "This is so exciting.$"
+
+PeaksOfArbel_Text_Scientist2:
+	.string "I need to wait for a POKéMON to push\n"
+	.string "this boulder every time.$"

@@ -63,7 +63,7 @@
 #define FLAG_HIDE_ROUTE_D_GRUNTS/*FLAG_UNUSED_0x031*/    0x31 // Unused Flag
 #define FLAG_HIDE_ROUTE_D_CELEBI/*FLAG_UNUSED_0x032*/    0x32 // Unused Flag
 #define FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE/*FLAG_UNUSED_0x033*/    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
+#define FLAG_HIDE_VIGOROTH_1/*FLAG_UNUSED_0x034*/    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
