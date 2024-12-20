@@ -1245,3 +1245,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MedianSea_West/scripts.inc"
 
 	.include "data/maps/MedianSea_North/scripts.inc"
+
+	.include "data/maps/HaruTelCity/scripts.inc"
+
+	.include "data/maps/BlissphonyCity/scripts.inc"

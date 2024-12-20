@@ -55,7 +55,9 @@
     "SheshBeshCity",
     "MedianSea_South",
     "MedianSea_West",
-    "MedianSea_North"
+    "MedianSea_North",
+    "HaruTelCity",
+    "BlissphonyCity"
   ],
   "gMapGroup_ValiantDungeons": [
     "SodoriTunnels",

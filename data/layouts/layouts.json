@@ -4880,6 +4880,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MedianSea_North/border.bin",
       "blockdata_filepath": "data/layouts/MedianSea_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_HARU_TEL_CITY",
+      "name": "HaruTelCity_Layout",
+      "width": 60,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/HaruTelCity/border.bin",
+      "blockdata_filepath": "data/layouts/HaruTelCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLISSPHONY_CITY",
+      "name": "BlissphonyCity_Layout",
+      "width": 60,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Desert",
+      "border_filepath": "data/layouts/BlissphonyCity/border.bin",
+      "blockdata_filepath": "data/layouts/BlissphonyCity/map.bin"
     }
   ]
 }
