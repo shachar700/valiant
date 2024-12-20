@@ -52,7 +52,10 @@
     "PinpointCity",
     "KenkoriaSea",
     "KenkoriaSafariZone",
-    "SheshBeshCity"
+    "SheshBeshCity",
+    "MedianSea_South",
+    "MedianSea_West",
+    "MedianSea_North"
   ],
   "gMapGroup_ValiantDungeons": [
     "SodoriTunnels",

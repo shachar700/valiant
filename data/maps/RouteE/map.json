@@ -15,13 +15,8 @@
   "connections": [
     {
       "map": "MAP_HAWAM_CITY",
-      "offset": 45,
-      "direction": "right"
-    },
-    {
-      "map": "MAP_PTOLEMAIS_CITY",
-      "offset": -12,
-      "direction": "right"
+      "offset": -6,
+      "direction": "up"
     }
   ],
   "object_events": [

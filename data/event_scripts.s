@@ -1239,3 +1239,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PeaksOfArbel_2F/scripts.inc"
 
 	.include "data/maps/SheshBeshCity/scripts.inc"
+
+	.include "data/maps/MedianSea_South/scripts.inc"
+
+	.include "data/maps/MedianSea_West/scripts.inc"
+
+	.include "data/maps/MedianSea_North/scripts.inc"

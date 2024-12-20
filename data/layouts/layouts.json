@@ -4614,18 +4614,18 @@
     {
       "id": "LAYOUT_ROUTE_E",
       "name": "RouteE_Layout",
-      "width": 80,
-      "height": 80,
+      "width": 50,
+      "height": 100,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/RouteE/border.bin",
       "blockdata_filepath": "data/layouts/RouteE/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE_F",
       "name": "RouteF_Layout",
-      "width": 50,
-      "height": 100,
+      "width": 40,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/RouteF/border.bin",
@@ -4850,6 +4850,36 @@
       "secondary_tileset": "gTileset_Desert",
       "border_filepath": "data/layouts/SheshBeshCity/border.bin",
       "blockdata_filepath": "data/layouts/SheshBeshCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEDIAN_SEA_SOUTH",
+      "name": "MedianSea_South_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MedianSea_South/border.bin",
+      "blockdata_filepath": "data/layouts/MedianSea_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEDIAN_SEA_WEST",
+      "name": "MedianSea_West_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MedianSea_West/border.bin",
+      "blockdata_filepath": "data/layouts/MedianSea_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEDIAN_SEA_NORTH",
+      "name": "MedianSea_North_Layout",
+      "width": 120,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MedianSea_North/border.bin",
+      "blockdata_filepath": "data/layouts/MedianSea_North/map.bin"
     }
   ]
 }
