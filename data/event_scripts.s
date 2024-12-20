@@ -1237,3 +1237,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PeaksOfArbel/scripts.inc"
 
 	.include "data/maps/PeaksOfArbel_2F/scripts.inc"
+
+	.include "data/maps/SheshBeshCity/scripts.inc"
