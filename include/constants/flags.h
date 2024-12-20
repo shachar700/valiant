@@ -64,12 +64,12 @@
 #define FLAG_HIDE_ROUTE_D_CELEBI/*FLAG_UNUSED_0x032*/    0x32 // Unused Flag
 #define FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE/*FLAG_UNUSED_0x033*/    0x33 // Unused Flag
 #define FLAG_HIDE_VIGOROTH_1/*FLAG_UNUSED_0x034*/    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_HIDE_VIGOROTH_2/*FLAG_UNUSED_0x035*/    0x35 // Unused Flag
+#define FLAG_HIDE_PEAKS_OF_ARBEL_TEAM_SMASH/*FLAG_UNUSED_0x036*/    0x36 // Unused Flag
+#define FLAG_HIDE_PEAKS_OF_ARBEL_2F_HAPPY_MEAL/*FLAG_UNUSED_0x037*/    0x37 // Unused Flag
+#define FLAG_HIDE_PEAKS_OF_ARBEL_2F_TRUCKS/*FLAG_UNUSED_0x038*/    0x38 // Unused Flag
+#define FLAG_HIDE_ROUTE_D_SNORLAX/*FLAG_UNUSED_0x039*/    0x39 // Unused Flag
+#define FLAG_HIDE_PEAKS_OF_ARBEL_TRAVELERS/*FLAG_UNUSED_0x03A*/    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
@@ -255,7 +255,7 @@
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
-#define FLAG_UNUSED_0x0E9                    0xE9 // Unused Flag
+#define FLAG_RECEVIED_HAPPY_MEAL/*FLAG_UNUSED_0x0E9*/                    0xE9 // Unused Flag
 
 #define FLAG_RECEIVED_TM_REST                0xEA
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB

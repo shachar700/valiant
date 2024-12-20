@@ -6056,6 +6056,11 @@ const u8 *GetTrainerPartnerName(void)
             return GetTrainerNameFromId(TRAINER_STEVEN);
         }
         else
+        if (gPartnerTrainerId == TRAINER_PARTNER(PARTNER_BEN))
+        {
+            return GetTrainerNameFromId(TRAINER_WALLY_MAUVILLE);
+        }
+        else
         {
             GetFrontierTrainerName(gStringVar1, gPartnerTrainerId);
             return gStringVar1;

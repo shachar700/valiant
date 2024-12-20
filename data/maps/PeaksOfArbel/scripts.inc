@@ -1,14 +1,14 @@
+.set LOCALID_VIGOROTH_1, 16
+.set LOCALID_VIGOROTH_2, 15 
+.set LOCALID_BEN, 26
+.set LOCALID_AZRI, 12
+
 PeaksOfArbel_MapScripts::
 	.byte 0
 
 PeaksOfArbel_EventScript_Box::
 	msgbox PeaksOfArbel_Text_Box, MSGBOX_NPC
 	end
-
-PeaksOfArbel_Text_Box:
-	.string "It says on the box:\n"
-	.string "PROPERTY OF TEAM SMASH.\p"
-	.string "Tasked with blocking unwanted guests.$"
 
 PeaksOfArbel_EventScript_GruntG1::
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, PeaksOfArbel_Text_GruntG1Intro, PeaksOfArbel_Text_GruntG1Defeat
@@ -149,8 +149,111 @@ PeaksOfArbel_EventScript_Scientist2::
 	msgbox PeaksOfArbel_Text_Scientist2, MSGBOX_NPC
 	end
 
+PeaksOfArbel_EventScript_GruntB5::
+	msgbox PeaksOfArbel_Text_GruntB5, MSGBOX_NPC
+	end
 
-PeaksOfArbel_EventScript_Vigoroth::
+PeaksOfArbel_EventScript_GruntG4::
+	msgbox PeaksOfArbel_Text_GruntG4, MSGBOX_NPC
+	end
+
+PeaksOfArbel_Trigger_Azri::
+	lockall
+	fadedefaultbgm
+	playbgm MUS_ENCOUNTER_MAGMA, TRUE
+	applymovement LOCALID_AZRI, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 60
+	applymovement LOCALID_AZRI, PeaksOfArbel_MOvement_AzriWalksForward
+	waitmovement 0 
+	msgbox PeaksOfArbel_Text_AzriIntro, MSGBOX_DEFAULT
+	closemessage
+	@ben walks in 
+	clearflag FLAG_HIDE_ROUTE_B_RIVAL
+	addobject LOCALID_BEN
+	applymovement LOCALID_BEN, PeaksOfARbel_Movement_BenEnters
+	waitmovement 0
+	msgbox PeaksOfArbel_Text_BenIntro, MSGBOX_DEFAULT
+	waitmessage
+	turnobject LOCALID_BEN, DIR_EAST
+	applymovement OBJ_EVENT_ID_PLAYER, PeaksOfArbel_Movement_PlayersMoveDownToBen
+	waitmovement 0
+	msgbox PeaksOfArbel_Text_BenPlayerAreYouReady, MSGBOX_DEFAULT
+	waitmessage
+	turnobject LOCALID_BEN, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	applymovement 18, PeaksOfArbel_Movement_GruntApproachesPlayer
+	waitmovement 0
+	goto PeaksOfArbel_EventScript_ChoosePartyForMultiBattle
+	end
+
+PeaksOfArbel_EventScript_ChoosePartyForMultiBattle::
+	special SavePlayerParty
+	fadescreen FADE_TO_BLACK
+	special ChooseHalfPartyForBattle
+	waitstate
+	goto_if_ne VAR_RESULT, 0, PeaksOfArbel_EventScript_DoBenMultiBattle
+	special LoadPlayerParty
+	goto PeaksOfArbel_EventScript_ChoosePartyForMultiBattle
+
+PeaksOfArbel_EventScript_DoBenMultiBattle::
+	@ fadeinbgm 0
+	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, PeaksOfArbel_Text_ThisIsNotOver, TRAINER_TABITHA_MOSSDEEP, PeaksOfArbel_Text_NajeebDefeat, PARTNER_BEN
+	switch VAR_RESULT
+	case 1, PeaksOfArbel_EventScript_DefeatedAzriNajib
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_ROUTE_B_RIVAL
+	special SetCB2WhiteOut
+	waitstate
+
+PeaksOfArbel_EventScript_DefeatedAzriNajib::
+	msgbox PeaksOfArbel_Text_AzriConfused, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement 18, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_AZRI, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	delay 60
+	applymovement 18, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_AZRI, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
+	delay 20
+	msgbox PeaksOfArbel_Text_AzriDefeat, MSGBOX_DEFAULT
+	closemessage
+	fadedefaultbgm
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_PEAKS_OF_ARBEL_TEAM_SMASH
+	removeobject LOCALID_AZRI
+	removeobject 18 @NAJEEB/Boy5
+	removeobject 17 @Girl4
+	removeobject 14 @Scientist2
+	removeobject 13 @Boy4
+	removeobject 21 @Scientist1
+	removeobject 11 @Girl3
+	removeobject 10 @Boy3
+	removeobject 9  @Girl2
+	removeobject 20 @Boy2
+	removeobject 27 @Boy1
+	removeobject 24 @Girl1
+	@hide grunts and set vars and flags
+	fadescreen FADE_FROM_BLACK
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+	turnobject LOCALID_BEN, DIR_EAST
+	msgbox PeaksOfArbel_Text_BenhankYouComeSeeMeAtMyResearchFacility, MSGBOX_DEFAULT
+	closemessage
+	fadescreen FADE_TO_BLACK
+	@remove ben
+	setflag FLAG_HIDE_ROUTE_B_RIVAL
+	clearflag FLAG_HIDE_PEAKS_OF_ARBEL_TRAVELERS
+	removeobject LOCALID_BEN
+	setvar VAR_KEREN_CITY_GYM_STATE, 7
+	fadescreen FADE_FROM_BLACK
+#ifdef BUGFIX
+	releaseall
+#endif
+	end
+
+PeaksOfArbel_EventScript_Vigoroth1::
 	lock
 	faceplayer
 	waitse
@@ -162,13 +265,76 @@ PeaksOfArbel_EventScript_Vigoroth::
 	dowildbattle
 	playmoncry SPECIES_VIGOROTH, CRY_MODE_FAINT
 	waitmoncry
-	fadescreen 1
+	fadescreen FADE_TO_BLACK
 	delay 60
 	removeobject LOCALID_VIGOROTH_1
 	setflag FLAG_HIDE_VIGOROTH_1
-	fadescreen 0
+	fadescreen FADE_FROM_BLACK
 	release
 	end
+
+PeaksOfArbel_EventScript_Vigoroth2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VIGOROTH, CRY_MODE_ENCOUNTER
+	delay 40
+	msgbox PeaksOfArbel_Text_Vigoroth, MSGBOX_AUTOCLOSE
+	waitmoncry
+	setwildbattle SPECIES_VIGOROTH, 30, ITEM_NONE
+	dowildbattle
+	playmoncry SPECIES_VIGOROTH, CRY_MODE_FAINT
+	waitmoncry
+	fadescreen FADE_TO_BLACK
+	delay 60
+	removeobject LOCALID_VIGOROTH_2
+	setflag FLAG_HIDE_VIGOROTH_2
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+PeaksOfArbel_EventScript_Hiker::
+	msgbox PeaksOfArbel_Text_Hiker, MSGBOX_NPC
+	end
+
+PeaksOfArbel_EventScript_Maniac::
+	msgbox PeaksOfArbel_Text_Maniac, MSGBOX_NPC
+	end
+
+PeaksOfARbel_Movement_BenEnters:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_up
+	step_end
+
+PeaksOfArbel_MOvement_AzriWalksForward:
+	walk_down
+	step_end
+
+PeaksOfArbel_Movement_GruntApproachesPlayer:
+	walk_down
+	walk_left
+	walk_left
+	step_end
+
+PeaksOfArbel_Movement_PlayersMoveDownToBen:
+	walk_down
+	face_left
+	step_end
+
+PeaksOfArbel_Text_Box:
+	.string "It says on the box:\n"
+	.string "PROPERTY OF TEAM SMASH.\p"
+	.string "Tasked with blocking unwanted guests.$"
+
+PeaksOfArbel_Text_GruntB5:
+	.string "No entry past this point.$"
+
+PeaksOfArbel_Text_GruntG4:
+	.string "We are digging for zircon gems.$"
 
 PeaksOfArbel_Text_Vigoroth:
 	.string "Vigo Vigoroth!$"
@@ -275,3 +441,69 @@ PeaksOfArbel_Text_Scientist1PostBattle:
 PeaksOfArbel_Text_Scientist2:
 	.string "I need to wait for a POKéMON to push\n"
 	.string "this boulder every time.$"
+
+PeaksOfArbel_Text_AzriIntro:
+	.string "So you are the pesk who's been meddling\n"
+	.string "with my plans?\p"
+	.string "{PLAYER}, right?\n"
+	.string "I got eyes everywhere.$"
+
+PeaksOfArbel_Text_BenIntro:
+	.string "{COLOR BLUE}BEN{COLOR DARK_GRAY}: Stop with this insane excavation of\n"
+	.string "the ZIRCON gems. Those are not yours\l"
+	.string "for the taking.$"
+
+PeaksOfArbel_Text_AzriRevealsPlan:
+	.string "What we do in this cave is our own\n"
+	.string "concern. This is none of your business.\p"
+	.string "If you think you can stop us, then think\n"
+	.string "again. I'm not going to let you stop us.\p"
+	.string "Those ZIRCON ORBs are already taken.\n"
+	.string "these gems, along with the power of CELEBI\l"
+	.string "will allow us to travel through time.\l"
+	.string "So these converstaion will cease to exit.\p"
+	.string "The flower nectars will sustain CELEBI's\n"
+	.string "mind under our influence.\p"
+	.string "We WILL catch that mystical beast.\n"
+	.string "Mark my words.$"
+
+PeaksOfArbel_Text_BenPlayerAreYouReady:
+	.string "{PLAYER}, are you ready?\n"
+	.string "This is not going to be an easy fight.\p"
+	.string "We gotta get those goons outta here.\n"
+	.string "Pick your strongest POKéMON for this.$"
+
+PeaksOfArbel_Text_ThisIsNotOver:
+	.string "This is not over…\n"
+	.string "Not in a million years.$"
+
+PeaksOfArbel_Text_NajeebDefeat:
+	.string "I'm with our leader…$"
+
+PeaksOfArbel_Text_AzriConfused:
+	.string "This is outrageous.$"
+
+PeaksOfArbel_Text_AzriDefeat:
+	.string "Hehehe this was not suppose to happen…\n"
+	.string "The gem stones are far off by now\p"
+	.string "Our trucks have already left.\p"
+	.string "We are going, this place is now useless\n"
+	.string "to us. Don't follow us or you'll regret it.$"
+
+PeaksOfArbel_Text_BenhankYouComeSeeMeAtMyResearchFacility:
+	.string "{COLOR BLUE}BEN{COLOR DARK_GRAY}: Whew, that was intense.\n"
+	.string "{PLAYER}, thank you.\p"
+	.string "I have somethign to give you as\n"
+	.string "thanks for your support.\p"
+	.string "Please come see me at the KEREN\n"
+	.string "Research Facility after this.\n"
+	.string "Oh yeah, I don't live in PTOLEMAIS CITY.\n"
+	.string "I live right here in KEREN CITY.$"
+
+PeaksOfArbel_Text_Hiker:
+	.string "Now that TEAM SMASH is gone, I can\n"
+	.string "finally explore the cave.$"
+
+PeaksOfArbel_Text_Maniac:
+	.string "I want to reach the top of the peaks.\n"
+	.string "I wonder what's up there.$"

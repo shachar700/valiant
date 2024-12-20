@@ -1235,3 +1235,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KenkoriaSafariZone/scripts.inc"
 
 	.include "data/maps/PeaksOfArbel/scripts.inc"
+
+	.include "data/maps/PeaksOfArbel_2F/scripts.inc"

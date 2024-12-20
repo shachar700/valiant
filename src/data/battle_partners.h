@@ -103,3 +103,56 @@
             },
         },
     },
+#line 45
+    [PARTNER_BEN] =
+    {
+#line 46
+        .trainerName = _("BEN"),
+#line 47
+        .trainerClass = TRAINER_CLASS_RIVAL,
+#line 48
+        .trainerPic = TRAINER_BACK_PIC_WALLY,
+        .encounterMusic_gender = 
+#line 50
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 52
+            .species = SPECIES_MARSHTOMP,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 55
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 54
+            .lvl = 30,
+#line 53
+            .nature = NATURE_BASHFUL,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 57
+            .species = SPECIES_NUZLEAF,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 60
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 59
+            .lvl = 26,
+#line 58
+            .nature = NATURE_IMPISH,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 62
+            .species = SPECIES_MAGNEMITE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 65
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 64
+            .lvl = 26,
+#line 63
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },

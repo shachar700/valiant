@@ -14123,4 +14123,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+        [ITEM_HAPPY_MEAL] =
+    {
+        .name = _("Happy Meal"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A kids meal that\n"
+            "contains food,\n"
+            "drink and a toy."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_HappyMeal,
+        .iconPalette = gItemIconPalette_HappyMeal,
+    },
 };

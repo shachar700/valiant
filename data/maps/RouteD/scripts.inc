@@ -220,7 +220,39 @@ RouteD_EventScript_Snorlax::
 	waitse
 	playmoncry SPECIES_SNORLAX, CRY_MODE_NORMAL
 	msgbox RouteD_Text_Snorlax, MSGBOX_DEFAULT
+	goto_if_set FLAG_RECEVIED_HAPPY_MEAL, RouteD_EventScript_SnorlaxHappyMeal
 	waitmoncry
+	release
+	end
+
+RouteD_EventScript_SnorlaxHappyMeal::
+	msgbox RouteD_Text_SnorlaxSniffing, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 0, RouteD_EventScript_SnorlaxDeclinedHappyMeal
+	waitse
+	playmoncry SPECIES_SNORLAX, CRY_MODE_NORMAL
+	removeitem ITEM_HAPPY_MEAL
+	msgbox RouteD_Text_SnorlaxMunching, MSGBOX_DEFAULT
+	waitmoncry
+	applymovement 25, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 60
+	msgbox RouteD_Text_SnorlaxAttacks, MSGBOX_AUTOCLOSE
+	setwildbattle SPECIES_SNORLAX, 30, ITEM_SITRUS_BERRY
+	dowildbattle
+	playmoncry SPECIES_SNORLAX, CRY_MODE_FAINT
+	waitmoncry
+	fadescreen FADE_TO_BLACK
+	delay 60
+	removeobject 25
+	setflag FLAG_HIDE_ROUTE_D_SNORLAX
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+
+
+
+RouteD_EventScript_SnorlaxDeclinedHappyMeal::
 	release
 	end
 
@@ -444,3 +476,17 @@ RouteD_Text_Snorlax:
 	.string "Snor… … …\p"
 	.string "A SNORLAX is snoring and blocking the\n"
 	.string "way.$"
+
+RouteD_Text_SnorlaxSniffing:
+	.string "SNORLAX is sniffing a warm meal.\n"
+	.string "Awaken by the good smell.\p"
+	.string "Give Happy Meal to SNORLAX?$"
+
+RouteD_Text_SnorlaxMunching:
+	.string "SNORLAX is munching the HAPPY MEAL\n"
+	.string "making it very happy.\p"
+	.string "Woke by its senses it notices {PLAYER},\n"
+	.string "making it protective.$"
+
+RouteD_Text_SnorlaxAttacks:
+	.string "SNORLAX attacks.$"

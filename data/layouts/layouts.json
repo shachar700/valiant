@@ -4830,6 +4830,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/PeaksOfArbel/border.bin",
       "blockdata_filepath": "data/layouts/PeaksOfArbel/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEAKS_OF_ARBEL_2F",
+      "name": "PeaksOfArbel_2F_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/PeaksOfArbel_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PeaksOfArbel_2F/map.bin"
     }
   ]
 }

@@ -2988,6 +2988,7 @@ void TryHideBattleTowerReporter(void)
 }
 
 #define STEVEN_OTID 61226
+#define BEN_OTID 13098
 
 static void FillPartnerParty(u16 trainerId)
 {
@@ -3030,6 +3031,8 @@ static void FillPartnerParty(u16 trainerId)
             }
             if (trainerId == TRAINER_PARTNER(PARTNER_STEVEN))
                 otID = STEVEN_OTID;
+            else if (trainerId == TRAINER_PARTNER(PARTNER_BEN))
+                otID = BEN_OTID;
             else
                 otID = ((firstIdPart % 72) * 1000) + ((secondIdPart % 23) * 10) + (thirdIdPart % 37) % 65536;
 
@@ -3084,6 +3087,7 @@ static void FillPartnerParty(u16 trainerId)
             j = gBattlePartners[SanitizeTrainerId(trainerId - TRAINER_PARTNER(PARTNER_NONE))].encounterMusic_gender >> 7;
             SetMonData(&gPlayerParty[i + 3], MON_DATA_OT_GENDER, &j);
         }
+
     }
     else if (trainerId == TRAINER_EREADER)
     {

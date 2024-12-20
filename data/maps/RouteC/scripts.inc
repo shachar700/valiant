@@ -15,7 +15,7 @@ RouteC_EventScript_Grunt1::
 
 RouteC_EventScript_Grunts_Trigger::
 	lock
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	msgbox RouteC_Text_MainGruntIntro, MSGBOX_DEFAULT
 	applymovement LOCALID_MAIN_GRUNT, Common_Movement_ExclamationMark
 	waitmovement 0
