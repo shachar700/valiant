@@ -4824,7 +4824,7 @@
     {
       "id": "LAYOUT_PEAKS_OF_ARBEL",
       "name": "PeaksOfArbel_Layout",
-      "width": 40,
+      "width": 60,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",

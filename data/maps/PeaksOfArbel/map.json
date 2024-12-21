@@ -458,6 +458,20 @@
       "elevation": 0,
       "dest_map": "MAP_PEAKS_OF_ARBEL_2F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 50,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_D",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 50,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_PINPOINT_CITY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

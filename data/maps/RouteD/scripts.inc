@@ -478,8 +478,8 @@ RouteD_Text_Snorlax:
 	.string "way.$"
 
 RouteD_Text_SnorlaxSniffing:
-	.string "SNORLAX is sniffing a warm meal.\n"
-	.string "Awaken by the good smell.\p"
+	.string "Awaken by the good smell.\n"
+	.string "SNORLAX is sniffing a warm meal.\p"
 	.string "Give Happy Meal to SNORLAX?$"
 
 RouteD_Text_SnorlaxMunching:
