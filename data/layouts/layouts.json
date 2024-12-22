@@ -4865,7 +4865,7 @@
       "id": "LAYOUT_MEDIAN_SEA_WEST",
       "name": "MedianSea_West_Layout",
       "width": 40,
-      "height": 80,
+      "height": 100,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MedianSea_West/border.bin",
@@ -4900,6 +4900,16 @@
       "secondary_tileset": "gTileset_Desert",
       "border_filepath": "data/layouts/JebusCity/border.bin",
       "blockdata_filepath": "data/layouts/JebusCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLIATH_CITY",
+      "name": "GoliathCity_Layout",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Desert",
+      "border_filepath": "data/layouts/GoliathCity/border.bin",
+      "blockdata_filepath": "data/layouts/GoliathCity/map.bin"
     }
   ]
 }

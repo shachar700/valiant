@@ -4,7 +4,7 @@
       "map_section": "MAPSEC_OLDALE_TOWN",
       "name": "OLDALE TOWN",
       "x": 4,
-      "y": 9,
+      "y": 7,
       "width": 1,
       "height": 1
     },
@@ -12,22 +12,22 @@
       "map_section": "MAPSEC_DEWFORD_TOWN",
       "name": "DEWFORD TOWN",
       "x": 2,
-      "y": 14,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_LAVARIDGE_TOWN",
       "name": "LAVARIDGE TOWN",
-      "x": 5,
-      "y": 3,
+      "x": 4,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_FALLARBOR_TOWN",
       "name": "FALLARBOR TOWN",
-      "x": 3,
+      "x": 2,
       "y": 0,
       "width": 1,
       "height": 1
@@ -35,16 +35,16 @@
     {
       "map_section": "MAPSEC_VERDANTURF_TOWN",
       "name": "VERDANTURF TOWN",
-      "x": 4,
-      "y": 6,
+      "x": 3,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_PACIFIDLOG_TOWN",
       "name": "PACIFIDLOG TOWN",
-      "x": 17,
-      "y": 10,
+      "x": 11,
+      "y": 9,
       "width": 1,
       "height": 1
     },
@@ -52,24 +52,24 @@
       "map_section": "MAPSEC_PETALBURG_CITY",
       "name": "PETALBURG CITY",
       "x": 1,
-      "y": 9,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SLATEPORT_CITY",
       "name": "SLATEPORT CITY",
-      "x": 8,
-      "y": 10,
+      "x": 7,
+      "y": 9,
       "width": 1,
-      "height": 2
+      "height": 1
     },
     {
       "map_section": "MAPSEC_MAUVILLE_CITY",
       "name": "MAUVILLE CITY",
-      "x": 8,
-      "y": 6,
-      "width": 2,
+      "x": 7,
+      "y": 5,
+      "width": 1,
       "height": 1
     },
     {
@@ -83,7 +83,7 @@
     {
       "map_section": "MAPSEC_FORTREE_CITY",
       "name": "FORTREE CITY",
-      "x": 12,
+      "x": 10,
       "y": 0,
       "width": 1,
       "height": 1
@@ -99,26 +99,26 @@
     {
       "map_section": "MAPSEC_MOSSDEEP_CITY",
       "name": "MOSSDEEP CITY",
-      "x": 24,
-      "y": 5,
-      "width": 2,
+      "x": 16,
+      "y": 3,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SOOTOPOLIS_CITY",
       "name": "SOOTOPOLIS CITY",
-      "x": 21,
-      "y": 7,
+      "x": 14,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_EVER_GRANDE_CITY",
       "name": "EVER GRANDE CITY",
-      "x": 27,
+      "x": 17,
       "y": 8,
       "width": 1,
-      "height": 2
+      "height": 1
     },
     {
       "map_section": "MAPSEC_ROUTE_101",
@@ -1762,7 +1762,7 @@
     },
     {
       "map_section": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "BIGROOT TOWN",
+      "name": "BIGROOT CITY",
       "x": 4,
       "y": 9,
       "width": 1,

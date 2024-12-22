@@ -1885,7 +1885,7 @@ static void CreateFlyDestIcons(void)
     }
 
     canFlyFlag = FLAG_VISITED_HAWAM_CITY;
-    for (mapSecId = MAPSEC_HAWAM_CITY; mapSecId <= MAPSEC_TAMARIX_CITY; mapSecId++)
+    for (mapSecId = MAPSEC_HAWAM_CITY; mapSecId <= MAPSEC_PINPOINT_CITY; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN) * 8 + 4;
