@@ -6,7 +6,7 @@ Common_EventScript_SetGymTrainers::
 	case 4, PinpointCity_Gym_SetGymTrainers
 	case 5, HawamCity_Gym_SetGymTrainers
 	case 6, HaruTelCity_Gym_SetGymTrainers
-	case 7, MoriahCity_Gym_SetGymTrainers
+	case 7, JebusCity_Gym_SetGymTrainers
 	case 8, SheshBeshCity_Gym_SetGymTrainers
 	end
 
@@ -59,7 +59,7 @@ HawamCity_Gym_SetGymTrainers::
 HaruTelCity_Gym_SetGymTrainers::
 	return
 
-MoriahCity_Gym_SetGymTrainers::
+JebusCity_Gym_SetGymTrainers::
 	return
 
 SheshBeshCity_Gym_SetGymTrainers::

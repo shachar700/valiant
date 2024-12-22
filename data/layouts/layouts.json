@@ -4892,14 +4892,14 @@
       "blockdata_filepath": "data/layouts/HaruTelCity/map.bin"
     },
     {
-      "id": "LAYOUT_BLISSPHONY_CITY",
-      "name": "BlissphonyCity_Layout",
+      "id": "LAYOUT_JEBUS_CITY",
+      "name": "JebusCity_Layout",
       "width": 60,
       "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Desert",
-      "border_filepath": "data/layouts/BlissphonyCity/border.bin",
-      "blockdata_filepath": "data/layouts/BlissphonyCity/map.bin"
+      "border_filepath": "data/layouts/JebusCity/border.bin",
+      "blockdata_filepath": "data/layouts/JebusCity/map.bin"
     }
   ]
 }

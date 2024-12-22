@@ -304,6 +304,11 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_MOSSDEEP_CITY] = {MAP_GROUP(MOSSDEEP_CITY), MAP_NUM(MOSSDEEP_CITY), HEAL_LOCATION_MOSSDEEP_CITY},
     [MAPSEC_SOOTOPOLIS_CITY] = {MAP_GROUP(SOOTOPOLIS_CITY), MAP_NUM(SOOTOPOLIS_CITY), HEAL_LOCATION_SOOTOPOLIS_CITY},
     [MAPSEC_EVER_GRANDE_CITY] = {MAP_GROUP(EVER_GRANDE_CITY), MAP_NUM(EVER_GRANDE_CITY), HEAL_LOCATION_EVER_GRANDE_CITY},
+    [MAPSEC_HAWAM_CITY] = {MAP_GROUP(HAWAM_CITY), MAP_NUM(HAWAM_CITY), HEAL_LOCATION_HAWAM_CITY},
+    [MAPSEC_PTOLEMAIS_CITY] = {MAP_GROUP(PTOLEMAIS_CITY), MAP_NUM(PTOLEMAIS_CITY), HEAL_LOCATION_PTOLEMAIS_CITY},
+    [MAPSEC_KEREN_CITY] = {MAP_GROUP(KEREN_CITY), MAP_NUM(KEREN_CITY), HEAL_LOCATION_KEREN_CITY},
+    [MAPSEC_KENKORIA_CITY] = {MAP_GROUP(KENKORIA_CITY), MAP_NUM(KENKORIA_CITY), HEAL_LOCATION_KENKORIA_CITY},
+    [MAPSEC_PINPOINT_CITY] = {MAP_GROUP(PINPOINT_CITY), MAP_NUM(PINPOINT_CITY), HEAL_LOCATION_PINPOINT_CITY},
     [MAPSEC_ROUTE_101] = {MAP_GROUP(ROUTE101), MAP_NUM(ROUTE101), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_102] = {MAP_GROUP(ROUTE102), MAP_NUM(ROUTE102), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_103] = {MAP_GROUP(ROUTE103), MAP_NUM(ROUTE103), HEAL_LOCATION_NONE},
@@ -1210,6 +1215,8 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_EVER_GRANDE_CITY:
         return FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_HAWAM_CITY:
+        return FlagGet(FLAG_VISITED_HAWAM_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_BATTLE_FRONTIER:
         return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
     case MAPSEC_SOUTHERN_ISLAND:
@@ -1876,6 +1883,37 @@ static void CreateFlyDestIcons(void)
         }
         canFlyFlag++;
     }
+
+    canFlyFlag = FLAG_VISITED_HAWAM_CITY;
+    for (mapSecId = MAPSEC_HAWAM_CITY; mapSecId <= MAPSEC_TAMARIX_CITY; mapSecId++)
+    {
+        GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+        x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+        y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+
+        if (width == 2)
+            shape = SPRITE_SHAPE(16x8);
+        else if (height == 2)
+            shape = SPRITE_SHAPE(8x16);
+        else
+            shape = SPRITE_SHAPE(8x8);
+
+        spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+        if (spriteId != MAX_SPRITES)
+        {
+            gSprites[spriteId].oam.shape = shape;
+
+            if (FlagGet(canFlyFlag))
+                gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+            else
+                shape += 3;
+
+            StartSpriteAnim(&gSprites[spriteId], shape);
+            gSprites[spriteId].sIconMapSec = mapSecId;
+        }
+        canFlyFlag++;
+    }
+
 }
 
 // Draw a red outline box on the mapsec if its corresponding flag has been set
