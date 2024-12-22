@@ -17,6 +17,11 @@
       "map": "MAP_HAWAM_CITY",
       "offset": 11,
       "direction": "right"
+    },
+    {
+      "map": "MAP_MEDIAN_SEA_WEST",
+      "offset": -63,
+      "direction": "left"
     }
   ],
   "object_events": [

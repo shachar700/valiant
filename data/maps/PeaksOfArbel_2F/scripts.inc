@@ -36,9 +36,9 @@ PeaksOfArbel_2F_Movement_TrucksOut:
 
 PeaksOfArbel_2F_EventScript_HappyMeal::
 	lock
+	removeobject 6
 	giveitem ITEM_HAPPY_MEAL
 	setflag FLAG_HIDE_PEAKS_OF_ARBEL_2F_HAPPY_MEAL
 	setflag FLAG_RECEVIED_HAPPY_MEAL
-	removeobject 6
 	release
 	end

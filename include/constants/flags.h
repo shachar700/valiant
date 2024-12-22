@@ -70,7 +70,7 @@
 #define FLAG_HIDE_PEAKS_OF_ARBEL_2F_TRUCKS/*FLAG_UNUSED_0x038*/    0x38 // Unused Flag
 #define FLAG_HIDE_ROUTE_D_SNORLAX/*FLAG_UNUSED_0x039*/    0x39 // Unused Flag
 #define FLAG_HIDE_PEAKS_OF_ARBEL_TRAVELERS/*FLAG_UNUSED_0x03A*/    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
+#define FLAG_HIDE_KENKORIA_CITY_MART_MYSTERYGIFT_MAN_1/*FLAG_UNUSED_0x03B*/    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
