@@ -44,15 +44,17 @@ KenkoriaCity_Mart_EventScript_GameBoyKidR::
 	end
 
 KenkoriaCity_Mart_EventScript_MysteryGiftMan::
-	lock
+	lockall
 	faceplayer
-	specialvar VAR_RESULT, TryBufferWaldaPhrase
-	msgbox KenkoriaCity_Mart_Text_MysteryGiftMan_Hi, MSGBOX_DEFAULT
-	waitmessage
-	bufferstring STR_VAR_1, Text_Happy2025
-	special DoWaldaNamingScreen @STR_VAR_2 is given by player
+	msgbox KenkoriaCity_Mart_Text_MysteryGiftMan_Hi, MSGBOX_AUTOCLOSE
+	special EnterMysteryGiftCode
 	waitstate
-	goto_if_eq VAR_RESULT, FALSE, KenkoriaCity_Mart_EventScript_MysteryGiftMan_Decline
+	special GetMysteryGiftFeedback
+	goto_if_eq VAR_RESULT, 1, KenkoriaCity_Mart_EventScript_MysteryGiftMan_Success
+	goto KenkoriaCity_Mart_EventScript_MysteryGiftMan_Decline
+	end
+
+KenkoriaCity_Mart_EventScript_MysteryGiftMan_Success::
 	playse SE_PIN
 	applymovement 6, Common_Movement_ExclamationMark
 	waitmovement 0
