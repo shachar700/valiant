@@ -812,7 +812,6 @@ KenkoriaCity_Gym_EventScript_MichalDefeated::
 	msgbox MauvilleCity_Gym_Text_ExplainBloomBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_KENKORIA_CITY_GYM
 	setflag FLAG_BADGE03_GET
-	setvar VAR_KEREN_CITY_STATE, 2
 	addvar VAR_KEREN_CITY_GYM_STATE, 1
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers

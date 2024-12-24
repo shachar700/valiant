@@ -1,7 +1,12 @@
 .set LOCALID_BIRCH, 1
 
 HawamCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HawamCity_OnTransition
 	.byte 0
+
+HawamCity_OnTransition:
+	setflag FLAG_VISITED_HAWAM_CITY
+	end
 
 HawamCity_EventScript_ProfApproachesTrigger1::
 	setvar VAR_0x8008, 1

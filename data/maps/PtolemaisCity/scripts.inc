@@ -1,7 +1,12 @@
 .set LOCALID_SMASHFEMALE, 5
 
 PtolemaisCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PtolemaisCity_OnTransition
 	.byte 0
+
+PtolemaisCity_OnTransition:
+	setflag FLAG_VISITED_PTOLEMAIS_CITY
+	end
 
 PtolemaisCity_EventScript_SmashFemale::
 	msgbox PtolemaisCity_Text_SmashFemale, MSGBOX_NPC

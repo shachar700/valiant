@@ -7,6 +7,7 @@ KerenCity_MapScripts::
 	.byte 0
 
 KerenCity_OnTransition::
+	setflag FLAG_VISITED_KEREN_CITY
 	call_if_eq VAR_RIVAL_NOA, 1, KerenCity_EventScript_SetNoaOut
 	call_if_set FLAG_DEFEATED_KEREN_CITY_GYM, KerenCity_EventScript_SetGrunts
 	end
@@ -169,7 +170,7 @@ KerenCity_Text_DanceFestival:
 	.string "takes place in Summer each year, spanning\l"
 	.string "three days and featuring a variety of\l"
 	.string "performances, workshops, and events.\p"
-	.string "It's one of HAWAM's largest and most\n"
+	.string "It's one of KEREN's largest and most\n"
 	.string "celebrated cultural festivals.$"
 
 KerenCity_Text_ResearchFacility:

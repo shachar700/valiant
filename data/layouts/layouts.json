@@ -4882,7 +4882,7 @@
       "blockdata_filepath": "data/layouts/MedianSea_North/map.bin"
     },
     {
-      "id": "LAYOUT_HARU_TEL_CITY",
+      "id": "LAYOUT_HARUTEL_CITY",
       "name": "HaruTelCity_Layout",
       "width": 60,
       "height": 70,
@@ -4910,6 +4910,16 @@
       "secondary_tileset": "gTileset_Desert",
       "border_filepath": "data/layouts/GoliathCity/border.bin",
       "blockdata_filepath": "data/layouts/GoliathCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_TAMARIX_CITY",
+      "name": "TamarixCity_Layout",
+      "width": 70,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Desert",
+      "border_filepath": "data/layouts/TamarixCity/border.bin",
+      "blockdata_filepath": "data/layouts/TamarixCity/map.bin"
     }
   ]
 }

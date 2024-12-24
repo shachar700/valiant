@@ -4,7 +4,12 @@
 .equ LOCALID_BOAT_SEA, 2
 
 KenkoriaCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KenkoriaCity_OnTransition
 	.byte 0
+
+KenkoriaCity_OnTransition:
+	setflag FLAG_VISITED_KENKORIA_CITY
+	end
 
 KenkoriaCity_EventScript_BikeShopSign::
 	msgbox KenkoriaCity_Text_BikeShopSign, MSGBOX_SIGN

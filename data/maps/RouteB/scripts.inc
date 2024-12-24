@@ -107,7 +107,7 @@ RouteB_Text_Introduce2:
 
 RouteB_Text_CanYouCatch:
 	.string "Do you know how to catch wild POKéMON?\n"
-	.string "I can show you.$"
+	.string "I can show you if you don't.$"
 
 RouteB_Text_HereWeGo:
 	.string "Well here we go!$"

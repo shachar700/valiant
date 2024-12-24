@@ -4,11 +4,14 @@ KerenCity_ResearchFacility_MapScripts::
 	.byte 0
 
 KerenCity_EventScript_BenTalks::
+	lock
+	faceplayer
 	goto_if_eq VAR_KEREN_CITY_STATE, 0, KerenCity_ResearchFacility_EventScript_GoodToSeeYou
 	goto_if_eq VAR_KEREN_CITY_STATE, 1, KerenCity_ResearchFacility_EventScript_NectarResearch
 	goto_if_eq VAR_KEREN_CITY_STATE, 2, KerenCity_ResearchFacility_EventScript_BenAlerts
 	goto_if_eq VAR_KEREN_CITY_STATE, 3, KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver
-	goto_if_eq VAR_KEREN_CITY_STATE, 4, KerenCity_ResearchFacility_EventScript_BenThanksYouForTheHelp
+	goto_if_eq VAR_KEREN_CITY_STATE, 4, KerenCity_ResearchFacility_EventScript_BenThanksYouForDelivery
+	goto_if_eq VAR_KEREN_CITY_STATE, 5, KerenCity_ResearchFacility_EventScript_BenThanksYouForTheHelp
 	end
 
 @ VAR_KEREN_CITY_STATE at 0
@@ -24,7 +27,6 @@ KerenCity_ResearchFacility_EventScript_NectarResearch::
 
 @ VAR_KEREN_CITY_STATE at 2
 KerenCity_ResearchFacility_EventScript_BenAlerts::
-	lockall
 	applymovement LOCALID_BEN, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_BEN, Common_Movement_Delay48
@@ -45,13 +47,18 @@ KerenCity_ResearchFacility_EventScript_DeclineHelping:
 KerenCity_ResearchFacility_EventScript_AgreeToHelp:
 	msgbox KerenCity_ResearchFacility_Text_ImGladYouAgree, MSGBOX_DEFAULT
 	setvar VAR_KEREN_CITY_STATE, 3
-	releaseall
+	release
 	end
 
 @ VAR_KEREN_CITY_STATE at 3
 KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver::
-	goto_if_eq VAR_HAWAM_CITY_INTRO_STATE, KerenCity_ResearchFacility_EventScript_ThankYouForDelivering
+	goto_if_eq VAR_HAWAM_CITY_INTRO_STATE, 5, KerenCity_ResearchFacility_EventScript_ThankYouForDelivering
 	msgbox KerenCity_ResearchFacility_Text_BenAsksForYouToDeliver, MSGBOX_NPC
+	end
+
+@VAR at 5
+KerenCity_ResearchFacility_EventScript_BenThanksYouForDelivery:
+	msgbox KerenCity_ResearchFacility_Text_BenThanksYouForDelivery, MSGBOX_NPC
 	end
 
 KerenCity_ResearchFacility_EventScript_ThankYouForDelivering:
@@ -110,6 +117,7 @@ KerenCity_ResearchFacility_AideGiveExpShare::
 KerenCity_ResearchFacility_EventScript_BenThanksYouForTheHelp:
 	lock
 	faceplayer
+	goto_if_set FLAG_RECEIVED_MIRACLE_SEED, KerenCity_ResearchFacility_EventScript_NectarResearch
 	msgbox KerenCity_ResearchFacility_Text_BenThanksYouForTheHelp, MSGBOX_DEFAULT
 	giveitem ITEM_MIRACLE_SEED
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -216,4 +224,5 @@ KerenCity_ResearchFacility_Text_Aide_CongratulationsHeresYourReward:
 	.string "Congratulations!\p"
 	.string "Here's your reward!$"
 
-
+KerenCity_ResearchFacility_Text_BenThanksYouForDelivery:
+	.string "Thank you for delivering the goods.$"

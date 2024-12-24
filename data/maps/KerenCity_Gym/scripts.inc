@@ -124,33 +124,26 @@ KerenCity_Gym_EventScript_AnimateFlashFullBrightness::
 
 KerenCity_Gym_EventScript_CountTrainersDefeated::
 	setvar VAR_0x8000, 0
-	goto_if_not_defeated TRAINER_TAKAO, KerenCity_Gym_EventScript_CheckJocelyn
+	goto_if_not_defeated TRAINER_RHETT, KerenCity_Gym_EventScript_CheckJocelyn
 	addvar VAR_0x8000, 1
-
 KerenCity_Gym_EventScript_CheckJocelyn::
-	goto_if_not_defeated TRAINER_JOCELYN, KerenCity_Gym_EventScript_CheckMia
+	goto_if_not_defeated TRAINER_JOCELYN, KerenCity_Gym_EventScript_CheckLaura
 	addvar VAR_0x8000, 1
-
-KerenCity_Gym_EventScript_CheckMia::
-	goto_if_not_defeated TRAINER_MARC, KerenCity_Gym_EventScript_CheckLaura
-	addvar VAR_0x8000, 1
-
 KerenCity_Gym_EventScript_CheckLaura::
 	goto_if_not_defeated TRAINER_LAURA, KerenCity_Gym_EventScript_CheckBrenden
 	addvar VAR_0x8000, 1
-
 KerenCity_Gym_EventScript_CheckBrenden::
 	goto_if_not_defeated TRAINER_BRENDEN, KerenCity_Gym_EventScript_CheckCristian
 	addvar VAR_0x8000, 1
-
 KerenCity_Gym_EventScript_CheckCristian::
 	goto_if_not_defeated TRAINER_CRISTIAN, KerenCity_Gym_EventScript_CheckLilith
 	addvar VAR_0x8000, 1
-
 KerenCity_Gym_EventScript_CheckLilith::
-	goto_if_not_defeated TRAINER_LILITH, KerenCity_Gym_EventScript_StopCountingTrainers
+	goto_if_not_defeated TRAINER_LILITH, KerenCity_Gym_EventScript_CheckMia
 	addvar VAR_0x8000, 1
-
+KerenCity_Gym_EventScript_CheckMia::
+	goto_if_not_defeated TRAINER_MARC, KerenCity_Gym_EventScript_StopCountingTrainers
+	addvar VAR_0x8000, 1
 KerenCity_Gym_EventScript_StopCountingTrainers::
 	return
 
@@ -169,7 +162,8 @@ KerenCity_Gym_EventScript_BrawlyDefeated::
 	msgbox KerenCity_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_KEREN_CITY_GYM
 	setflag FLAG_BADGE02_GET
-	addvar VAR_KEREN_CITY_GYM_STATE, 1
+	setvar VAR_KEREN_CITY_GYM_STATE, 1
+	setvar VAR_KEREN_CITY_STATE, 2
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	goto KerenCity_Gym_EventScript_GiveBulkUp

@@ -247,6 +247,7 @@ PeaksOfArbel_EventScript_DefeatedAzriNajib::
 	clearflag FLAG_HIDE_PEAKS_OF_ARBEL_TRAVELERS
 	removeobject LOCALID_BEN
 	setvar VAR_KEREN_CITY_GYM_STATE, 7
+	setvar VAR_KEREN_CITY_STATE, 5
 	fadescreen FADE_FROM_BLACK
 #ifdef BUGFIX
 	releaseall

@@ -1251,3 +1251,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/JebusCity/scripts.inc"
 
 	.include "data/maps/GoliathCity/scripts.inc"
+
+	.include "data/maps/TamarixCity/scripts.inc"

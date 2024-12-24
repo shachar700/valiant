@@ -1815,6 +1815,78 @@
       "y": 5,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_MEDIAN_SEA",
+      "name": "MEDIAN SEA",
+      "x": 19,
+      "y": 3,
+      "width": 2,
+      "height": 3
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_E",
+      "name": "ROUTE E",
+      "x": 21,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_F",
+      "name": "ROUTE F",
+      "x": 21,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_HARU_TEL_CITY",
+      "name": "HARUTEL CITY",
+      "x": 21,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_GOLIATH_CITY",
+      "name": "GOLIATH CITY",
+      "x": 21,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SHESHBESH_CITY",
+      "name": "SHESHBESH CITY",
+      "x": 22,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_JEBUS_CITY",
+      "name": "JEBUS CITY",
+      "x": 24,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_KEREN_CAVE",
+      "name": "KEREN CAVE",
+      "x": 23,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_TAMARIX_CITY",
+      "name": "TAMARIX CITY",
+      "x": 23,
+      "y": 12,
+      "width": 1,
+      "height": 1
     }
   ]
 }

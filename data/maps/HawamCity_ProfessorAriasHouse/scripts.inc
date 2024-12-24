@@ -166,7 +166,7 @@ ProfessorBirchStudy::
 	lock
 	faceplayer
 	goto_if_eq VAR_HAWAM_CITY_INTRO_STATE, 5, HawamCity_ProfessorAriasHouse_EventScript_BackToResearch
-	goto_if_ge VAR_KEREN_CITY_STATE, 3, HawamCity_ProfessorAriasHouse_EventScript_GiveDevonParts
+	goto_if_ge VAR_KEREN_CITY_STATE, 2, HawamCity_ProfessorAriasHouse_EventScript_GiveDevonParts
 	msgbox ProfessorBirchStudy_Text_0
 	release
 	end
@@ -182,6 +182,7 @@ HawamCity_ProfessorAriasHouse_EventScript_GiveDevonParts:
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_SILK_SCARF
 	setvar VAR_HAWAM_CITY_INTRO_STATE, 5
+	setvar VAR_KEREN_CITY_STATE, 4
 	release
 	end
 

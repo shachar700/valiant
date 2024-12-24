@@ -214,15 +214,14 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-
 #define MAPSEC_HAWAM_CITY                   0xD5
 #define MAPSEC_PTOLEMAIS_CITY               0xD6
 #define MAPSEC_KEREN_CITY                   0xD7
 #define MAPSEC_KENKORIA_CITY                0xD8
 #define MAPSEC_PINPOINT_CITY                0xD9
-#define MAPSEC_HARUTEL_CITY                 0xDA
+#define MAPSEC_HARU_TEL_CITY                0xDA
 #define MAPSEC_JEBUS_CITY                   0xDB
-#define MAPSEC_SHESHBESH_CITY               0xDC
+#define MAPSEC_SHESHBESH_CITY              0xDC
 #define MAPSEC_GOLIATH_CITY                 0xDD
 #define MAPSEC_TAMARIX_CITY                 0xDE
 #define MAPSEC_ROUTE_A                      0xDF

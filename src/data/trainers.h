@@ -6054,7 +6054,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2481
-            .species = SPECIES_LOMBRE,
+            .species = SPECIES_LOTAD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2483
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9678,7 +9678,7 @@ F_TRAINER_FEMALE |
 #line 3936
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 3935
-            .lvl = 12,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
