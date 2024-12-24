@@ -190,7 +190,7 @@ KerenCity_Text_PokemonSchoolSign:
 	.string "KEREN CITY POKéMON School$"
 
 KerenCity_Text_GruntsMoveOut:
-	.string "Lets move out.\n"
+	.string "We're done here, lets move out.\n"
 	.string "No point in wasting time here.$"
 
 KerenCity_Movement_SmashFemaleToRow:

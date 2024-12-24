@@ -446,18 +446,20 @@ PeaksOfArbel_Text_AzriIntro:
 	.string "So you are the pesk who's been meddling\n"
 	.string "with my plans?\p"
 	.string "{PLAYER}, right?\n"
-	.string "I got eyes everywhere.$"
+	.string "I got eyes everywhere.\p"
+	.string "I'm AZRI, the leader of TEAM SMASH.$"
 
 PeaksOfArbel_Text_BenIntro:
 	.string "{COLOR BLUE}BEN{COLOR DARK_GRAY}: Stop with this insane excavation of\n"
-	.string "the ZIRCON gems. Those are not yours\l"
+	.string "the ZIRCON gems.\p"
+	.string "Those are not yours\n"
 	.string "for the taking.$"
 
 PeaksOfArbel_Text_AzriRevealsPlan:
-	.string "What we do in this cave is our own\n"
+	.string "{COLOR RED}AZRI{COLOR DARK_GRAY}: What we do in this cave is our own\n"
 	.string "concern. This is none of your business.\p"
 	.string "If you think you can stop us, then think\n"
-	.string "again. I'm not going to let you stop us.\p"
+	.string "again. I'm not going to let that happen.\p"
 	.string "Those ZIRCON ORBs are already taken.\n"
 	.string "these gems, along with the power of CELEBI\l"
 	.string "will allow us to travel through time.\l"

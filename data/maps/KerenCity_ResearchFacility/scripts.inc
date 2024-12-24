@@ -8,6 +8,7 @@ KerenCity_EventScript_BenTalks::
 	goto_if_eq VAR_KEREN_CITY_STATE, 1, KerenCity_ResearchFacility_EventScript_NectarResearch
 	goto_if_eq VAR_KEREN_CITY_STATE, 2, KerenCity_ResearchFacility_EventScript_BenAlerts
 	goto_if_eq VAR_KEREN_CITY_STATE, 3, KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver
+	goto_if_eq VAR_KEREN_CITY_STATE, 4, KerenCity_ResearchFacility_EventScript_BenThanksYouForTheHelp
 	end
 
 @ VAR_KEREN_CITY_STATE at 0
@@ -43,13 +44,18 @@ KerenCity_ResearchFacility_EventScript_DeclineHelping:
 
 KerenCity_ResearchFacility_EventScript_AgreeToHelp:
 	msgbox KerenCity_ResearchFacility_Text_ImGladYouAgree, MSGBOX_DEFAULT
-	setvar VAR_KEREN_CITY_STATE, 2
+	setvar VAR_KEREN_CITY_STATE, 3
 	releaseall
 	end
 
 @ VAR_KEREN_CITY_STATE at 3
 KerenCity_ResearchFacility_EventScript_BenAsksForYouToDeliver::
+	goto_if_eq VAR_HAWAM_CITY_INTRO_STATE, KerenCity_ResearchFacility_EventScript_ThankYouForDelivering
 	msgbox KerenCity_ResearchFacility_Text_BenAsksForYouToDeliver, MSGBOX_NPC
+	end
+
+KerenCity_ResearchFacility_EventScript_ThankYouForDelivering:
+	msgbox KerenCity_ResearchFacility_Text_ThankYouForDelivering, MSGBOX_NPC
 	end
 
 KerenCity_ResearchFacility_EventScript_Scientist1::
@@ -78,6 +84,7 @@ KerenCity_ResearchFacility_EventScript_Aide::
 	msgbox KerenCity_ResearchFacility_Text_Aide_HelloImProfessor, MSGBOX_AUTOCLOSE
 	compare VAR_0x8009, 15
 	goto_if_ge KerenCity_ResearchFacility_AideGiveExpShare
+	applymovement 5, Common_Movement_ExclamationMark
 	playse SE_PIN
 	waitse
 	delay 60
@@ -99,6 +106,26 @@ KerenCity_ResearchFacility_AideGiveExpShare::
 	setflag FLAG_PROF_AIDE_RESEARCH_FACILITY_EXP_SHARE
 	goto KerenCity_ResearchFacility_EventScript_AideGiveExpShare_Given
 	end
+
+KerenCity_ResearchFacility_EventScript_BenThanksYouForTheHelp:
+	lock
+	faceplayer
+	msgbox KerenCity_ResearchFacility_Text_BenThanksYouForTheHelp, MSGBOX_DEFAULT
+	giveitem ITEM_MIRACLE_SEED
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_MIRACLE_SEED
+	release
+	end
+
+KerenCity_ResearchFacility_Text_ThankYouForDelivering:
+	.string "Thank you for delivering the DEVON\n"
+	.string "PARTS to Professor Aria.\p"
+	.string "I'm sure he'll make good use of them.$"
+
+KerenCity_ResearchFacility_Text_BenThanksYouForTheHelp:
+	.string "Thank you for helping me back there with\n"
+	.string "TEAM SMASH in the cave in PEAKS OF ARBEL.\p"
+	.string "Here, I've got something for you.$"
 
 KerenCity_ResearchFacility_Text_Scientist1:
 	.string "We study POKéMON, flowers, fossils, you\n"
@@ -134,13 +161,15 @@ KerenCity_ResearchFacility_Text_BenAlerts:
 	.string "I assume it's TEAM SMASH as they are\n"
 	.string "known for wreaking havoc.\p"
 	.string "Data about plants, flowers, POKéMON,\n"
-	.string "gem stones, and fossils. All stolen.\p"
+	.string "gem stones, and fossils. All gone.\p"
 	.string "They haven't entered the facility so\n"
 	.string "they must have hacked their way in.\p"
 	.string "Good thing they didn't find my research\n"
-	.string "about CELEBI and the IRIS flowers.\p"
+	.string "about CELEBI and the IRIS flowers.\l"
+	.string "or at least I think they didn't.\l"
+	.string "It's still here in my research notes.\p"
 	.string "There is a strong connection between\n"
-	.string "CELEBI, IRIS and the gem ZIRCON.\p"
+	.string "CELEBI, IRIS and the ZIRCON gem stones.\p"
 	.string "I'm not going to risk it and go out\n"
 	.string "there while TEAM SMASH looks for ways\l"
 	.string "to harnest power and control.\p"

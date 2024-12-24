@@ -102,6 +102,7 @@ KenkoriaCity_Mart_EventScript_MysteryGiftMan_Decline::
 	end
 
 KenkoriaCity_Mart_EventScript_MysteryGiftMan_Exit::
+	msgbox KenkoriaCity_Mart_Text_MysteryGiftMan_Farewell, MSGBOX_AUTOCLOSE
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_KENKORIA_CITY_MART_MYSTERYGIFT_MAN_1
 	removeobject 6
@@ -110,6 +111,9 @@ KenkoriaCity_Mart_EventScript_MysteryGiftMan_Exit::
 	closemessage
 	release
 	end
+
+KenkoriaCity_Mart_Text_MysteryGiftMan_Farewell:
+	.string "Farewell.$"
 
 KenkoriaCity_Mart_Text_OhYouDontKnow:
 	.string "Oh you don't know…$"

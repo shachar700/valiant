@@ -165,9 +165,40 @@ NicknameBoxMon_1:
 ProfessorBirchStudy::
 	lock
 	faceplayer
+	goto_if_eq VAR_HAWAM_CITY_INTRO_STATE, 5, HawamCity_ProfessorAriasHouse_EventScript_BackToResearch
+	goto_if_ge VAR_KEREN_CITY_STATE, 3, HawamCity_ProfessorAriasHouse_EventScript_GiveDevonParts
 	msgbox ProfessorBirchStudy_Text_0
 	release
 	end
+
+HawamCity_ProfessorAriasHouse_EventScript_BackToResearch:
+	msgbox HawamCity_ProfessorAriasHouse_Text_BackToResearch, MSGBOX_NPC
+	end
+
+HawamCity_ProfessorAriasHouse_EventScript_GiveDevonParts:
+	msgbox HawamCity_ProfessorAriasHouse_Text_GiveDevonParts, MSGBOX_DEFAULT
+	removeitem ITEM_DEVON_PARTS
+	giveitem ITEM_SILK_SCARF
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_SILK_SCARF
+	setvar VAR_HAWAM_CITY_INTRO_STATE, 5
+	release
+	end
+
+HawamCity_ProfessorAriasHouse_Text_BackToResearch:
+	.string "I'm going back to my research.$"
+
+HawamCity_ProfessorAriasHouse_Text_GiveDevonParts:
+	.string "Oh you've got something for me?\n"
+	.string "The Devon parts? That would be helpful.\p"
+	.string "The machines will run much faster now.\n"
+	.string "Thank you.\p"
+	.string "The pseudo legendaries have been\n"
+	.string "acting up lately.\p"
+	.string "They are sensing something we humans\n"
+	.string "can't understand.\p"
+	.string "Anyway I'll go back to my research\n"
+	.string "You can have this item as a thank you.$"
 
 ComeCloser_Text_0:
 	.string "I've been preparing these POKéMON\n"
