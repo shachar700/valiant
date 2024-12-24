@@ -61,7 +61,7 @@ KenkoriaCity_Mart_EventScript_MysteryGiftMan_Success::
 	delay 30
 	msgbox KenkoriaCity_Mart_Text_MysteryGiftMan_Correct, MSGBOX_DEFAULT
 	bufferspeciesname STR_VAR_1, SPECIES_PORYGON
-	givemon SPECIES_PORYGON, 20
+	givemon SPECIES_PORYGON, 20, ITEM_UPGRADE
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, KenkoriaCity_Mart_EventScript_SendPorygonToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, KenkoriaCity_Mart_EventScript_SendPorygonToPC 
 	release
